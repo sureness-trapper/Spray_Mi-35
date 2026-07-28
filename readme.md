@@ -75,6 +75,8 @@ Aegis for open sourcing the model and the whole mod.
 
 https://github.com/senicluxus/A3_Aegis_Public_Releases/tree/main/A3_Aegis
 
+RHS for the Mi-24 flight model
+
 Arma 3 Object Builder for importing it into blender
 
 https://github.com/MrClock8163/Arma3ObjectBuilder
