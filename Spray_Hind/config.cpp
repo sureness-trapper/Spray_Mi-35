@@ -7135,6 +7135,8 @@ class CfgVehicles {
             horizontalWingsAngleCollMax = 7.5;
             stressDamagePerSec = 0.0033333332;
         };
+        envelope[] = {0,0.2,0.9,2.1,2.5,3.3,3.5,3.6,3.7,3.8,3.8,3.8,3.8,3.8,3.8};
+        maxSpeed = 365;
         slingLoadMaxCargoMass = 4000;
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
         cargoCompartments[] = {"Compartment3"};
