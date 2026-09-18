@@ -16,15 +16,15 @@ class SensorTemplateIR;
 class SensorTemplateVisual;
 class SensorTemplateDataLink;
 class CfgVehicles {
-	class Helicopter;
-    class Helicopter_Base_F: Helicopter {
+    class Helicopter;
+    class Helicopter_Base_F : Helicopter {
         class HitPoints;
     };
     class Heli_Attack_02_base_F : Helicopter_Base_F {
         class AnimationSources;
         class EventHandlers;
         class Components;
-		class CargoTurret;
+        class CargoTurret;
         class Turrets {
             class MainTurret;
         };
@@ -58,7 +58,7 @@ class CfgVehicles {
                 lockCargo[] = {0,1,2,3,4,5,6,7};
                 lockCargoAnimationPhase = 1;
                 forceAnimatePhase = 0;
-			    forceAnimate[] = {"floorsitting_hide", 1};
+                forceAnimate[] = {"floorsitting_hide", 1};
             };
             class floorsitting_hide {
                 animPeriod = 1e-05;
@@ -67,7 +67,7 @@ class CfgVehicles {
                 lockCargo[] = {8, 9};
                 lockCargoAnimationPhase = 1;
                 forceAnimatePhase = 0;
-			    forceAnimate[] = {"benches_hide", 1};
+                forceAnimate[] = {"benches_hide", 1};
                 source = "user";
             }; */
         };
@@ -139,66 +139,64 @@ class CfgVehicles {
             class TransportPylonsComponent {
                 class pylons {
                     class PylonLeft1 {
-                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL", "20MM_TWIN_CANNON", "20MM_CANNON", 
-                            "DAGRM", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_BOMB_PYLON_HELI", "O_BOMB_PYLON", "TITAN_NLOS_1RND", "TITAN_NLOS_2RND",
-                            "B_BIM9X_RAIL", "B_BIM9X_DUAL_RAIL","B_AMRAAM_D_RAIL","B_AGM65_RAIL","B_HARM_RAIL","B_GBU12","B_SDB_QUAD_RAIL", "B_AGM_154",
-                            "I_BIM9X_RAIL","I_BIM9X_DUAL_RAIL","I_AMRAAM_C_RAIL","I_AGM65_RAIL","I_GBU12",
-                            "O_R73","O_R77","O_KH25","O_KAB250_BOMB","O_KH58"
-                        };
+                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL", "20MM_TWIN_CANNON", "20MM_CANNON",
+                                        "DAGRM", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_BOMB_PYLON_HELI", "O_BOMB_PYLON", "TITAN_NLOS_1RND", "TITAN_NLOS_2RND",
+                                        "B_BIM9X_RAIL", "B_BIM9X_DUAL_RAIL", "B_AMRAAM_D_RAIL", "B_AGM65_RAIL", "B_HARM_RAIL", "B_GBU12", "B_SDB_QUAD_RAIL", "B_AGM_154",
+                                        "I_BIM9X_RAIL", "I_BIM9X_DUAL_RAIL", "I_AMRAAM_C_RAIL", "I_AGM65_RAIL", "I_GBU12",
+                                        "O_R73", "O_R77", "O_KH25", "O_KAB250_BOMB", "O_KH58"};
                         priority = 2;
                     };
                     class PylonLeft2 : PylonLeft1 {
-                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL", "20MM_TWIN_CANNON", "20MM_CANNON", 
-                            "DAGRM", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_BOMB_PYLON_HELI", "O_BOMB_PYLON", "TITAN_NLOS_1RND", "TITAN_NLOS_2RND",
-                            "B_BIM9X_RAIL", "B_BIM9X_DUAL_RAIL","B_AMRAAM_D_RAIL","B_AGM65_RAIL","B_HARM_RAIL","B_GBU12","B_SDB_QUAD_RAIL", "B_AGM_154",
-                            "I_BIM9X_RAIL","I_BIM9X_DUAL_RAIL","I_AMRAAM_C_RAIL","I_AGM65_RAIL","I_GBU12",
-                            "O_R73","O_R77","O_KH25","O_KAB250_BOMB","O_KH58"
-                        };
+                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL", "20MM_TWIN_CANNON", "20MM_CANNON",
+                                        "DAGRM", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_BOMB_PYLON_HELI", "O_BOMB_PYLON", "TITAN_NLOS_1RND", "TITAN_NLOS_2RND",
+                                        "B_BIM9X_RAIL", "B_BIM9X_DUAL_RAIL", "B_AMRAAM_D_RAIL", "B_AGM65_RAIL", "B_HARM_RAIL", "B_GBU12", "B_SDB_QUAD_RAIL", "B_AGM_154",
+                                        "I_BIM9X_RAIL", "I_BIM9X_DUAL_RAIL", "I_AMRAAM_C_RAIL", "I_AGM65_RAIL", "I_GBU12",
+                                        "O_R73", "O_R77", "O_KH25", "O_KAB250_BOMB", "O_KH58"};
                         priority = 3;
                     };
                     class PylonLeft3 : PylonLeft1 {
                         hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL", "20MM_TWIN_CANNON", "20MM_CANNON",
-                            "DAGRM", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_MISSILE_PYLON", "TITAN_NLOS_1RND", "TITAN_NLOS_2RND", "ECM_POD_L"};
+                                        "DAGRM", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_MISSILE_PYLON", "TITAN_NLOS_1RND", "TITAN_NLOS_2RND", "ECM_POD_L"};
                         priority = 4;
                     };
                     class PylonRight1;
                     class PylonRight2;
-                    class PylonRight3: PylonLeft3 {
+                    class PylonRight3 : PylonLeft3 {
                         hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "DAR", "DAGR", "B_SHIEKER", "UNI_SCALPEL", "20MM_TWIN_CANNON", "20MM_CANNON",
-                            "DAGRM", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_MISSILE_PYLON", "TITAN_NLOS_1RND", "TITAN_NLOS_2RND", "ECM_POD_R"};
+                                        "DAGRM", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_MISSILE_PYLON", "TITAN_NLOS_1RND", "TITAN_NLOS_2RND", "ECM_POD_R"};
                     };
                     class PylonLeft4 {
-                        hardpoints[] = {"O_MISSILE_PYLON", "B_MISSILE_PYLON", "B_BIM9X_RAIL","B_AMRAAM_D_RAIL",
-                                        "I_BIM9X_RAIL","I_AMRAAM_C_RAIL",
-                                        "O_R73","O_R77"};
+                        hardpoints[] = {"O_MISSILE_PYLON", "B_MISSILE_PYLON", "B_BIM9X_RAIL", "B_AMRAAM_D_RAIL",
+                                        "I_BIM9X_RAIL", "I_AMRAAM_C_RAIL",
+                                        "O_R73", "O_R77"};
                         attachment = "";
                         priority = 1;
                         turret[] = {0};
-                        UIposition[] = {0.628,0.45};
+                        UIposition[] = {0.628, 0.45};
                     };
                     class PylonRight4 : PylonLeft4 {
                         mirroredMissilePos = 7;
-                        UIposition[] = {0.04,0.45};
+                        UIposition[] = {0.04, 0.45};
                     };
                     class PylonRadar {
                         hardpoints[] = {"MastRadar_Pylon"};
-                        UIposition[] = {0.35,0.1};
+                        UIposition[] = {0.35, 0.1};
                         attachment = "MastRadar";
                         priority = 9;
                     };
                 };
                 class Presets {
                     class Default {
-                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_4Rnd_LG_scalpel","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_4Rnd_LG_scalpel", "", "", "MastRadar"};
+                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_4Rnd_LG_scalpel", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_4Rnd_LG_scalpel", "", "", "MastRadar"};
                     };
                     class AT {
-                        attachment[] = {"PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","", "", "MastRadar"};
+                        attachment[] = {"PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "", "", "MastRadar"};
                     };
                     class CAS {
-                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire","PylonMissile_1Rnd_Bomb_03_F","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonMissile_1Rnd_Bomb_03_F","PylonRack_19Rnd_Rocket_Skyfire","", "", "MastRadar"};
+                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire", "PylonMissile_1Rnd_Bomb_03_F", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonMissile_1Rnd_Bomb_03_F", "PylonRack_19Rnd_Rocket_Skyfire", "", "", "MastRadar"};
                     };
                     class HAT {
-                        attachment[] = {"PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_4Rnd_LG_scalpel","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_4Rnd_LG_scalpel","", "", "MastRadar"};
+                        attachment[] = {"PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_4Rnd_LG_scalpel", "PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_4Rnd_LG_scalpel", "", "", "MastRadar"};
                     };
                 };
             };
@@ -238,61 +236,57 @@ class CfgVehicles {
             };
         };
         class Turrets : Turrets {
-			class CargoTurret_01: CargoTurret
-			{
-				gunnerAction="passenger_inside_1";
-				gunnerGetInAction="GetInLow";
-				gunnerGetOutAction="GetOutLow";
-				memoryPointsGetInGunner="pos cargo R2";
-				memoryPointsGetInGunnerDir="pos cargo R2 dir";
-				gunnerName="Passenger (Right Bench 2)";
-				gunnerCompartments="Compartment3";
-				proxyIndex=5;
-				maxElev=15;
-				minElev=-45;
-				maxTurn=40;
-				minTurn=-15;
-				lodTurnedIn=1200;
-				lodTurnedOut=1200;
-				lodOpticsIn=1200;
-				lodOpticsOut=1200;
-				selectionFireAnim="";
-				gunnerUsesPilotView=0;
-				playerPosition=2;
-				soundAttenuationTurret="HeliAttenuationRamp";
-				isPersonTurret=1;
-				commanding=-2;
-				gunnerDoor="Door_Cargo";
-				disableSoundAttenuation=0;
-				enabledByAnimationSource="Door_Cargo";
-			};
-			class CargoTurret_02: CargoTurret_01
-			{
-				gunnerName="Passenger (Right Bench 1)";
-				memoryPointsGetInGunner="pos cargo R";
-				memoryPointsGetInGunnerDir="pos cargo R dir";
-				proxyIndex=7;
-				maxTurn=34;
-				minTurn=-30;
-			};
-			class CargoTurret_03: CargoTurret_01
-			{
-				memoryPointsGetInGunner="pos cargo L2";
-				memoryPointsGetInGunnerDir="pos cargo L2 dir";
-				gunnerName="Passenger (Left Bench 2)";
-				proxyIndex=6;
-				maxTurn=25;
-				minTurn=-44;
-			};
-			class CargoTurret_04: CargoTurret_01
-			{
-				gunnerName="Passenger (Left Bench 1)";
-				memoryPointsGetInGunner="pos cargo L";
-				memoryPointsGetInGunnerDir="pos cargo L dir";
-				proxyIndex=8;
-				maxTurn=31;
-				minTurn=-25;
-			};
+            class CargoTurret_01 : CargoTurret {
+                gunnerAction = "passenger_inside_1";
+                gunnerGetInAction = "GetInLow";
+                gunnerGetOutAction = "GetOutLow";
+                memoryPointsGetInGunner = "pos cargo R2";
+                memoryPointsGetInGunnerDir = "pos cargo R2 dir";
+                gunnerName = "Passenger (Right Bench 2)";
+                gunnerCompartments = "Compartment3";
+                proxyIndex = 5;
+                maxElev = 15;
+                minElev = -45;
+                maxTurn = 40;
+                minTurn = -15;
+                lodTurnedIn = 1200;
+                lodTurnedOut = 1200;
+                lodOpticsIn = 1200;
+                lodOpticsOut = 1200;
+                selectionFireAnim = "";
+                gunnerUsesPilotView = 0;
+                playerPosition = 2;
+                soundAttenuationTurret = "HeliAttenuationRamp";
+                isPersonTurret = 1;
+                commanding = -2;
+                gunnerDoor = "Door_Cargo";
+                disableSoundAttenuation = 0;
+                enabledByAnimationSource = "Door_Cargo";
+            };
+            class CargoTurret_02 : CargoTurret_01 {
+                gunnerName = "Passenger (Right Bench 1)";
+                memoryPointsGetInGunner = "pos cargo R";
+                memoryPointsGetInGunnerDir = "pos cargo R dir";
+                proxyIndex = 7;
+                maxTurn = 34;
+                minTurn = -30;
+            };
+            class CargoTurret_03 : CargoTurret_01 {
+                memoryPointsGetInGunner = "pos cargo L2";
+                memoryPointsGetInGunnerDir = "pos cargo L2 dir";
+                gunnerName = "Passenger (Left Bench 2)";
+                proxyIndex = 6;
+                maxTurn = 25;
+                minTurn = -44;
+            };
+            class CargoTurret_04 : CargoTurret_01 {
+                gunnerName = "Passenger (Left Bench 1)";
+                memoryPointsGetInGunner = "pos cargo L";
+                memoryPointsGetInGunnerDir = "pos cargo L dir";
+                proxyIndex = 8;
+                maxTurn = 31;
+                minTurn = -25;
+            };
             class MainTurret : MainTurret {
                 discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000};
                 weapons[] = {"Aegis_Autocannon_Heli_Attack_04_F", "Laserdesignator_mounted"};
@@ -389,6 +383,7 @@ class CfgVehicles {
                 };
                 class MFD {
                     class AirplaneHUD {
+                        enableParallax = 0;
                         topLeft = "HUD_top_left";
                         topRight = "HUD_top_right";
                         bottomLeft = "HUD_bottom_left";
@@ -396,11 +391,11 @@ class CfgVehicles {
                         borderRight = 0;
                         borderTop = 0;
                         borderBottom = 0;
-                        color[] = {0.15000001, 1, 0.15000001, 1};
+                        color[] = {1, 1, 1, 1};
                         helmetMountedDisplay = 1;
-                        helmetPosition[] = {-0.037500001, 0.037500001, 0.1};
-                        helmetRight[] = {0.075000003, 0, 0};
-                        helmetDown[] = {0, -0.075000003, 0};
+                        helmetPosition[] = {-0.0375, 0.0375, 0.1};
+                        helmetRight[] = {0.075, 0, 0};
+                        helmetDown[] = {0, -0.075, 0};
                         font = "LucidaConsoleB";
                         turret[] = {-2};
                         class Bones {
@@ -408,28 +403,20 @@ class CfgVehicles {
                                 type = "fixed";
                                 pos[] = {0.5, 0.5};
                             };
-                            class HorizonBankSource {
-                                type = "rotational";
-                                source = "HorizonBank";
-                                center[] = {0.5, 0.5};
-                                min = -6.2831001;
-                                max = 6.2831001;
-                                minAngle = -360;
-                                maxAngle = 360;
+                            class WeaponAim {
+                                type = "vector";
+                                source = "weapon";
+                                pos0[] = {0.5, 0.5};
+                                pos10[] = {0.734, 0.73};
                             };
-                            class HorizonDiveSource {
-                                source = "horizonDive";
-                                type = "linear";
-                                min = -1;
-                                max = 1;
-                                minPos[] = {0.5, 2.5};
-                                maxPos[] = {0.5, -1.5};
+                            class WeaponAimRelative : WeaponAim {
+                                source = "weapontoview";
                             };
                             class VelocityVector {
                                 type = "vector";
                                 source = "velocityToView";
                                 pos0[] = {0.5, 0.5};
-                                pos10[] = {0.73400003, 0.73000002};
+                                pos10[] = {0.734, 0.73};
                             };
                             class ForwardVector {
                                 type = "vector";
@@ -437,116 +424,101 @@ class CfgVehicles {
                                 pos0[] = {0, 0};
                                 pos10[] = {0.234, 0.23};
                             };
+                            class HorizonVector {
+                                type = "horizontoview";
+                                pos0[] = {0.5, 0.5};
+                                pos10[] = {0.830923, 0.825266};
+                                angle = 0;
+                            };
                             class GunnerAim {
                                 type = "vector";
                                 source = "turret";
-                                pos0[] = {0, -0.60000002};
-                                pos10[] = {0.0068000001, -0.012};
+                                pos0[] = {0, -2};
+                                pos10[] = {0.0068, -0.01};
                                 projection = 0;
                             };
-                            class WeaponAim {
-                                type = "vector";
-                                source = "weaponToView";
-                                pos0[] = {0.5, 0.5};
-                                pos10[] = {0.73400003, 0.73000002};
-                            };
-                            class SliderDiveSource {
-                                type = "linear";
-                                source = "horizonDive";
-                                min = "RAD(-10)";
-                                max = "RAD(10)";
-                                minPos[] = {0.105, 0.38};
-                                maxPos[] = {0.105, 0.54000002};
-                            };
-                            class SliderDiveSource30 : SliderDiveSource {
-                                min = "RAD(10)";
-                                max = "RAD(30)";
-                                minPos[] = {0, -0.039999999};
-                                maxPos[] =
-                                    {
-                                        0,
-                                        "0)"};
-                            };
-                            class SliderDiveSource90 : SliderDiveSource30 {
-                                min = "RAD(30)";
-                                max = "RAD(90)";
-                                minPos[] = {0, -0.039999999};
-                            };
-                            class SliderDiveSource30m : SliderDiveSource {
-                                min = "RAD(-30)";
-                                max = "RAD(-10)";
-                                minPos[] = {0, 0};
-                                maxPos[] = {0, 0.039999999};
-                            };
-                            class SliderDiveSource90m : SliderDiveSource30m {
-                                min = "RAD(-90)";
-                                max = "RAD(-30)";
-                                maxPos[] = {0, 0.039999999};
-                            };
-                            class SliderAltitudeSource {
-                                type = "linear";
-                                source = "altitudeAGL";
-                                sourceOffset = -3;
-                                min = 0;
-                                max = 1000;
-                                minPos[] = {0.88499999, 0.2};
-                                maxPos[] = {0.88499999, 0.375};
-                            };
-                            class GForceSource {
-                                type = "linear";
-                                source = "gmeter";
-                                sourceScale = 0.15000001;
-                                min = -1;
-                                max = 3;
-                                minPos[] = {0.105, 0.69999999};
-                                maxPos[] = {0.105, 0.86000001};
-                            };
-                            class SliderVSpeedSource {
+                            class VerticalSpeedBone {
                                 type = "linear";
                                 source = "vspeed";
-                                min = -15;
-                                max = 15;
-                                minPos[] = {0.79500002, 0.60000002};
-                                maxPos[] = {0.79500002, 0.83999997};
+                                sourceScale = 1;
+                                min = -10;
+                                max = 10;
+                                minPos[] = {0, -0.32};
+                                maxPos[] = {0, 0.32};
+                            };
+                            class HorizonBankRot {
+                                type = "linear";
+                                source = "horizonBank";
+                                min = -0.5236;
+                                max = 0.5236;
+                                minPos[] = {0.41, 0.84};
+                                maxPos[] = {0.59, 0.84};
+                                aspectRatio = 1;
                             };
                             class ImpactPoint {
                                 type = "vector";
                                 source = "ImpactPointToView";
+                                pos[] = {};
                                 pos0[] = {0.5, 0.5};
-                                pos10[] = {0.73400003, 0.73000002};
-                            };
-                            class ImpactPointRockets {
-                                type = "vector";
-                                source = "ImpactPointToView";
-                                pos0[] = {0.5, 0.52499998};
-                                pos10[] = {0.73400003, 0.755};
-                            };
-                            class WPPoint {
-                                type = "vector";
-                                source = "WPPointToView";
-                                pos0[] = {0.5, 0.5};
-                                pos10[] = {0.73400003, 0.73000002};
-                            };
-                            class rtdRPM1 {
-                                type = "linear";
-                                source = "rtdrpm1";
-                                min = 0.1;
-                                max = 1;
-                                minPos[] = {0, -0.75999999};
-                                maxPos[] = {0, 0};
-                            };
-                            class rtdRPM2 : rtdRPM1 {
-                                source = "rtdrpm2";
-                            };
-                            class Limit0109 {
-                                type = "limit";
-                                limits[] = {0.1, 0.1, 0.89999998, 0.89999998};
+                                pos10[] = {0.734, 0.73};
                             };
                             class Target {
                                 source = "targettoview";
                                 type = "vector";
                                 pos0[] = {0.5, 0.5};
-                                pos10[] = {0.73400003, 0.73000002};
+                                pos10[] = {0.734, 0.73};
+                            };
+                            class Limit0109 {
+                                type = "limit";
+                                limits[] = {0.1, 0.1, 0.9, 0.9};
+                            };
+                            class LimitWaypoint {
+                                type = "limit";
+                                limits[] = {0.2, 0.1, 0.8, 0.1};
+                            };
+                            class WPPoint {
+                                type = "vector";
+                                source = "WPPoint";
+                                pos0[] = {0.5, 0.5};
+                                pos10[] = {0.734, 0.73};
+                            };
+                            class WPPointToView : WPPoint {
+                                source = "WPPointToView";
+                            };
+                            class RadarHeight {
+                                type = "linear";
+                                source = "altitudeAGL";
+                                sourceScale = 1;
+                                sourceOffset = -2;
+                                min = 0;
+                                max = 100;
+                                minPos[] = {0.903, 0.18};
+                                maxPos[] = {0.903, 0.82};
+                            };
+                            class HorizonBankRotFull {
+                                type = "rotational";
+                                source = "horizonBank";
+                                center[] = {0, 0};
+                                min = -3.1416;
+                                max = 3.1416;
+                                minAngle = -180;
+                                maxAngle = 180;
+                                aspectRatio = 1;
+                            };
+                            class LarAmmoMax {
+                                type = "linear";
+                                source = "LarAmmoMax";
+                                sourceScale = 1;
+                                min = 0;
+                                max = 1;
+                                minPos[] = {0, 1};
+                                maxPos[] = {0, 0};
+                            };
+                            class LarAmmoMin : LarAmmoMax {
+                                source = "LarAmmoMin";
+                            };
+                            class LarTargetDist : LarAmmoMax {
+                                source = "LarTargetDist";
                             };
                             class MissileFlightTimeRot1 {
                                 type = "rotational";
@@ -635,1340 +607,26 @@ class CfgVehicles {
                                 maxAngle = 360;
                                 max = 10;
                             };
-                            class HorizonBankRotFull {
-                                type = "rotational";
-                                source = "horizonBank";
-                                center[] = {0, 0};
-                                min = -3.1415999;
-                                max = 3.1415999;
-                                minAngle = -180;
-                                maxAngle = 180;
-                                aspectRatio = 1;
-                            };
-                            class LarAmmoMax {
-                                type = "linear";
-                                source = "LarAmmoMax";
-                                sourceScale = 1;
-                                min = 0;
-                                max = 1;
-                                minPos[] = {0, 1};
-                                maxPos[] = {0, 0};
-                            };
-                            class LarAmmoMin : LarAmmoMax {
-                                source = "LarAmmoMin";
-                            };
-                            class LarTargetDist : LarAmmoMax {
-                                source = "LarTargetDist";
-                            };
                         };
                         class Draw {
                             alpha = "user3";
-                            color[] =
-                                {
-                                    "user0",
-                                    "user1",
-                                    "user2"};
-                            condition = "(1 - (cameraHeadingDiffY<=-19) + (abs(cameraHeadingDiffX)>=24))*on";
-                            class VelocityLine {
-                                type = "line";
-                                width = 2;
-                                points[] =
-                                    {
-
-                                        {"HUDCenter",
-                                         1},
-
-                                        {"VelocityVector",
-                                         1},
-                                        {},
-
-                                        {"VelocityVector",
-                                         {0, -0.0049145301},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {0.0024999999, -0.0042559798},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {0.0043299999, -0.0024572599},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {0.0049999999, 0},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {0.0043299999, 0.0024572599},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {0.0024999999, 0.0042559798},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {0, 0.0049145301},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {-0.0024999999, 0.0042559798},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {-0.0043299999, 0.0024572599},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {-0.0049999999, 0},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {-0.0043299999, -0.0024572599},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {-0.0024999999, -0.0042559798},
-                                         1},
-
-                                        {"VelocityVector",
-                                         {0, -0.0049145301},
-                                         1},
-                                        {}};
-                            };
+                            color[] = {"user0", "user1", "user2"};
+                            condition = "on";
+                            delete ImpactCross;
                             class Static {
                                 type = "line";
-                                width = 3;
-                                points[] =
-                                    {
-
-                                        {"SliderDiveSource90",
-                                         1,
-                                         "SliderDiveSource30",
-                                         1,
-                                         "SliderDiveSource",
-                                         1,
-                                         "SliderDiveSource30m",
-                                         1,
-                                         "SliderDiveSource90m",
-                                         1,
-                                         {0.015, 0.0099999998},
-                                         1},
-
-                                        {"SliderDiveSource90",
-                                         1,
-                                         "SliderDiveSource30",
-                                         1,
-                                         "SliderDiveSource",
-                                         1,
-                                         "SliderDiveSource30m",
-                                         1,
-                                         "SliderDiveSource90m",
-                                         1,
-                                         {0, 0},
-                                         1},
-
-                                        {"SliderDiveSource90",
-                                         1,
-                                         "SliderDiveSource30",
-                                         1,
-                                         "SliderDiveSource",
-                                         1,
-                                         "SliderDiveSource30m",
-                                         1,
-                                         "SliderDiveSource90m",
-                                         1,
-                                         {0.015, -0.0099999998},
-                                         1},
-
-                                        {"SliderDiveSource90",
-                                         1,
-                                         "SliderDiveSource30",
-                                         1,
-                                         "SliderDiveSource",
-                                         1,
-                                         "SliderDiveSource30m",
-                                         1,
-                                         "SliderDiveSource90m",
-                                         1,
-                                         {0.015, 0.0099999998},
-                                         1},
-                                        {},
-
-                                        {"SliderDiveSource90",
-                                         1,
-                                         "SliderDiveSource30",
-                                         1,
-                                         "SliderDiveSource",
-                                         1,
-                                         "SliderDiveSource30m",
-                                         1,
-                                         "SliderDiveSource90m",
-                                         1,
-                                         {0.029999999, 0.015},
-                                         1},
-
-                                        {"SliderDiveSource90",
-                                         1,
-                                         "SliderDiveSource30",
-                                         1,
-                                         "SliderDiveSource",
-                                         1,
-                                         "SliderDiveSource30m",
-                                         1,
-                                         "SliderDiveSource90m",
-                                         1,
-                                         {0.088, 0.015},
-                                         1},
-
-                                        {"SliderDiveSource90",
-                                         1,
-                                         "SliderDiveSource30",
-                                         1,
-                                         "SliderDiveSource",
-                                         1,
-                                         "SliderDiveSource30m",
-                                         1,
-                                         "SliderDiveSource90m",
-                                         1,
-                                         {0.088, -0.015},
-                                         1},
-
-                                        {"SliderDiveSource90",
-                                         1,
-                                         "SliderDiveSource30",
-                                         1,
-                                         "SliderDiveSource",
-                                         1,
-                                         "SliderDiveSource30m",
-                                         1,
-                                         "SliderDiveSource90m",
-                                         1,
-                                         {0.029999999, -0.015},
-                                         1},
-
-                                        {"SliderDiveSource90",
-                                         1,
-                                         "SliderDiveSource30",
-                                         1,
-                                         "SliderDiveSource",
-                                         1,
-                                         "SliderDiveSource30m",
-                                         1,
-                                         "SliderDiveSource90m",
-                                         1,
-                                         {0.029999999, 0.015},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.30000001},
-                                         1},
-
-                                        {{0.1, 0.62},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.30000001},
-                                         1},
-
-                                        {{0.079999998, 0.30000001},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.34},
-                                         1},
-
-                                        {{0.079999998, 0.34},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.38},
-                                         1},
-
-                                        {{0.079999998, 0.38},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.46000001},
-                                         1},
-
-                                        {{0.079999998, 0.46000001},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.54000002},
-                                         1},
-
-                                        {{0.079999998, 0.54000002},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.57999998},
-                                         1},
-
-                                        {{0.079999998, 0.57999998},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.62},
-                                         1},
-
-                                        {{0.079999998, 0.62},
-                                         1},
-                                        {},
-
-                                        {"GForceSource",
-                                         {0.015, 0.0099999998},
-                                         1},
-
-                                        {"GForceSource",
-                                         {0, 0},
-                                         1},
-
-                                        {"GForceSource",
-                                         {0.015, -0.0099999998},
-                                         1},
-
-                                        {"GForceSource",
-                                         {0.015, 0.0099999998},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.68800002},
-                                         1},
-
-                                        {{0.1, 0.81999999},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.69999999},
-                                         1},
-
-                                        {{0.079999998, 0.69999999},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.74000001},
-                                         1},
-
-                                        {{0.079999998, 0.74000001},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.77999997},
-                                         1},
-
-                                        {{0.079999998, 0.77999997},
-                                         1},
-                                        {},
-
-                                        {{0.1, 0.81999999},
-                                         1},
-
-                                        {{0.079999998, 0.81999999},
-                                         1},
-                                        {},
-
-                                        {{0.40000001, 0.86000001},
-                                         1},
-
-                                        {{0.40000001, 0.94},
-                                         1},
-
-                                        {{0.60000002, 0.94},
-                                         1},
-
-                                        {{0.60000002, 0.86000001},
-                                         1},
-
-                                        {{0.40000001, 0.86000001},
-                                         1},
-                                        {},
-
-                                        {{0.40000001, 0.89499998},
-                                         1},
-
-                                        {{0.40799999, 0.89499998},
-                                         1},
-                                        {},
-
-                                        {{0.60000002, 0.89499998},
-                                         1},
-
-                                        {{0.59200001, 0.89499998},
-                                         1},
-                                        {},
-
-                                        {{0.5, 0.86000001},
-                                         1},
-
-                                        {{0.5, 0.86799997},
-                                         1},
-                                        {},
-
-                                        {{0.5, 0.94},
-                                         1},
-
-                                        {{0.5, 0.93199998},
-                                         1},
-                                        {},
-
-                                        {{0.46000001, 0.07},
-                                         1},
-
-                                        {{0.54000002, 0.07},
-                                         1},
-
-                                        {{0.54000002, 0.035},
-                                         1},
-
-                                        {{0.46000001, 0.035},
-                                         1},
-
-                                        {{0.46000001, 0.07},
-                                         1},
-                                        {},
-
-                                        {{0.15000001, 0.115},
-                                         1},
-
-                                        {{0.85000002, 0.115},
-                                         1},
-                                        {},
-
-                                        {{0, 0.95999998},
-                                         1},
-
-                                        {{1.1, 0.95999998},
-                                         1},
-                                        {},
-
-                                        {{0.47999999, 0.5},
-                                         1},
-
-                                        {{0.49000001, 0.5},
-                                         1},
-                                        {},
-
-                                        {{0.50999999, 0.5},
-                                         1},
-
-                                        {{0.51999998, 0.5},
-                                         1},
-                                        {},
-
-                                        {{0.5, 0.49000001},
-                                         1},
-
-                                        {{0.5, 0.47999999},
-                                         1},
-                                        {},
-
-                                        {{0.5, 0.50999999},
-                                         1},
-
-                                        {{0.5, 0.51999998},
-                                         1},
-                                        {},
-
-                                        {"WeaponAim",
-                                         1,
-                                         {-0.02, 0},
-                                         1},
-
-                                        {"WeaponAim",
-                                         1,
-                                         {-0.0099999998, 0},
-                                         1},
-                                        {},
-
-                                        {"WeaponAim",
-                                         1,
-                                         {0.0099999998, 0},
-                                         1},
-
-                                        {"WeaponAim",
-                                         1,
-                                         {0.02, 0},
-                                         1},
-                                        {},
-
-                                        {"WeaponAim",
-                                         1,
-                                         {0, -0.0099999998},
-                                         1},
-
-                                        {"WeaponAim",
-                                         1,
-                                         {0, -0.02},
-                                         1},
-                                        {},
-
-                                        {"WeaponAim",
-                                         1,
-                                         {0, 0.0099999998},
-                                         1},
-
-                                        {"WeaponAim",
-                                         1,
-                                         {0, 0.02},
-                                         1},
-                                        {},
-
-                                        {"HUDCenter",
-                                         {-0.16500001, 7.0890902e-009},
-                                         1},
-
-                                        {"HUDCenter",
-                                         {-0.22, 9.45212e-009},
-                                         1},
-                                        {},
-
-                                        {"HUDCenter",
-                                         {0.16500001, -1.9339701e-009},
-                                         1},
-
-                                        {"HUDCenter",
-                                         {0.22, -2.57863e-009},
-                                         1},
-                                        {},
-
-                                        {"HUDCenter",
-                                         {-0.082500003, 0.140452},
-                                         1},
-
-                                        {"HUDCenter",
-                                         {-0.096249998, 0.16385999},
-                                         1},
-                                        {},
-
-                                        {"HUDCenter",
-                                         {0.082500003, 0.140452},
-                                         1},
-
-                                        {"HUDCenter",
-                                         {0.096249998, 0.16385999},
-                                         1},
-                                        {},
-
-                                        {"HUDCenter",
-                                         {-0.142894, 0.081089698},
-                                         1},
-
-                                        {"HUDCenter",
-                                         {-0.16671, 0.094604701},
-                                         1},
-                                        {},
-
-                                        {"HUDCenter",
-                                         {0.142894, 0.081089698},
-                                         1},
-
-                                        {"HUDCenter",
-                                         {0.16671, 0.094604701},
-                                         1},
-                                        {},
-
-                                        {"HUDCenter",
-                                         {-0.116673, 0.114678},
-                                         1},
-
-                                        {"HUDCenter",
-                                         {-0.155564, 0.152904},
-                                         1},
-                                        {},
-
-                                        {"HUDCenter",
-                                         {0.116673, 0.114678},
-                                         1},
-
-                                        {"HUDCenter",
-                                         {0.155563, 0.152904},
-                                         1},
-                                        {},
-                                        {}};
-                            };
-                            class Gunner {
-                                type = "line";
                                 width = 4;
-                                points[] =
-                                    {
-
-                                        {"GunnerAim",
-                                         {0.48500001, 0.89200002},
-                                         1},
-
-                                        {"GunnerAim",
-                                         {0.48500001, 0.90799999},
-                                         1},
-
-                                        {"GunnerAim",
-                                         {0.51499999, 0.90799999},
-                                         1},
-
-                                        {"GunnerAim",
-                                         {0.51499999, 0.89200002},
-                                         1},
-
-                                        {"GunnerAim",
-                                         {0.48500001, 0.89200002},
-                                         1}};
-                            };
-                            class DiveNumber {
-                                type = "text";
-                                source = "horizondive";
-                                sourceScale = 57.29578;
-                                sourceOffset = 0;
-                                align = "left";
-                                scale = 1;
-                                pos[] =
-                                    {
-                                        "SliderDiveSource90",
-                                        1,
-                                        "SliderDiveSource30",
-                                        1,
-                                        "SliderDiveSource",
-                                        1,
-                                        "SliderDiveSource30m",
-                                        1,
-                                        "SliderDiveSource90m",
-                                        1,
-
-                                        {0.085000001,
-                                         "0.00-0.011"},
-                                        1};
-                                right[] =
-                                    {
-                                        "SliderDiveSource90",
-                                        1,
-                                        "SliderDiveSource30",
-                                        1,
-                                        "SliderDiveSource",
-                                        1,
-                                        "SliderDiveSource30m",
-                                        1,
-                                        "SliderDiveSource90m",
-                                        1,
-
-                                        {0.12,
-                                         "0.00-0.011"},
-                                        1};
-                                down[] =
-                                    {
-                                        "SliderDiveSource90",
-                                        1,
-                                        "SliderDiveSource30",
-                                        1,
-                                        "SliderDiveSource",
-                                        1,
-                                        "SliderDiveSource30m",
-                                        1,
-                                        "SliderDiveSource90m",
-                                        1,
-
-                                        {0.085000001,
-                                         "0.03-0.011"},
-                                        1};
-                            };
-                            class VSpeedGroup {
-                                condition = "on";
-                                class VSpeedNumber {
-                                    type = "text";
-                                    source = "vspeed";
-                                    sourceScale = 1;
-                                    align = "center";
-                                    scale = 1;
-                                    pos[] =
-                                        {
-
-                                            {"0.82+0.07",
-                                             0.72799999},
-                                            1};
-                                    right[] =
-                                        {
-
-                                            {"0.87+0.07",
-                                             0.72799999},
-                                            1};
-                                    down[] =
-                                        {
-
-                                            {"0.82+0.07",
-                                             0.76300001},
-                                            1};
-                                };
-                                class Static {
-                                    type = "line";
-                                    width = 3;
-                                    points[] =
-                                        {
-
-                                            {{0.85900003, 0.75999999},
-                                             1},
-
-                                            {{0.91900003, 0.75999999},
-                                             1},
-
-                                            {{0.91900003, 0.72500002},
-                                             1},
-
-                                            {{0.85900003, 0.72500002},
-                                             1},
-
-                                            {{0.85900003, 0.75999999},
-                                             1},
-                                            {}};
-                                };
-                            };
-                            class VSpeedGroupUp {
-                                condition = "vspeed";
-                                class Static {
-                                    type = "line";
-                                    width = 3;
-                                    points[] =
-                                        {
-
-                                            {{0.86900002, 0.71499997},
-                                             1},
-
-                                            {{0.90899998, 0.71499997},
-                                             1},
-
-                                            {{0.889, 0.69499999},
-                                             1},
-
-                                            {{0.86900002, 0.71499997},
-                                             1},
-                                            {}};
-                                };
-                            };
-                            class VSpeedGroupDown {
-                                condition = "-vspeed";
-                                class Static {
-                                    type = "line";
-                                    width = 3;
-                                    points[] =
-                                        {
-
-                                            {{0.86900002, 0.76999998},
-                                             1},
-
-                                            {{0.90899998, 0.76999998},
-                                             1},
-
-                                            {{0.889, 0.79000002},
-                                             1},
-
-                                            {{0.86900002, 0.76999998},
-                                             1},
-                                            {}};
-                                };
-                            };
-                            class AltGroup {
-                                condition = "1000 - altitudeAGL";
-                                class Static {
-                                    type = "line";
-                                    width = 3;
-                                    points[] =
-                                        {
-
-                                            {"SliderAltitudeSource",
-                                             {0.024, 0.0099999998},
-                                             1},
-
-                                            {"SliderAltitudeSource",
-                                             {0.0089999996, 0},
-                                             1},
-
-                                            {"SliderAltitudeSource",
-                                             {0.024, -0.0099999998},
-                                             1},
-
-                                            {"SliderAltitudeSource",
-                                             {0.024, 0.0099999998},
-                                             1},
-                                            {},
-
-                                            {"SliderAltitudeSource",
-                                             {0.035, 0.015},
-                                             1},
-
-                                            {"SliderAltitudeSource",
-                                             {0.093000002, 0.015},
-                                             1},
-
-                                            {"SliderAltitudeSource",
-                                             {0.093000002, -0.015},
-                                             1},
-
-                                            {"SliderAltitudeSource",
-                                             {0.035, -0.015},
-                                             1},
-
-                                            {"SliderAltitudeSource",
-                                             {0.035, 0.015},
-                                             1},
-                                            {},
-
-                                            {{0.889, 0.2},
-                                             1},
-
-                                            {{0.889, 0.375},
-                                             1},
-                                            {},
-
-                                            {{0.87900001, 0.2},
-                                             1},
-
-                                            {{0.89899999, 0.2},
-                                             1},
-                                            {},
-
-                                            {{0.87900001, 0.375},
-                                             1},
-
-                                            {{0.89899999, 0.375},
-                                             1},
-                                            {}};
-                                };
-                                class AltNumber {
-                                    type = "text";
-                                    source = "altitudeAGL";
-                                    sourceScale = 1;
-                                    sourceOffset = -3;
-                                    align = "left";
-                                    scale = 1;
-                                    pos[] =
-                                        {
-                                            "SliderAltitudeSource",
-
-                                            {0.085000001,
-                                             "0.00-0.011"},
-                                            1};
-                                    right[] =
-                                        {
-                                            "SliderAltitudeSource",
-
-                                            {0.11,
-                                             "0.00-0.011"},
-                                            1};
-                                    down[] =
-                                        {
-                                            "SliderAltitudeSource",
-
-                                            {0.085000001,
-                                             "0.03-0.011"},
-                                            1};
-                                };
-                                class AltStatic50 {
-                                    type = "text";
-                                    source = "static";
-                                    text = "1000";
-                                    scale = 1;
-                                    sourceScale = 1;
-                                    align = "center";
-                                    pos[] =
-                                        {
-                                            {0.88499999, 0.171},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.92500001, 0.171},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.88499999, 0.20100001},
-                                            1};
-                                };
-                            };
-                            class SpeedNumber {
-                                type = "text";
-                                source = "speed";
-                                sourceScale = 3.5999999;
-                                sourceLength = 3;
-                                align = "left";
-                                scale = 1;
-                                pos[] =
-                                    {
-                                        {0.13, 0.22},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.13, 0.25999999},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.2, 0.22},
-                                        1};
-                            };
-                            class Angle_90 {
-                                type = "text";
-                                source = "static";
-                                text = "90";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.285},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.285},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.315},
-                                        1};
-                            };
-                            class Angle_30 {
-                                type = "text";
-                                source = "static";
-                                text = "30";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.32499999},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.32499999},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.35499999},
-                                        1};
-                            };
-                            class Angle_10 {
-                                type = "text";
-                                source = "static";
-                                text = "10";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.36500001},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.36500001},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.39500001},
-                                        1};
-                            };
-                            class Angle_0 {
-                                type = "text";
-                                source = "static";
-                                text = "0";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.44499999},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.44499999},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.47499999},
-                                        1};
-                            };
-                            class Angle_10m {
-                                type = "text";
-                                source = "static";
-                                text = "-10";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.52499998},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.52499998},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.55500001},
-                                        1};
-                            };
-                            class Angle_30m {
-                                type = "text";
-                                source = "static";
-                                text = "-30";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.565},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.565},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.59500003},
-                                        1};
-                            };
-                            class Angle_90m {
-                                type = "text";
-                                source = "static";
-                                text = "-90";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.60500002},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.60500002},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.63499999},
-                                        1};
-                            };
-                            class GMeterStatic3 {
-                                type = "text";
-                                source = "static";
-                                text = "3";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.68300003},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.68300003},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.713},
-                                        1};
-                            };
-                            class GMeterStatic2 {
-                                type = "text";
-                                source = "static";
-                                text = "2";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.72299999},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.72299999},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.75300002},
-                                        1};
-                            };
-                            class GMeterStatic1 {
-                                type = "text";
-                                source = "static";
-                                text = "1";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.76300001},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.76300001},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.79299998},
-                                        1};
-                            };
-                            class GMeterStatic0 {
-                                type = "text";
-                                source = "static";
-                                text = "0";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "left";
-                                pos[] =
-                                    {
-                                        {0.07, 0.80299997},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.11, 0.80299997},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.07, 0.833},
-                                        1};
-                            };
-                            class RtdOnlyGroup {
-                                condition = "simulRTD";
-                                class CollectiveNumber {
-                                    type = "text";
-                                    source = "rtdCollective";
-                                    sourceScale = 100;
-                                    align = "left";
-                                    scale = 1;
-                                    pos[] =
-                                        {
-                                            {0.889, 0.46000001},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.93900001, 0.46000001},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.889, 0.495},
-                                            1};
-                                };
-                                class CollectiveText {
-                                    type = "text";
-                                    source = "static";
-                                    text = "%";
-                                    scale = 1;
-                                    sourceScale = 1;
-                                    align = "right";
-                                    pos[] =
-                                        {
-                                            {0.89899999, 0.46000001},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.949, 0.46000001},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.89899999, 0.495},
-                                            1};
-                                };
-                                class EngineRPM {
-                                    type = "line";
-                                    width = 3;
-                                    points[] =
-                                        {
-
-                                            {{0.88999999, 0.5},
-                                             1},
-
-                                            {{0.88999999, 0.66000003},
-                                             1},
-                                            {},
-
-                                            {{0.92000002, 0.5},
-                                             1},
-
-                                            {{0.86000001, 0.5},
-                                             1},
-                                            {},
-
-                                            {{0.92000002, 0.66000003},
-                                             1},
-
-                                            {{0.86000001, 0.66000003},
-                                             1},
-                                            {},
-
-                                            {{0.91000003, 0.54000002},
-                                             1},
-
-                                            {{0.87, 0.54000002},
-                                             1},
-                                            {},
-
-                                            {{0.91000003, 0.57999998},
-                                             1},
-
-                                            {{0.87, 0.57999998},
-                                             1},
-                                            {},
-
-                                            {{0.91000003, 0.62},
-                                             1},
-
-                                            {{0.87, 0.62},
-                                             1},
-                                            {}};
-                                };
-                                class EngineRPMLines {
-                                    type = "line";
-                                    width = 5;
-                                    points[] =
-                                        {
-
-                                            {
-
-                                                {"0.90+0.01",
-                                                 0.66000003},
-                                                1},
-
-                                            {"rtdrpm1",
-
-                                             {"0.90+0.01",
-                                              0.66000003},
-                                             1},
-                                            {},
-
-                                            {
-
-                                                {"0.86+0.01",
-                                                 0.66000003},
-                                                1},
-
-                                            {"rtdrpm2",
-
-                                             {"0.86+0.01",
-                                              0.66000003},
-                                             1},
-                                            {},
-                                            {}};
-                                };
-                                class RPM60Text {
-                                    type = "text";
-                                    source = "static";
-                                    text = "60";
-                                    scale = 1;
-                                    sourceScale = 1;
-                                    align = "right";
-                                    pos[] =
-                                        {
-                                            {0.92500001, 0.64499998},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.95499998, 0.64499998},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.92500001, 0.67000002},
-                                            1};
-                                };
-                                class RPM80Text {
-                                    type = "text";
-                                    source = "static";
-                                    text = "80";
-                                    scale = 1;
-                                    sourceScale = 1;
-                                    align = "right";
-                                    pos[] =
-                                        {
-                                            {0.92500001, 0.60500002},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.95499998, 0.60500002},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.92500001, 0.63},
-                                            1};
-                                };
-                                class RPM100Text {
-                                    type = "text";
-                                    source = "static";
-                                    text = "100";
-                                    scale = 1;
-                                    sourceScale = 1;
-                                    align = "right";
-                                    pos[] =
-                                        {
-                                            {0.92500001, 0.565},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.95499998, 0.565},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.92500001, 0.58999997},
-                                            1};
-                                };
-                                class RPM120Text {
-                                    type = "text";
-                                    source = "static";
-                                    text = "120";
-                                    scale = 1;
-                                    sourceScale = 1;
-                                    align = "right";
-                                    pos[] =
-                                        {
-                                            {0.92500001, 0.52499998},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.95499998, 0.52499998},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.92500001, 0.55000001},
-                                            1};
-                                };
+                                points[] = {{{0.5, 0.11}, 1}, {{0.5, 0.14}, 1}, {}, {{0.4, 0.86}, 1}, {{0.4, 0.94}, 1}, {{0.6, 0.94}, 1}, {{0.6, 0.86}, 1}, {{0.4, 0.86}, 1}, {}, {{0.4, 0.885}, 1}, {{0.408, 0.885}, 1}, {}, {{0.6, 0.885}, 1}, {{0.592, 0.885}, 1}, {}, {{0.5, 0.86}, 1}, {{0.5, 0.868}, 1}, {}, {{0.5, 0.94}, 1}, {{0.5, 0.932}, 1}, {}, {{0.52, 0.86}, 1}, {{0.52, 0.82}, 1}, {}, {{0.48, 0.86}, 1}, {{0.48, 0.82}, 1}, {}, {{0.55, 0}, 1}, {{0.55, 0.04}, 1}, {{0.45, 0.04}, 1}, {{0.45, 0}, 1}, {{0.55, 0}, 1}};
                             };
                             class HeadingNumber {
                                 type = "text";
-                                source = "heading";
+                                source = "Heading";
                                 sourceScale = 1;
                                 align = "center";
                                 scale = 1;
-                                pos[] =
-                                    {
-
-                                        {"0.80-0.302",
-                                         "0.082-0.043"},
-                                        1};
-                                right[] =
-                                    {
-
-                                        {"0.84-0.302",
-                                         "0.082-0.043"},
-                                        1};
-                                down[] =
-                                    {
-
-                                        {"0.80-0.302",
-                                         "0.117-0.043"},
-                                        1};
-                            };
-                            class HeadingRotationArrow {
-                                condition = "5-abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)";
-                                class HeadingArrow {
-                                    type = "line";
-                                    width = 3;
-                                    points[] =
-                                        {
-
-                                            {{0.51999998, 0.079999998},
-                                             1},
-
-                                            {{0.5, 0.11},
-                                             1},
-
-                                            {{0.47999999, 0.079999998},
-                                             1},
-
-                                            {{0.51999998, 0.079999998},
-                                             1},
-                                            {}};
-                                };
+                                pos[] = {{0.5, 0.006}, 1};
+                                right[] = {{0.55, 0.006}, 1};
+                                down[] = {{0.5, 0.046}, 1};
                             };
                             class HeadingRotation {
                                 condition = "abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)-5";
@@ -1978,794 +636,350 @@ class CfgVehicles {
                                     sourceScale = 1;
                                     align = "center";
                                     scale = 1;
-                                    pos[] =
-                                        {
-
-                                            {"0.80-0.302",
-                                             "0.082+0.001"},
-                                            1};
-                                    right[] =
-                                        {
-
-                                            {"0.83-0.302",
-                                             "0.082+0.001"},
-                                            1};
-                                    down[] =
-                                        {
-
-                                            {"0.80-0.302",
-                                             "0.113+0.001"},
-                                            1};
+                                    pos[] = {{"0.80-0.302", "0.082-0.025"}, 1};
+                                    right[] = {{"0.83-0.302", "0.082-0.025"}, 1};
+                                    down[] = {{"0.80-0.302", "0.113-0.025"}, 1};
                                 };
                                 class HeadingArrow {
                                     type = "line";
                                     width = 3;
-                                    points[] =
-                                        {
-
-                                            {{0.47799999, 0.075000003},
-                                             1},
-
-                                            {{0.52200001, 0.075000003},
-                                             1},
-
-                                            {{0.55199999, 0.094999999},
-                                             1},
-
-                                            {{0.52200001, 0.115},
-                                             1},
-
-                                            {{0.47799999, 0.115},
-                                             1},
-
-                                            {{0.44800001, 0.094999999},
-                                             1},
-
-                                            {{0.47799999, 0.075000003},
-                                             1},
-                                            {}};
+                                    points[] = {{{0.478, 0.045}, 1}, {{0.522, 0.045}, 1}, {{0.552, 0.07}, 1}, {{0.522, 0.095}, 1}, {{0.478, 0.095}, 1}, {{0.448, 0.07}, 1}, {{0.478, 0.045}, 1}, {}};
+                                };
+                                class HeadingScaleRight {
+                                    clipTL[] = {0.55, 0.05};
+                                    clipBR[] = {0.83, 0.11};
+                                    class lines {
+                                        type = "scale";
+                                        horizontal = 1;
+                                        source = "heading";
+                                        sourceScale = 1;
+                                        width = 4;
+                                        top = 0.5;
+                                        center = 0.5;
+                                        bottom = 0.85;
+                                        lineXleft = 0.11;
+                                        lineYright = 0.1;
+                                        lineXleftMajor = 0.11;
+                                        lineYrightMajor = 0.09;
+                                        majorLineEach = 2;
+                                        numberEach = 2;
+                                        step = 22.5;
+                                        stepSize = 0.075;
+                                        align = "center";
+                                        scale = 1;
+                                        pos[] = {0.496, 0.05};
+                                        right[] = {0.536, 0.05};
+                                        down[] = {0.496, 0.09};
+                                    };
+                                };
+                                class HeadingScaleMidle {
+                                    type = "scale";
+                                    horizontal = 1;
+                                    source = "heading";
+                                    sourceScale = 1;
+                                    width = 4;
+                                    top = 0.45;
+                                    center = 0.5;
+                                    bottom = 0.55;
+                                    lineXleft = 0.11;
+                                    lineYright = 0.1;
+                                    lineXleftMajor = 0.11;
+                                    lineYrightMajor = 0.1;
+                                    majorLineEach = 2;
+                                    step = 22.5;
+                                    stepSize = 0.075;
+                                    align = "center";
+                                    scale = 1;
+                                    numberEach = 0;
+                                    pos[] = {0.47, 0.05};
+                                    right[] = {0.5, 0.05};
+                                    down[] = {0.45, 0.09};
+                                };
+                                class HeadingScaleLeft {
+                                    clipTL[] = {0.18, 0.05};
+                                    clipBR[] = {0.45, 0.11};
+                                    class lines {
+                                        type = "scale";
+                                        horizontal = 1;
+                                        source = "heading";
+                                        sourceScale = 1;
+                                        width = 4;
+                                        top = 0.15;
+                                        center = 0.5;
+                                        bottom = 0.55;
+                                        lineXleft = 0.11;
+                                        lineYright = 0.1;
+                                        lineXleftMajor = 0.11;
+                                        lineYrightMajor = 0.09;
+                                        majorLineEach = 2;
+                                        numberEach = 2;
+                                        step = 22.5;
+                                        stepSize = 0.075;
+                                        align = "center";
+                                        scale = 1;
+                                        pos[] = {0.146, 0.05};
+                                        right[] = {0.186, 0.05};
+                                        down[] = {0.146, 0.09};
+                                    };
                                 };
                             };
-                            class HeadingScale {
-                                type = "scale";
-                                horizontal = 1;
-                                source = "heading";
-                                sourceScale = 0.1;
-                                sourceoffset = 0;
-                                width = 3;
-                                NeverEatSeaWeed = 1;
-                                top = 0.15000001;
-                                center = 0.5;
-                                bottom = 0.85000002;
-                                lineXleft = 0.114;
-                                lineYright = 0.12;
-                                lineXleftMajor = 0.114;
-                                lineYrightMajor = 0.13;
-                                majorLineEach = 2;
-                                numberEach = 6;
-                                step = 0.5;
-                                stepSize = 0.034482799;
-                                align = "center";
-                                scale = 1;
-                                pos[] = {0.15000001, 0.13};
-                                right[] = {0.20999999, 0.13};
-                                down[] = {0.15000001, 0.17};
+                            class HeadingScaleFull {
+                                condition = "4-abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)";
+                                class HeadingScale {
+                                    clipTL[] = {0.18, 0};
+                                    clipBR[] = {0.83, 1};
+                                    class lines {
+                                        type = "scale";
+                                        horizontal = 1;
+                                        source = "heading";
+                                        sourceScale = 1;
+                                        width = 4;
+                                        top = 0.15;
+                                        center = 0.5;
+                                        bottom = 0.85;
+                                        lineXleft = 0.11;
+                                        lineYright = 0.1;
+                                        lineXleftMajor = 0.11;
+                                        lineYrightMajor = 0.09;
+                                        majorLineEach = 2;
+                                        numberEach = 2;
+                                        step = 22.5;
+                                        stepSize = 0.075;
+                                        align = "center";
+                                        scale = 1;
+                                        pos[] = {0.146, 0.05};
+                                        right[] = {0.186, 0.05};
+                                        down[] = {0.146, 0.09};
+                                    };
+                                };
                             };
-                            class HorizonBanking {
-                                type = "line";
-                                width = 3;
-                                clipTL[] = {0, 0.1};
-                                clipBR[] = {1, 0.89999998};
-                                points[] =
-                                    {
-
-                                        {"HorizonBankSource",
-                                         {0.16, 0},
-                                         1},
-
-                                        {"HorizonBankSource",
-                                         {0.1, 0},
-                                         1},
-
-                                        {"HorizonBankSource",
-                                         {0.085000001, -0.015},
-                                         1},
-
-                                        {"HorizonBankSource",
-                                         {0.07, 0},
-                                         1},
-
-                                        {"HorizonBankSource",
-                                         {0.050000001, 0},
-                                         1},
-                                        {},
-
-                                        {"HorizonBankSource",
-                                         {-0.16, 0},
-                                         1},
-
-                                        {"HorizonBankSource",
-                                         {-0.1, 0},
-                                         1},
-
-                                        {"HorizonBankSource",
-                                         {-0.085000001, -0.015},
-                                         1},
-
-                                        {"HorizonBankSource",
-                                         {-0.07, 0},
-                                         1},
-
-                                        {"HorizonBankSource",
-                                         {-0.050000001, 0},
-                                         1},
-                                        {}};
+                            class HorizonBankRot {
+                                type = "polygon";
+                                width = 4;
+                                points[] = {{{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.00260472, -0.0145196}, 1}, {"HorizonBankRot", {0.0051303, -0.0138544}, 1}, {"HorizonBankRot", {0.0075, -0.0127683}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0075, -0.0127683}, 1}, {"HorizonBankRot", {0.00964181, -0.0112942}, 1}, {"HorizonBankRot", {0.0114907, -0.009477}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0114907, -0.009477}, 1}, {"HorizonBankRot", {0.0129904, -0.00737179}, 1}, {"HorizonBankRot", {0.0140954, -0.0050426}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0140954, -0.0050426}, 1}, {"HorizonBankRot", {0.0147721, -0.0025602}, 1}, {"HorizonBankRot", {0.015, 6.44463e-10}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.015, 6.44463e-10}, 1}, {"HorizonBankRot", {0.0147721, 0.0025602}, 1}, {"HorizonBankRot", {0.0140954, 0.0050426}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0140954, 0.0050426}, 1}, {"HorizonBankRot", {0.0129904, 0.0073718}, 1}, {"HorizonBankRot", {0.0114907, 0.009477}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0114907, 0.009477}, 1}, {"HorizonBankRot", {0.00964181, 0.0112942}, 1}, {"HorizonBankRot", {0.0075, 0.0127683}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0075, 0.0127683}, 1}, {"HorizonBankRot", {0.0051303, 0.0138544}, 1}, {"HorizonBankRot", {0.00260472, 0.0145196}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.00260472, 0.0145196}, 1}, {"HorizonBankRot", {-1.31134e-09, 0.0147436}, 1}, {"HorizonBankRot", {-0.00260473, 0.0145196}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.00260473, 0.0145196}, 1}, {"HorizonBankRot", {-0.0051303, 0.0138544}, 1}, {"HorizonBankRot", {-0.0075, 0.0127683}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0075, 0.0127683}, 1}, {"HorizonBankRot", {-0.00964181, 0.0112942}, 1}, {"HorizonBankRot", {-0.0114907, 0.009477}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0114907, 0.009477}, 1}, {"HorizonBankRot", {-0.0129904, 0.00737179}, 1}, {"HorizonBankRot", {-0.0140954, 0.0050426}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0140954, 0.0050426}, 1}, {"HorizonBankRot", {-0.0147721, 0.0025602}, 1}, {"HorizonBankRot", {-0.015, -1.75816e-10}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.015, -1.75816e-10}, 1}, {"HorizonBankRot", {-0.0147721, -0.0025602}, 1}, {"HorizonBankRot", {-0.0140954, -0.0050426}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0140954, -0.0050426}, 1}, {"HorizonBankRot", {-0.0129904, -0.0073718}, 1}, {"HorizonBankRot", {-0.0114907, -0.009477}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0114907, -0.009477}, 1}, {"HorizonBankRot", {-0.00964181, -0.0112942}, 1}, {"HorizonBankRot", {-0.0075, -0.0127683}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0075, -0.0127683}, 1}, {"HorizonBankRot", {-0.00513031, -0.0138544}, 1}, {"HorizonBankRot", {-0.00260472, -0.0145196}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.00260472, -0.0145196}, 1}, {"HorizonBankRot", {2.62268e-09, -0.0147436}, 1}, {"HorizonBankRot", {0.00260472, -0.0145196}, 1}}};
                             };
-                            class CoordXNumber {
+                            class CollectiveGroup {
+                                condition = "simulRTD";
+                                class CollectiveText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "%";
+                                    align = "right";
+                                    scale = 1;
+                                    pos[] = {{0.22, 0.2}, 1};
+                                    right[] = {{0.28, 0.2}, 1};
+                                    down[] = {{0.22, 0.24}, 1};
+                                };
+                                class CollectiveNumber {
+                                    type = "text";
+                                    source = "rtdCollective";
+                                    sourceScale = 100;
+                                    align = "left";
+                                    scale = 1;
+                                    pos[] = {{0.22, 0.2}, 1};
+                                    right[] = {{0.28, 0.2}, 1};
+                                    down[] = {{0.22, 0.24}, 1};
+                                };
+                            };
+                            class SpeedNumber {
                                 type = "text";
-                                source = "coordinateX";
-                                sourceScale = 0.0099999998;
-                                sourceLength = 3;
-                                sourceOffset = -0.5;
+                                source = "speed";
+                                sourceScale = 3.6;
                                 align = "right";
                                 scale = 1;
-                                pos[] =
-                                    {
-                                        {0.80900002, 0.96100003},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.85900003, 0.96100003},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.80900002, 0.99599999},
-                                        1};
+                                pos[] = {{0.16, 0.48}, 1};
+                                right[] = {{0.22, 0.48}, 1};
+                                down[] = {{0.16, 0.52}, 1};
                             };
-                            class CoordYNumber : CoordXNumber {
-                                source = "coordinateY";
-                                pos[] =
-                                    {
-                                        {0.89899999, 0.96100003},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.949, 0.96100003},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.89899999, 0.99599999},
-                                        1};
-                            };
-                            class Time : CoordXNumber {
-                                source = "time";
-                                text = "%X";
+                            class AltNumber {
+                                type = "text";
+                                source = "altitudeAGL";
+                                sourceScale = 1;
+                                sourceOffset = -2;
                                 align = "left";
-                                pos[] =
-                                    {
-                                        {0.60500002, 0.96100003},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.65499997, 0.96100003},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.60500002, 0.99599999},
-                                        1};
+                                scale = 1;
+                                pos[] = {{0.81, 0.48}, 1};
+                                right[] = {{0.87, 0.48}, 1};
+                                down[] = {{0.81, 0.52}, 1};
                             };
-                            class CurrentWeapon {
+                            class HoverMode {
+                                condition = "autohover";
+                                class HoverText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "HOVER";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{0.005, 0.075}, 1};
+                                    right[] = {{0.045, 0.075}, 1};
+                                    down[] = {{0.005, 0.11}, 1};
+                                };
+                            };
+                            class CruiseMode {
+                                condition = "((altitudeASL-27) min 1) - autohover";
+                                class CruiseText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "CRUISE";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{0.005, 0.075}, 1};
+                                    right[] = {{0.045, 0.075}, 1};
+                                    down[] = {{0.005, 0.11}, 1};
+                                };
+                                class AltNumberASL {
+                                    type = "text";
+                                    source = "altitudeASL";
+                                    sourceScale = 1;
+                                    align = "left";
+                                    scale = 1;
+                                    pos[] = {{0.81, 0.16}, 1};
+                                    right[] = {{0.87, 0.16}, 1};
+                                    down[] = {{0.81, 0.2}, 1};
+                                };
+                            };
+                            class TransitionMode {
+                                condition = "((27-altitudeASL) min 1) - autohover";
+                                class TransText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "TRANS";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{0.005, 0.075}, 1};
+                                    right[] = {{0.045, 0.075}, 1};
+                                    down[] = {{0.005, 0.11}, 1};
+                                };
+                            };
+                            class HoverModeHide {
+                                condition = "1-autohover";
+                                class VelocityLine {
+                                    type = "line";
+                                    width = 4;
+                                    points[] = {{"VelocityVector", {0, -0.0196581}, 1}, {"VelocityVector", {0.01, -0.0170239}, 1}, {"VelocityVector", {0.01732, -0.00982906}, 1}, {"VelocityVector", {0.02, 0}, 1}, {"VelocityVector", {0.01732, 0.00982906}, 1}, {"VelocityVector", {0.01, 0.0170239}, 1}, {"VelocityVector", {0, 0.0196581}, 1}, {"VelocityVector", {-0.01, 0.0170239}, 1}, {"VelocityVector", {-0.01732, 0.00982906}, 1}, {"VelocityVector", {-0.02, 0}, 1}, {"VelocityVector", {-0.01732, -0.00982906}, 1}, {"VelocityVector", {-0.01, -0.0170239}, 1}, {"VelocityVector", {0, -0.0196581}, 1}, {}, {"VelocityVector", {0.04, 0}, 1}, {"VelocityVector", {0.02, 0}, 1}, {}, {"VelocityVector", {-0.04, 0}, 1}, {"VelocityVector", {-0.02, 0}, 1}, {}, {"VelocityVector", {0, -0.0393162}, 1}, {"VelocityVector", {0, -0.0196581}, 1}, {}};
+                                };
+                            };
+                            class GearGroup {
+                                type = "group";
+                                condition = "ils";
+                                class GearText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "GEAR";
+                                    align = "right";
+                                    scale = 1;
+                                    pos[] = {{0.015, 0.334188}, 1};
+                                    right[] = {{0.055, 0.334188}, 1};
+                                    down[] = {{0.015, 0.363675}, 1};
+                                };
+                            };
+                            class LaserGroup {
+                                condition = "laseron";
+                                class laserText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "LASER";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{0.015, 0.37}, 1};
+                                    right[] = {{0.055, 0.37}, 1};
+                                    down[] = {{0.015, 0.405}, 1};
+                                };
+                            };
+                            class RadarGroup {
+                                condition = "activeSensorsOn";
+                                class radarText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "RADAR";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{0.015, 0.41}, 1};
+                                    right[] = {{0.055, 0.41}, 1};
+                                    down[] = {{0.015, 0.445}, 1};
+                                };
+                            };
+                            class VerticalSpeedScale {
+                                type = "line";
+                                width = 4;
+                                points[] = {{"HUDCenter", 1, {-0.03, 0}, 1}, {"HUDCenter", 1, {-0.01, 0}, 1}, {}, {"HUDCenter", 1, {0.01, 0}, 1}, {"HUDCenter", 1, {0.03, 0}, 1}, {}, {"HUDCenter", 1, {0, -0.01}, 1}, {"HUDCenter", 1, {0, -0.03}, 1}, {}, {"HUDCenter", 1, {0, 0.01}, 1}, {"HUDCenter", 1, {0, 0.03}, 1}, {}, {{0.915, 0.18}, 1}, {{0.935, 0.18}, 1}, {}, {{0.87, 0.18}, 1}, {{0.89, 0.18}, 1}, {}, {{0.915, 0.34}, 1}, {{0.935, 0.34}, 1}, {}, {{0.87, 0.34}, 1}, {{0.89, 0.34}, 1}, {}, {{0.875, 0.372}, 1}, {{0.885, 0.372}, 1}, {}, {{0.875, 0.404}, 1}, {{0.885, 0.404}, 1}, {}, {{0.875, 0.436}, 1}, {{0.885, 0.436}, 1}, {}, {{0.875, 0.468}, 1}, {{0.885, 0.468}, 1}, {}, {{0.87, 0.5}, 1}, {{0.89, 0.5}, 1}, {}, {{0.915, 0.5}, 1}, {{0.935, 0.5}, 1}, {}, {{0.915, 0.66}, 1}, {{0.935, 0.66}, 1}, {}, {{0.87, 0.66}, 1}, {{0.89, 0.66}, 1}, {}, {{0.875, 0.628}, 1}, {{0.885, 0.628}, 1}, {}, {{0.875, 0.596}, 1}, {{0.885, 0.596}, 1}, {}, {{0.875, 0.564}, 1}, {{0.885, 0.564}, 1}, {}, {{0.875, 0.532}, 1}, {{0.885, 0.532}, 1}, {}, {{0.92, 0.692}, 1}, {{0.93, 0.692}, 1}, {}, {{0.92, 0.724}, 1}, {{0.93, 0.724}, 1}, {}, {{0.92, 0.756}, 1}, {{0.93, 0.756}, 1}, {}, {{0.92, 0.788}, 1}, {{0.93, 0.788}, 1}, {}, {{0.915, 0.82}, 1}, {{0.935, 0.82}, 1}, {}, {{0.87, 0.82}, 1}, {{0.89, 0.82}, 1}, {}};
+                            };
+                            class GunnerAimWorld {
+                                condition = "1-mgun";
+                                class Cross {
+                                    type = "line";
+                                    width = 4;
+                                    points[] = {{"WeaponAimRelative", 1, {-0.03, 0}, 1}, {"WeaponAimRelative", 1, {-0.02, 0}, 1}, {}, {"WeaponAimRelative", 1, {0.02, 0}, 1}, {"WeaponAimRelative", 1, {0.03, 0}, 1}, {}, {"WeaponAimRelative", 1, {0, -0.02}, 1}, {"WeaponAimRelative", 1, {0, -0.03}, 1}, {}, {"WeaponAimRelative", 1, {0, 0.02}, 1}, {"WeaponAimRelative", 1, {0, 0.03}, 1}};
+                                };
+                            };
+                            class VerticalSpeedArrow {
+                                type = "polygon";
+                                points[] = {{{"VerticalSpeedBone", {0.85, 0.488}, 1}, {"VerticalSpeedBone", {0.87, 0.5}, 1}, {"VerticalSpeedBone", {0.85, 0.512}, 1}}};
+                            };
+                            class RadarAltitude {
+                                condition = "101-altitudeAGL";
+                                class RadarHeight {
+                                    type = "line";
+                                    width = 15;
+                                    points[] = {{{0.903, 0.82}, 1}, {"RadarHeight", {0, 0}, 1}, {}};
+                                };
+                            };
+                            class HorizonLine {
+                                condition = "1-autohover";
+                                clipTL[] = {0.2, 0.145};
+                                clipBR[] = {0.8, 0.855};
+                                class HorizonLineDraw {
+                                    type = "line";
+                                    width = 4;
+                                    points[] = {{"HorizonVector", {-0.225, 0}, 1}, {"HorizonVector", {-0.1875, 0}, 1}, {}, {"HorizonVector", {-0.15, 0}, 1}, {"HorizonVector", {-0.1125, 0}, 1}, {}, {"HorizonVector", {-0.075, 0}, 1}, {"HorizonVector", {-0.0375, 0}, 1}, {}, {"HorizonVector", {0.0375, 0}, 1}, {"HorizonVector", {0.075, 0}, 1}, {}, {"HorizonVector", {0.1125, 0}, 1}, {"HorizonVector", {0.15, 0}, 1}, {}, {"HorizonVector", {0.1875, 0}, 1}, {"HorizonVector", {0.225, 0}, 1}};
+                                };
+                            };
+                            class Gunner {
+                                type = "line";
+                                width = 4;
+                                points[] = {{"GunnerAim", {0.485, 0.892}, 1}, {"GunnerAim", {0.485, 0.908}, 1}, {"GunnerAim", {0.515, 0.908}, 1}, {"GunnerAim", {0.515, 0.892}, 1}, {"GunnerAim", {0.485, 0.892}, 1}};
+                            };
+                            class WeaponsText {
                                 type = "text";
                                 source = "weapon";
                                 sourceScale = 1;
                                 align = "left";
-                                scale = 1;
-                                pos[] =
-                                    {
-                                        {0.97899997, 0.889},
-                                        1};
-                                right[] =
-                                    {
-                                        {1.029, 0.889},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.97899997, 0.92400002},
-                                        1};
+                                scale = 0.5;
+                                pos[] = {{0.38, 0.869}, 1};
+                                right[] = {{0.415, 0.869}, 1};
+                                down[] = {{0.38, 0.904}, 1};
                             };
-                            class CurrentAmmo : CurrentWeapon {
+                            class Ammo {
+                                type = "text";
                                 source = "ammo";
+                                sourceScale = 1;
                                 align = "left";
-                                pos[] =
-                                    {
-                                        {0.97899997, 0.921},
-                                        1};
-                                right[] =
-                                    {
-                                        {1.029, 0.921},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.97899997, 0.95599997},
-                                        1};
-                            };
-                            class CoordXText {
-                                type = "text";
-                                source = "static";
-                                text = "GRID:";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "right";
-                                pos[] =
-                                    {
-                                        {0.65499997, 0.96100003},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.70499998, 0.96100003},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.65499997, 0.99599999},
-                                        1};
-                            };
-                            class CoordYText {
-                                type = "text";
-                                source = "static";
-                                text = "";
-                                scale = 1;
-                                sourceScale = 1;
-                                align = "right";
-                                pos[] =
-                                    {
-                                        {0.875, 0.96100003},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.92500001, 0.96100003},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.875, 0.99599999},
-                                        1};
-                            };
-                            class LightsGroup {
-                                condition = "lights";
-                                class LightsText {
-                                    type = "text";
-                                    source = "static";
-                                    text = "LIGHT";
-                                    align = "left";
-                                    scale = 1;
-                                    pos[] =
-                                        {
-                                            {0.149, 0.96100003},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.199, 0.96100003},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.149, 0.99599999},
-                                            1};
-                                };
-                            };
-                            class CollisionLights {
-                                condition = "collisionlights";
-                                class CollisionLightsText {
-                                    type = "text";
-                                    source = "static";
-                                    text = "COLL";
-                                    align = "left";
-                                    scale = 1;
-                                    pos[] =
-                                        {
-                                            {0.30899999, 0.96100003},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.359, 0.96100003},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.30899999, 0.99599999},
-                                            1};
-                                };
-                            };
-                            class WeaponsLocking {
-                                condition = "missilelocking";
-                                blinkingPattern[] = {0.2, 0.2};
-                                blinkingStartsOn = 1;
-                                class Text {
-                                    type = "text";
-                                    source = "static";
-                                    text = "LOCKING";
-                                    align = "center";
-                                    scale = 1;
-                                    pos[] =
-                                        {
-                                            {0.215, 0.87970102},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.27500001, 0.87970102},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.215, 0.928846},
-                                            1};
-                                };
-                            };
-                            class TargetDist {
-                                class DistanceText {
-                                    type = "text";
-                                    source = "static";
-                                    text = "DISTANCE:";
-                                    scale = 1;
-                                    sourceScale = 1;
-                                    align = "left";
-                                    pos[] =
-                                        {
-
-                                            {"0.125+0.13",
-                                             0.921},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.30000001, 0.921},
-                                            1};
-                                    down[] =
-                                        {
-
-                                            {"0.125+0.13",
-                                             0.95599997},
-                                            1};
-                                };
-                                class TargetDistance : CurrentWeapon {
-                                    source = "targetDist";
-                                    sourceLength = 0;
-                                    sourcePrecision = 2;
-                                    sourceScale = 0.001;
-                                    align = "right";
-                                    pos[] =
-                                        {
-                                            {0.26899999, 0.921},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.31900001, 0.921},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.26899999, 0.95599997},
-                                            1};
-                                };
-                            };
-                            class TargetInfo {
-                                condition = "missilelocked";
-                                class TargetLockedText {
-                                    type = "text";
-                                    source = "static";
-                                    text = "TARGET ACQUIRED";
-                                    scale = 1;
-                                    sourceScale = 1;
-                                    align = "center";
-                                    pos[] =
-                                        {
-                                            {0.19499999, 0.85900003},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.235, 0.85900003},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.19499999, 0.88999999},
-                                            1};
-                                };
-                                class TimeOfFlightText {
-                                    type = "text";
-                                    source = "static";
-                                    text = "TOF:";
-                                    scale = 1;
-                                    sourceScale = 1;
-                                    align = "left";
-                                    pos[] =
-                                        {
-
-                                            {"0.127+0.13",
-                                             0.889},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.30199999, 0.889},
-                                            1};
-                                    down[] =
-                                        {
-
-                                            {"0.127+0.13",
-                                             0.92400002},
-                                            1};
-                                };
-                                class TOF_source : CurrentWeapon {
-                                    source = "missileflighttime";
-                                    align = "right";
-                                    pos[] =
-                                        {
-                                            {0.26899999, 0.889},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.31900001, 0.889},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.26899999, 0.92400002},
-                                            1};
-                                };
-                            };
-                            class IncomingMissile {
-                                condition = "incomingmissile";
-                                blinkingPattern[] = {0.30000001, 0.30000001};
-                                blinkingStartsOn = 1;
-                                class Text {
-                                    type = "text";
-                                    source = "static";
-                                    text = "!INCOMING MISSILE!";
-                                    align = "center";
-                                    scale = 1;
-                                    pos[] =
-                                        {
-                                            {0.48500001, 0.21623901},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.54500002, 0.21623901},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.48500001, 0.265385},
-                                            1};
-                                };
+                                scale = 0.5;
+                                pos[] = {{0.38, 0.901}, 1};
+                                right[] = {{0.415, 0.901}, 1};
+                                down[] = {{0.38, 0.936}, 1};
                             };
                             class MGun {
                                 condition = "-2+mgun*ImpactDistance";
                                 class Cross {
                                     type = "line";
                                     width = 3;
-                                    points[] =
-                                        {
-
-                                            {"ImpactPoint",
-                                             {0, -0.0294872},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, -0.0393162},
-                                             1},
-                                            {},
-
-                                            {"ImpactPoint",
-                                             {0.02, -0.024},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.025, -0.030999999},
-                                             1},
-                                            {},
-
-                                            {"ImpactPoint",
-                                             {0, -0.0020000001},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, 0.0020000001},
-                                             1},
-                                            {},
-
-                                            {"ImpactPoint",
-                                             {-0.0020000001, 0},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.0020000001, 0},
-                                             1},
-                                            {}};
+                                    points[] = {{"ImpactPoint", {0, -0.0294872}, 1}, {"ImpactPoint", {0, -0.0393162}, 1}, {}, {"ImpactPoint", {0.02, -0.024}, 1}, {"ImpactPoint", {0.025, -0.030999999}, 1}, {}, {"ImpactPoint", {0, -0.0020000001}, 1}, {"ImpactPoint", {0, 0.0020000001}, 1}, {}, {"ImpactPoint", {-0.0020000001, 0}, 1}, {"ImpactPoint", {0.0020000001, 0}, 1}, {}};
                                 };
                                 class Circle {
                                     type = "line";
                                     width = 3;
-                                    points[] =
-                                        {
-
-                                            {"ImpactPoint",
-                                             {0, -0.0275214},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, -0.0344017},
-                                             1},
-
-                                            {"MissileFlightTimeRot1",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot2",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot3",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot4",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot5",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot6",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot7",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot8",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot9",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot10",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot11",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot12",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot13",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot14",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot15",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot16",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot17",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot18",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot19",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot20",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot20",
-                                             {0, 0.028000001},
-                                             1,
-                                             "ImpactPoint",
-                                             1}};
+                                    points[] = {{"ImpactPoint", {0, -0.0275214}, 1}, {"ImpactPoint", {0, -0.0344017}, 1}, {"MissileFlightTimeRot1", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot2", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot3", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot4", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot5", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot6", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot7", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot8", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot9", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot10", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot11", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot12", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot13", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot14", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot15", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot16", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot17", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot18", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot19", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot20", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot20", {0, 0.028000001}, 1, "ImpactPoint", 1}};
                                 };
                                 class Circle_Min_Range {
                                     type = "line";
                                     width = 3;
-                                    points[] =
-                                        {
-
-                                            {"ImpactPoint",
-                                             {0, -0.0294872},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.0052080001, -0.029038999},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.01026, -0.0277091},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.015, -0.0255359},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.019284001, -0.022587201},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.022980001, -0.0189544},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.025979999, -0.0147436},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.028191, -0.0100846},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.029544, -0.0051189698},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.029999999, 0},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.029544, 0.0051189698},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.028191, 0.0100846},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.025979999, 0.0147436},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.022980001, 0.0189544},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.019284001, 0.022587201},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.015, 0.0255359},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.01026, 0.0277091},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.0052080001, 0.029038999},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, 0.0294872},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.0052080001, 0.029038999},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.01026, 0.0277091},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.015, 0.0255359},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.019284001, 0.022587201},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.022980001, 0.0189544},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.025979999, 0.0147436},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.028191, 0.0100846},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.029544, 0.0051189698},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.029999999, 0},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.029544, -0.0051189698},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.028191, -0.0100846},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.025979999, -0.0147436},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.022980001, -0.0189544},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.019284001, -0.022587201},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.015, -0.0255359},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.01026, -0.0277091},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.0052080001, -0.029038999},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, -0.0294872},
-                                             1}};
+                                    points[] = {{"ImpactPoint", {0, -0.0294872}, 1}, {"ImpactPoint", {0.0052080001, -0.029038999}, 1}, {"ImpactPoint", {0.01026, -0.0277091}, 1}, {"ImpactPoint", {0.015, -0.0255359}, 1}, {"ImpactPoint", {0.019284001, -0.022587201}, 1}, {"ImpactPoint", {0.022980001, -0.0189544}, 1}, {"ImpactPoint", {0.025979999, -0.0147436}, 1}, {"ImpactPoint", {0.028191, -0.0100846}, 1}, {"ImpactPoint", {0.029544, -0.0051189698}, 1}, {"ImpactPoint", {0.029999999, 0}, 1}, {"ImpactPoint", {0.029544, 0.0051189698}, 1}, {"ImpactPoint", {0.028191, 0.0100846}, 1}, {"ImpactPoint", {0.025979999, 0.0147436}, 1}, {"ImpactPoint", {0.022980001, 0.0189544}, 1}, {"ImpactPoint", {0.019284001, 0.022587201}, 1}, {"ImpactPoint", {0.015, 0.0255359}, 1}, {"ImpactPoint", {0.01026, 0.0277091}, 1}, {"ImpactPoint", {0.0052080001, 0.029038999}, 1}, {"ImpactPoint", {0, 0.0294872}, 1}, {"ImpactPoint", {-0.0052080001, 0.029038999}, 1}, {"ImpactPoint", {-0.01026, 0.0277091}, 1}, {"ImpactPoint", {-0.015, 0.0255359}, 1}, {"ImpactPoint", {-0.019284001, 0.022587201}, 1}, {"ImpactPoint", {-0.022980001, 0.0189544}, 1}, {"ImpactPoint", {-0.025979999, 0.0147436}, 1}, {"ImpactPoint", {-0.028191, 0.0100846}, 1}, {"ImpactPoint", {-0.029544, 0.0051189698}, 1}, {"ImpactPoint", {-0.029999999, 0}, 1}, {"ImpactPoint", {-0.029544, -0.0051189698}, 1}, {"ImpactPoint", {-0.028191, -0.0100846}, 1}, {"ImpactPoint", {-0.025979999, -0.0147436}, 1}, {"ImpactPoint", {-0.022980001, -0.0189544}, 1}, {"ImpactPoint", {-0.019284001, -0.022587201}, 1}, {"ImpactPoint", {-0.015, -0.0255359}, 1}, {"ImpactPoint", {-0.01026, -0.0277091}, 1}, {"ImpactPoint", {-0.0052080001, -0.029038999}, 1}, {"ImpactPoint", {0, -0.0294872}, 1}};
                                 };
                                 class Distance {
                                     type = "text";
@@ -2775,21 +989,9 @@ class CfgVehicles {
                                     max = 99;
                                     align = "center";
                                     scale = 1;
-                                    pos[] =
-                                        {
-                                            "ImpactPoint",
-                                            {-0.0020000001, -0.079999998},
-                                            1};
-                                    right[] =
-                                        {
-                                            "ImpactPoint",
-                                            {0.045000002, -0.079999998},
-                                            1};
-                                    down[] =
-                                        {
-                                            "ImpactPoint",
-                                            {-0.0020000001, -0.039999999},
-                                            1};
+                                    pos[] = {"ImpactPoint", {-0.0020000001, -0.079999998}, 1};
+                                    right[] = {"ImpactPoint", {0.045000002, -0.079999998}, 1};
+                                    down[] = {"ImpactPoint", {-0.0020000001, -0.039999999}, 1};
                                 };
                             };
                             class Rockets {
@@ -2797,338 +999,17 @@ class CfgVehicles {
                                 class Cross {
                                     type = "line";
                                     width = 3;
-                                    points[] =
-                                        {
-
-                                            {"ImpactPoint",
-                                             {0, -0.0294872},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, -0.0393162},
-                                             1},
-                                            {},
-
-                                            {"ImpactPoint",
-                                             {0.02, -0.024},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.025, -0.030999999},
-                                             1},
-                                            {},
-
-                                            {"ImpactPoint",
-                                             {0, -0.0020000001},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, 0.0020000001},
-                                             1},
-                                            {},
-
-                                            {"ImpactPoint",
-                                             {-0.0020000001, 0},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.0020000001, 0},
-                                             1},
-                                            {}};
+                                    points[] = {{"ImpactPoint", {0, -0.0294872}, 1}, {"ImpactPoint", {0, -0.0393162}, 1}, {}, {"ImpactPoint", {0.02, -0.024}, 1}, {"ImpactPoint", {0.025, -0.030999999}, 1}, {}, {"ImpactPoint", {0, -0.0020000001}, 1}, {"ImpactPoint", {0, 0.0020000001}, 1}, {}, {"ImpactPoint", {-0.0020000001, 0}, 1}, {"ImpactPoint", {0.0020000001, 0}, 1}, {}};
                                 };
                                 class Circle {
                                     type = "line";
                                     width = 3;
-                                    points[] =
-                                        {
-
-                                            {"ImpactPoint",
-                                             {0, -0.0275214},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, -0.0344017},
-                                             1},
-
-                                            {"MissileFlightTimeRot1",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot2",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot3",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot4",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot5",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot6",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot7",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot8",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot9",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot10",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot11",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot12",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot13",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot14",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot15",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot16",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot17",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot18",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot19",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot20",
-                                             {0, 0.035},
-                                             1,
-                                             "ImpactPoint",
-                                             1},
-
-                                            {"MissileFlightTimeRot20",
-                                             {0, 0.028000001},
-                                             1,
-                                             "ImpactPoint",
-                                             1}};
+                                    points[] = {{"ImpactPoint", {0, -0.0275214}, 1}, {"ImpactPoint", {0, -0.0344017}, 1}, {"MissileFlightTimeRot1", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot2", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot3", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot4", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot5", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot6", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot7", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot8", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot9", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot10", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot11", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot12", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot13", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot14", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot15", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot16", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot17", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot18", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot19", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot20", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot20", {0, 0.028000001}, 1, "ImpactPoint", 1}};
                                 };
                                 class Circle_Min_Range {
                                     type = "line";
                                     width = 3;
-                                    points[] =
-                                        {
-
-                                            {"ImpactPoint",
-                                             {0, -0.0294872},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.0052080001, -0.029038999},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.01026, -0.0277091},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.015, -0.0255359},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.019284001, -0.022587201},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.022980001, -0.0189544},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.025979999, -0.0147436},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.028191, -0.0100846},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.029544, -0.0051189698},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.029999999, 0},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.029544, 0.0051189698},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.028191, 0.0100846},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.025979999, 0.0147436},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.022980001, 0.0189544},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.019284001, 0.022587201},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.015, 0.0255359},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.01026, 0.0277091},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.0052080001, 0.029038999},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, 0.0294872},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.0052080001, 0.029038999},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.01026, 0.0277091},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.015, 0.0255359},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.019284001, 0.022587201},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.022980001, 0.0189544},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.025979999, 0.0147436},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.028191, 0.0100846},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.029544, 0.0051189698},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.029999999, 0},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.029544, -0.0051189698},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.028191, -0.0100846},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.025979999, -0.0147436},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.022980001, -0.0189544},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.019284001, -0.022587201},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.015, -0.0255359},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.01026, -0.0277091},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.0052080001, -0.029038999},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, -0.0294872},
-                                             1}};
+                                    points[] = {{"ImpactPoint", {0, -0.0294872}, 1}, {"ImpactPoint", {0.0052080001, -0.029038999}, 1}, {"ImpactPoint", {0.01026, -0.0277091}, 1}, {"ImpactPoint", {0.015, -0.0255359}, 1}, {"ImpactPoint", {0.019284001, -0.022587201}, 1}, {"ImpactPoint", {0.022980001, -0.0189544}, 1}, {"ImpactPoint", {0.025979999, -0.0147436}, 1}, {"ImpactPoint", {0.028191, -0.0100846}, 1}, {"ImpactPoint", {0.029544, -0.0051189698}, 1}, {"ImpactPoint", {0.029999999, 0}, 1}, {"ImpactPoint", {0.029544, 0.0051189698}, 1}, {"ImpactPoint", {0.028191, 0.0100846}, 1}, {"ImpactPoint", {0.025979999, 0.0147436}, 1}, {"ImpactPoint", {0.022980001, 0.0189544}, 1}, {"ImpactPoint", {0.019284001, 0.022587201}, 1}, {"ImpactPoint", {0.015, 0.0255359}, 1}, {"ImpactPoint", {0.01026, 0.0277091}, 1}, {"ImpactPoint", {0.0052080001, 0.029038999}, 1}, {"ImpactPoint", {0, 0.0294872}, 1}, {"ImpactPoint", {-0.0052080001, 0.029038999}, 1}, {"ImpactPoint", {-0.01026, 0.0277091}, 1}, {"ImpactPoint", {-0.015, 0.0255359}, 1}, {"ImpactPoint", {-0.019284001, 0.022587201}, 1}, {"ImpactPoint", {-0.022980001, 0.0189544}, 1}, {"ImpactPoint", {-0.025979999, 0.0147436}, 1}, {"ImpactPoint", {-0.028191, 0.0100846}, 1}, {"ImpactPoint", {-0.029544, 0.0051189698}, 1}, {"ImpactPoint", {-0.029999999, 0}, 1}, {"ImpactPoint", {-0.029544, -0.0051189698}, 1}, {"ImpactPoint", {-0.028191, -0.0100846}, 1}, {"ImpactPoint", {-0.025979999, -0.0147436}, 1}, {"ImpactPoint", {-0.022980001, -0.0189544}, 1}, {"ImpactPoint", {-0.019284001, -0.022587201}, 1}, {"ImpactPoint", {-0.015, -0.0255359}, 1}, {"ImpactPoint", {-0.01026, -0.0277091}, 1}, {"ImpactPoint", {-0.0052080001, -0.029038999}, 1}, {"ImpactPoint", {0, -0.0294872}, 1}};
                                 };
                                 class Distance {
                                     type = "text";
@@ -3138,21 +1019,9 @@ class CfgVehicles {
                                     max = 99;
                                     align = "center";
                                     scale = 1;
-                                    pos[] =
-                                        {
-                                            "ImpactPoint",
-                                            {-0.0020000001, -0.079999998},
-                                            1};
-                                    right[] =
-                                        {
-                                            "ImpactPoint",
-                                            {0.045000002, -0.079999998},
-                                            1};
-                                    down[] =
-                                        {
-                                            "ImpactPoint",
-                                            {-0.0020000001, -0.039999999},
-                                            1};
+                                    pos[] = {"ImpactPoint", {-0.0020000001, -0.079999998}, 1};
+                                    right[] = {"ImpactPoint", {0.045000002, -0.079999998}, 1};
+                                    down[] = {"ImpactPoint", {-0.0020000001, -0.039999999}, 1};
                                 };
                             };
                             class BombCrosshairGroup {
@@ -3161,241 +1030,7 @@ class CfgVehicles {
                                 class BombCrosshair {
                                     type = "line";
                                     width = 4;
-                                    points[] =
-                                        {
-
-                                            {"ImpactPoint",
-                                             {0, -0.0982906},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.01736, -0.096796602},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.034200002, -0.0923637},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.050000001, -0.085119702},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.064280003, -0.075290598},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.0766, -0.063181199},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.086599998, -0.0491453},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.093970001, -0.033615399},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.098480001, -0.0170632},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.1, 0},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.098480001, 0.0170632},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.093970001, 0.033615399},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.086599998, 0.0491453},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.0766, 0.063181199},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.064280003, 0.075290598},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.050000001, 0.085119702},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.034200002, 0.0923637},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0.01736, 0.096796602},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, 0.0982906},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.01736, 0.096796602},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.034200002, 0.0923637},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.050000001, 0.085119702},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.064280003, 0.075290598},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.0766, 0.063181199},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.086599998, 0.0491453},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.093970001, 0.033615399},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.098480001, 0.0170632},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.1, 0},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.098480001, -0.0170632},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.093970001, -0.033615399},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.086599998, -0.0491453},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.0766, -0.063181199},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.064280003, -0.075290598},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.050000001, -0.085119702},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.034200002, -0.0923637},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {-0.01736, -0.096796602},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             {0, -0.0982906},
-                                             1},
-                                            {},
-
-                                            {"ImpactPoint",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0, -0.0196581},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0.014, -0.0137607},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             1,
-                                             "Limit0109",
-                                             1,
-
-                                             {"+ 0.02",
-                                              0},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0.014, 0.0137607},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0, 0.0196581},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {-0.014, 0.0137607},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             1,
-                                             "Limit0109",
-                                             1,
-
-                                             {"- 0.02",
-                                              0},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {-0.014, -0.0137607},
-                                             1},
-
-                                            {"ImpactPoint",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0, -0.0196581},
-                                             1},
-                                            {},
-
-                                            {"VelocityVector",
-                                             0.001,
-                                             "ImpactPoint",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0, 0},
-                                             1},
-
-                                            {"VelocityVector",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0, 0},
-                                             1}};
+                                    points[] = {{"ImpactPoint", {0, -0.0982906}, 1}, {"ImpactPoint", {0.01736, -0.096796602}, 1}, {"ImpactPoint", {0.034200002, -0.0923637}, 1}, {"ImpactPoint", {0.050000001, -0.085119702}, 1}, {"ImpactPoint", {0.064280003, -0.075290598}, 1}, {"ImpactPoint", {0.0766, -0.063181199}, 1}, {"ImpactPoint", {0.086599998, -0.0491453}, 1}, {"ImpactPoint", {0.093970001, -0.033615399}, 1}, {"ImpactPoint", {0.098480001, -0.0170632}, 1}, {"ImpactPoint", {0.1, 0}, 1}, {"ImpactPoint", {0.098480001, 0.0170632}, 1}, {"ImpactPoint", {0.093970001, 0.033615399}, 1}, {"ImpactPoint", {0.086599998, 0.0491453}, 1}, {"ImpactPoint", {0.0766, 0.063181199}, 1}, {"ImpactPoint", {0.064280003, 0.075290598}, 1}, {"ImpactPoint", {0.050000001, 0.085119702}, 1}, {"ImpactPoint", {0.034200002, 0.0923637}, 1}, {"ImpactPoint", {0.01736, 0.096796602}, 1}, {"ImpactPoint", {0, 0.0982906}, 1}, {"ImpactPoint", {-0.01736, 0.096796602}, 1}, {"ImpactPoint", {-0.034200002, 0.0923637}, 1}, {"ImpactPoint", {-0.050000001, 0.085119702}, 1}, {"ImpactPoint", {-0.064280003, 0.075290598}, 1}, {"ImpactPoint", {-0.0766, 0.063181199}, 1}, {"ImpactPoint", {-0.086599998, 0.0491453}, 1}, {"ImpactPoint", {-0.093970001, 0.033615399}, 1}, {"ImpactPoint", {-0.098480001, 0.0170632}, 1}, {"ImpactPoint", {-0.1, 0}, 1}, {"ImpactPoint", {-0.098480001, -0.0170632}, 1}, {"ImpactPoint", {-0.093970001, -0.033615399}, 1}, {"ImpactPoint", {-0.086599998, -0.0491453}, 1}, {"ImpactPoint", {-0.0766, -0.063181199}, 1}, {"ImpactPoint", {-0.064280003, -0.075290598}, 1}, {"ImpactPoint", {-0.050000001, -0.085119702}, 1}, {"ImpactPoint", {-0.034200002, -0.0923637}, 1}, {"ImpactPoint", {-0.01736, -0.096796602}, 1}, {"ImpactPoint", {0, -0.0982906}, 1}, {}, {"ImpactPoint", 1, "Limit0109", 1, {0, -0.0196581}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {0.014, -0.0137607}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {"+ 0.02", 0}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {0.014, 0.0137607}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {0, 0.0196581}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {-0.014, 0.0137607}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {"- 0.02", 0}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {-0.014, -0.0137607}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {0, -0.0196581}, 1}, {}, {"VelocityVector", 0.001, "ImpactPoint", 1, "Limit0109", 1, {0, 0}, 1}, {"VelocityVector", 1, "Limit0109", 1, {0, 0}, 1}};
                                 };
                                 class Distance {
                                     type = "text";
@@ -3405,25 +1040,18 @@ class CfgVehicles {
                                     max = 99;
                                     align = "center";
                                     scale = 1;
-                                    pos[] =
-                                        {
-                                            "ImpactPoint",
-                                            {-0.0020000001, 0.11},
-                                            1};
-                                    right[] =
-                                        {
-                                            "ImpactPoint",
-                                            {0.045000002, 0.11},
-                                            1};
-                                    down[] =
-                                        {
-                                            "ImpactPoint",
-                                            {-0.0020000001, 0.15000001},
-                                            1};
+                                    pos[] = {"ImpactPoint", {-0.0020000001, 0.11}, 1};
+                                    right[] = {"ImpactPoint", {0.045000002, 0.11}, 1};
+                                    down[] = {"ImpactPoint", {-0.0020000001, 0.15000001}, 1};
                                 };
                             };
                             class AAMissile {
                                 condition = "AAmissile";
+                                class Circle {
+                                    type = "line";
+                                    width = 4;
+                                    points[] = {{"ForwardVector", 1, "HUDCenter", {0, -0.245726}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0434, -0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0855, -0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {0.125, -0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1607, -0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1915, -0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2165, -0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {0.234925, -0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2462, -0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {0.25, 0}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2462, 0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {0.234925, 0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2165, 0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1915, 0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1607, 0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {0.125, 0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0855, 0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0434, 0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0, 0.245726}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0434, 0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0855, 0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.125, 0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1607, 0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1915, 0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2165, 0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.234925, 0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2462, 0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.25, 0}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2462, -0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.234925, -0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2165, -0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1915, -0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1607, -0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.125, -0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0855, -0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0434, -0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0, -0.245726}, 1}};
+                                };
                                 class Lines {
                                     type = "line";
                                     width = 4;
@@ -3462,6 +1090,11 @@ class CfgVehicles {
                             };
                             class ATMissile {
                                 condition = "ATmissile";
+                                class Circle {
+                                    type = "line";
+                                    width = 4;
+                                    points[] = {{"ForwardVector", 1, "HUDCenter", {-0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.15, -0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.13, -0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.13, 0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.13, -0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.13, 0.147436}, 1}};
+                                };
                                 class Lines {
                                     type = "line";
                                     width = 4;
@@ -3507,152 +1140,88 @@ class CfgVehicles {
                                     sourcePrecision = 2;
                                     align = "left";
                                     scale = 1;
-                                    pos[] =
-                                        {
-                                            {0.935, 0.79713702},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.97500002, 0.79713702},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.935, 0.83448702},
-                                            1};
-                                };
-                                class WPstatic {
-                                    type = "text";
-                                    source = "static";
-                                    text = ">";
-                                    align = "center";
-                                    scale = 2;
-                                    pos[] =
-                                        {
-                                            {0.94999999, 0.79713702},
-                                            1};
-                                    right[] =
-                                        {
-                                            {0.97000003, 0.79713702},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.94999999, 0.83448702},
-                                            1};
+                                    pos[] = {{0.235, 0.774038}, 1};
+                                    right[] = {{0.275, 0.774038}, 1};
+                                    down[] = {{0.235, 0.80156}, 1};
                                 };
                                 class WPIndex {
                                     type = "text";
                                     source = "wpIndex";
                                     sourceScale = 1;
+                                    sourceLength = 2;
                                     align = "right";
                                     scale = 1;
-                                    pos[] =
-                                        {
-                                            {0.95999998, 0.79713702},
-                                            1};
-                                    right[] =
-                                        {
-                                            {1, 0.79713702},
-                                            1};
-                                    down[] =
-                                        {
-                                            {0.95999998, 0.83448702},
-                                            1};
+                                    pos[] = {{0.096, 0.776004}, 1};
+                                    right[] = {{0.126, 0.776004}, 1};
+                                    down[] = {{0.096, 0.799594}, 1};
+                                };
+                                class WPstatic {
+                                    type = "text";
+                                    source = "static";
+                                    text = "W";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{0.075, 0.775}, 1};
+                                    right[] = {{0.105, 0.775}, 1};
+                                    down[] = {{0.075, 0.8}, 1};
+                                };
+                                class WPKM {
+                                    type = "text";
+                                    source = "static";
+                                    text = "KM";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{"0.075 +0.16", 0.775}, 1};
+                                    right[] = {{0.265, 0.775}, 1};
+                                    down[] = {{"0.075 +0.16", 0.803}, 1};
                                 };
                                 class WP {
-                                    width = 1;
+                                    width = 2;
                                     type = "line";
-                                    points[] =
-                                        {
-
-                                            {"wppoint",
-                                             1,
-
-                                             {"HorizonBankRotFull",
-                                              0.015,
-                                              -0.035},
-                                             1},
-
-                                            {"wppoint",
-                                             1,
-
-                                             {"HorizonBankRotFull",
-                                              0,
-                                              0},
-                                             1},
-
-                                            {"wppoint",
-                                             1,
-
-                                             {"HorizonBankRotFull",
-                                              -0.015,
-                                              -0.035},
-                                             1}};
+                                    points[] = {{"WPPoint", 1, "LimitWaypoint", 1, {-0.02, 0.04}, 1}, {"WPPoint", 1, "LimitWaypoint", 1, {0, 0.02}, 1}, {"WPPoint", 1, "LimitWaypoint", 1, {0.02, 0.04}, 1}, {}};
                                 };
                             };
-                            class RadarBoxes {
-                                type = "radartoview";
-                                pos0[] = {0.5, 0.5};
-                                pos10[] = {0.73400003, 0.73000002};
-                                width = 2;
-                                points[] =
-                                    {
-
-                                        {{-0.0020000001, -0.0019658101},
-                                         1},
-
-                                        {{0.0020000001, -0.0019658101},
-                                         1},
-
-                                        {{0.0020000001, 0.0019658101},
-                                         1},
-
-                                        {{-0.0020000001, 0.0019658101},
-                                         1},
-
-                                        {{-0.0020000001, -0.0019658101},
-                                         1}};
+                            class WeaponsLocking {
+                                condition = "missilelocking";
+                                blinkingPattern[] = {0.2, 0.2};
+                                blinkingStartsOn = 1;
+                                class shape {
+                                    type = "line";
+                                    width = 4;
+                                    points[] = {{"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, 0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {-0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}};
+                                };
+                            };
+                            class IncomingMissile {
+                                condition = "incomingmissile";
+                                blinkingPattern[] = {0.3, 0.3};
+                                blinkingStartsOn = 1;
+                                class Text {
+                                    type = "text";
+                                    source = "static";
+                                    text = "!INCOMING MISSILE!";
+                                    align = "center";
+                                    scale = 1;
+                                    pos[] = {{0.485, 0.216239}, 1};
+                                    right[] = {{0.545, 0.216239}, 1};
+                                    down[] = {{0.485, 0.265385}, 1};
+                                };
+                            };
+                            class RadarTargets {
+                                class RadarBoxes {
+                                    type = "radartoview";
+                                    pos0[] = {0.5, 0.5};
+                                    pos10[] = {0.734, 0.73};
+                                    width = 4;
+                                    points[] = {{{-0.0035, -0.00344017}, 1}, {{0.0035, -0.00344017}, 1}, {{0.0035, 0.00344017}, 1}, {{-0.0035, 0.00344017}, 1}, {{-0.0035, -0.00344017}, 1}};
+                                };
                             };
                             class TargetDiamond {
                                 class shape {
                                     type = "line";
                                     width = 4;
-                                    points[] =
-                                        {
-
-                                            {"Target",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0.02, 0.0196581},
-                                             1},
-
-                                            {"Target",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {-0.02, 0.0196581},
-                                             1},
-
-                                            {"Target",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {-0.02, -0.0196581},
-                                             1},
-
-                                            {"Target",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0.02, -0.0196581},
-                                             1},
-
-                                            {"Target",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0.02, 0.0196581},
-                                             1}};
+                                    points[] = {{"Target", 1, "Limit0109", 1, {0.02, 0.0196581}, 1}, {"Target", 1, "Limit0109", 1, {-0.02, 0.0196581}, 1}, {"Target", 1, "Limit0109", 1, {-0.02, -0.0196581}, 1}, {"Target", 1, "Limit0109", 1, {0.02, -0.0196581}, 1}, {"Target", 1, "Limit0109", 1, {0.02, 0.0196581}, 1}};
                                 };
                             };
                             class TargetLocked {
@@ -3660,43 +1229,53 @@ class CfgVehicles {
                                 class shape {
                                     type = "line";
                                     width = 4;
-                                    points[] =
-                                        {
-
-                                            {"Target",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0, -0.0294872},
-                                             1},
-
-                                            {"Target",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0.029999999, 0},
-                                             1},
-
-                                            {"Target",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0, 0.0294872},
-                                             1},
-
-                                            {"Target",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {-0.029999999, 0},
-                                             1},
-
-                                            {"Target",
-                                             1,
-                                             "Limit0109",
-                                             1,
-                                             {0, -0.0294872},
-                                             1}};
+                                    points[] = {{"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, 0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {-0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}};
+                                };
+                                class TimeOfFlightText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "TOF:";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{"0.127+0.49", 0.869}, 1};
+                                    right[] = {{0.652, 0.869}, 1};
+                                    down[] = {{"0.127+0.49", 0.904}, 1};
+                                };
+                                class TOF_source {
+                                    type = "text";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    source = "missileflighttime";
+                                    align = "right";
+                                    pos[] = {{0.739, 0.869}, 1};
+                                    right[] = {{0.774, 0.869}, 1};
+                                    down[] = {{0.739, 0.904}, 1};
+                                };
+                            };
+                            class TargetDist {
+                                class DistanceText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "DIST:";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{"0.125+0.49", 0.901}, 1};
+                                    right[] = {{0.65, 0.901}, 1};
+                                    down[] = {{"0.125+0.49", 0.936}, 1};
+                                };
+                                class TargetDistance {
+                                    type = "text";
+                                    scale = 1;
+                                    source = "targetDist";
+                                    sourceLength = 0;
+                                    sourcePrecision = 2;
+                                    sourceScale = 0.001;
+                                    align = "right";
+                                    pos[] = {{0.739, 0.901}, 1};
+                                    right[] = {{0.774, 0.901}, 1};
+                                    down[] = {{0.739, 0.936}, 1};
                                 };
                             };
                         };
@@ -3705,49 +1284,27 @@ class CfgVehicles {
                         turret[] = {-1};
                         class Draw {
                             alpha = "user3";
-                            color[] =
-                                {
-                                    "user0",
-                                    "user1",
-                                    "user2"};
-                            condition = "(1 - (cameraHeadingDiffY<=-19) + (abs(cameraHeadingDiffX)>=24))*on";
-                            class CMName {
+                            color[] = {"user0", "user1", "user2"};
+                            condition = "on";
+                            class cmWeapons {
                                 type = "text";
                                 source = "cmweapon";
                                 sourceScale = 1;
-                                align = "left";
-                                scale = 1;
-                                pos[] =
-                                    {
-                                        {0.86900002, 0.84899998},
-                                        1};
-                                right[] =
-                                    {
-                                        {0.91900003, 0.84899998},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.86900002, 0.884},
-                                        1};
+                                align = "right";
+                                scale = 0.5;
+                                pos[] = {{0.001, 0.869}, 1};
+                                right[] = {{0.036, 0.869}, 1};
+                                down[] = {{0.001, 0.904}, 1};
                             };
-                            class CMCount {
+                            class cmAmmo {
                                 type = "text";
                                 source = "cmammo";
                                 sourceScale = 1;
-                                align = "left";
-                                scale = 1;
-                                pos[] =
-                                    {
-                                        {0.97899997, 0.84899998},
-                                        1};
-                                right[] =
-                                    {
-                                        {1.029, 0.84899998},
-                                        1};
-                                down[] =
-                                    {
-                                        {0.97899997, 0.884},
-                                        1};
+                                align = "right";
+                                scale = 0.5;
+                                pos[] = {{0.001, 0.901}, 1};
+                                right[] = {{0.036, 0.901}, 1};
+                                down[] = {{0.001, 0.936}, 1};
                             };
                         };
                     };
@@ -3756,6 +1313,7 @@ class CfgVehicles {
         };
         class MFD {
             class AirplaneHUD {
+                enableParallax = 0;
                 topLeft = "HUD_top_left";
                 topRight = "HUD_top_right";
                 bottomLeft = "HUD_bottom_left";
@@ -3763,11 +1321,11 @@ class CfgVehicles {
                 borderRight = 0;
                 borderTop = 0;
                 borderBottom = 0;
-                color[] = {0.15000001, 1, 0.15000001, 1};
+                color[] = {1, 1, 1, 1};
                 helmetMountedDisplay = 1;
-                helmetPosition[] = {-0.037500001, 0.037500001, 0.1};
-                helmetRight[] = {0.075000003, 0, 0};
-                helmetDown[] = {0, -0.075000003, 0};
+                helmetPosition[] = {-0.0375, 0.0375, 0.1};
+                helmetRight[] = {0.075, 0, 0};
+                helmetDown[] = {0, -0.075, 0};
                 font = "LucidaConsoleB";
                 turret[] = {-2};
                 class Bones {
@@ -3775,28 +1333,20 @@ class CfgVehicles {
                         type = "fixed";
                         pos[] = {0.5, 0.5};
                     };
-                    class HorizonBankSource {
-                        type = "rotational";
-                        source = "HorizonBank";
-                        center[] = {0.5, 0.5};
-                        min = -6.2831001;
-                        max = 6.2831001;
-                        minAngle = -360;
-                        maxAngle = 360;
+                    class WeaponAim {
+                        type = "vector";
+                        source = "weapon";
+                        pos0[] = {0.5, 0.5};
+                        pos10[] = {0.734, 0.73};
                     };
-                    class HorizonDiveSource {
-                        source = "horizonDive";
-                        type = "linear";
-                        min = -1;
-                        max = 1;
-                        minPos[] = {0.5, 2.5};
-                        maxPos[] = {0.5, -1.5};
+                    class WeaponAimRelative : WeaponAim {
+                        source = "weapontoview";
                     };
                     class VelocityVector {
                         type = "vector";
                         source = "velocityToView";
                         pos0[] = {0.5, 0.5};
-                        pos10[] = {0.73400003, 0.73000002};
+                        pos10[] = {0.734, 0.73};
                     };
                     class ForwardVector {
                         type = "vector";
@@ -3804,116 +1354,101 @@ class CfgVehicles {
                         pos0[] = {0, 0};
                         pos10[] = {0.234, 0.23};
                     };
+                    class HorizonVector {
+                        type = "horizontoview";
+                        pos0[] = {0.5, 0.5};
+                        pos10[] = {0.830923, 0.825266};
+                        angle = 0;
+                    };
                     class GunnerAim {
                         type = "vector";
                         source = "turret";
-                        pos0[] = {0, -0.60000002};
-                        pos10[] = {0.0068000001, -0.012};
+                        pos0[] = {0, -2};
+                        pos10[] = {0.0068, -0.01};
                         projection = 0;
                     };
-                    class WeaponAim {
-                        type = "vector";
-                        source = "weaponToView";
-                        pos0[] = {0.5, 0.5};
-                        pos10[] = {0.73400003, 0.73000002};
-                    };
-                    class SliderDiveSource {
-                        type = "linear";
-                        source = "horizonDive";
-                        min = "RAD(-10)";
-                        max = "RAD(10)";
-                        minPos[] = {0.105, 0.38};
-                        maxPos[] = {0.105, 0.54000002};
-                    };
-                    class SliderDiveSource30 : SliderDiveSource {
-                        min = "RAD(10)";
-                        max = "RAD(30)";
-                        minPos[] = {0, -0.039999999};
-                        maxPos[] =
-                            {
-                                0,
-                                "0)"};
-                    };
-                    class SliderDiveSource90 : SliderDiveSource30 {
-                        min = "RAD(30)";
-                        max = "RAD(90)";
-                        minPos[] = {0, -0.039999999};
-                    };
-                    class SliderDiveSource30m : SliderDiveSource {
-                        min = "RAD(-30)";
-                        max = "RAD(-10)";
-                        minPos[] = {0, 0};
-                        maxPos[] = {0, 0.039999999};
-                    };
-                    class SliderDiveSource90m : SliderDiveSource30m {
-                        min = "RAD(-90)";
-                        max = "RAD(-30)";
-                        maxPos[] = {0, 0.039999999};
-                    };
-                    class SliderAltitudeSource {
-                        type = "linear";
-                        source = "altitudeAGL";
-                        sourceOffset = -3;
-                        min = 0;
-                        max = 1000;
-                        minPos[] = {0.88499999, 0.2};
-                        maxPos[] = {0.88499999, 0.375};
-                    };
-                    class GForceSource {
-                        type = "linear";
-                        source = "gmeter";
-                        sourceScale = 0.15000001;
-                        min = -1;
-                        max = 3;
-                        minPos[] = {0.105, 0.69999999};
-                        maxPos[] = {0.105, 0.86000001};
-                    };
-                    class SliderVSpeedSource {
+                    class VerticalSpeedBone {
                         type = "linear";
                         source = "vspeed";
-                        min = -15;
-                        max = 15;
-                        minPos[] = {0.79500002, 0.60000002};
-                        maxPos[] = {0.79500002, 0.83999997};
+                        sourceScale = 1;
+                        min = -10;
+                        max = 10;
+                        minPos[] = {0, -0.32};
+                        maxPos[] = {0, 0.32};
+                    };
+                    class HorizonBankRot {
+                        type = "linear";
+                        source = "horizonBank";
+                        min = -0.5236;
+                        max = 0.5236;
+                        minPos[] = {0.41, 0.84};
+                        maxPos[] = {0.59, 0.84};
+                        aspectRatio = 1;
                     };
                     class ImpactPoint {
                         type = "vector";
                         source = "ImpactPointToView";
+                        pos[] = {};
                         pos0[] = {0.5, 0.5};
-                        pos10[] = {0.73400003, 0.73000002};
-                    };
-                    class ImpactPointRockets {
-                        type = "vector";
-                        source = "ImpactPointToView";
-                        pos0[] = {0.5, 0.52499998};
-                        pos10[] = {0.73400003, 0.755};
-                    };
-                    class WPPoint {
-                        type = "vector";
-                        source = "WPPointToView";
-                        pos0[] = {0.5, 0.5};
-                        pos10[] = {0.73400003, 0.73000002};
-                    };
-                    class rtdRPM1 {
-                        type = "linear";
-                        source = "rtdrpm1";
-                        min = 0.1;
-                        max = 1;
-                        minPos[] = {0, -0.75999999};
-                        maxPos[] = {0, 0};
-                    };
-                    class rtdRPM2 : rtdRPM1 {
-                        source = "rtdrpm2";
-                    };
-                    class Limit0109 {
-                        type = "limit";
-                        limits[] = {0.1, 0.1, 0.89999998, 0.89999998};
+                        pos10[] = {0.734, 0.73};
                     };
                     class Target {
                         source = "targettoview";
                         type = "vector";
                         pos0[] = {0.5, 0.5};
-                        pos10[] = {0.73400003, 0.73000002};
+                        pos10[] = {0.734, 0.73};
+                    };
+                    class Limit0109 {
+                        type = "limit";
+                        limits[] = {0.1, 0.1, 0.9, 0.9};
+                    };
+                    class LimitWaypoint {
+                        type = "limit";
+                        limits[] = {0.2, 0.1, 0.8, 0.1};
+                    };
+                    class WPPoint {
+                        type = "vector";
+                        source = "WPPoint";
+                        pos0[] = {0.5, 0.5};
+                        pos10[] = {0.734, 0.73};
+                    };
+                    class WPPointToView : WPPoint {
+                        source = "WPPointToView";
+                    };
+                    class RadarHeight {
+                        type = "linear";
+                        source = "altitudeAGL";
+                        sourceScale = 1;
+                        sourceOffset = -2;
+                        min = 0;
+                        max = 100;
+                        minPos[] = {0.903, 0.18};
+                        maxPos[] = {0.903, 0.82};
+                    };
+                    class HorizonBankRotFull {
+                        type = "rotational";
+                        source = "horizonBank";
+                        center[] = {0, 0};
+                        min = -3.1416;
+                        max = 3.1416;
+                        minAngle = -180;
+                        maxAngle = 180;
+                        aspectRatio = 1;
+                    };
+                    class LarAmmoMax {
+                        type = "linear";
+                        source = "LarAmmoMax";
+                        sourceScale = 1;
+                        min = 0;
+                        max = 1;
+                        minPos[] = {0, 1};
+                        maxPos[] = {0, 0};
+                    };
+                    class LarAmmoMin : LarAmmoMax {
+                        source = "LarAmmoMin";
+                    };
+                    class LarTargetDist : LarAmmoMax {
+                        source = "LarTargetDist";
                     };
                     class MissileFlightTimeRot1 {
                         type = "rotational";
@@ -4002,1340 +1537,26 @@ class CfgVehicles {
                         maxAngle = 360;
                         max = 10;
                     };
-                    class HorizonBankRotFull {
-                        type = "rotational";
-                        source = "horizonBank";
-                        center[] = {0, 0};
-                        min = -3.1415999;
-                        max = 3.1415999;
-                        minAngle = -180;
-                        maxAngle = 180;
-                        aspectRatio = 1;
-                    };
-                    class LarAmmoMax {
-                        type = "linear";
-                        source = "LarAmmoMax";
-                        sourceScale = 1;
-                        min = 0;
-                        max = 1;
-                        minPos[] = {0, 1};
-                        maxPos[] = {0, 0};
-                    };
-                    class LarAmmoMin : LarAmmoMax {
-                        source = "LarAmmoMin";
-                    };
-                    class LarTargetDist : LarAmmoMax {
-                        source = "LarTargetDist";
-                    };
                 };
                 class Draw {
                     alpha = "user3";
-                    color[] =
-                        {
-                            "user0",
-                            "user1",
-                            "user2"};
-                    condition = "(1 - (cameraHeadingDiffY<=-19) + (abs(cameraHeadingDiffX)>=24))*on";
-                    class VelocityLine {
-                        type = "line";
-                        width = 2;
-                        points[] =
-                            {
-
-                                {"HUDCenter",
-                                 1},
-
-                                {"VelocityVector",
-                                 1},
-                                {},
-
-                                {"VelocityVector",
-                                 {0, -0.0049145301},
-                                 1},
-
-                                {"VelocityVector",
-                                 {0.0024999999, -0.0042559798},
-                                 1},
-
-                                {"VelocityVector",
-                                 {0.0043299999, -0.0024572599},
-                                 1},
-
-                                {"VelocityVector",
-                                 {0.0049999999, 0},
-                                 1},
-
-                                {"VelocityVector",
-                                 {0.0043299999, 0.0024572599},
-                                 1},
-
-                                {"VelocityVector",
-                                 {0.0024999999, 0.0042559798},
-                                 1},
-
-                                {"VelocityVector",
-                                 {0, 0.0049145301},
-                                 1},
-
-                                {"VelocityVector",
-                                 {-0.0024999999, 0.0042559798},
-                                 1},
-
-                                {"VelocityVector",
-                                 {-0.0043299999, 0.0024572599},
-                                 1},
-
-                                {"VelocityVector",
-                                 {-0.0049999999, 0},
-                                 1},
-
-                                {"VelocityVector",
-                                 {-0.0043299999, -0.0024572599},
-                                 1},
-
-                                {"VelocityVector",
-                                 {-0.0024999999, -0.0042559798},
-                                 1},
-
-                                {"VelocityVector",
-                                 {0, -0.0049145301},
-                                 1},
-                                {}};
-                    };
+                    color[] = {"user0", "user1", "user2"};
+                    condition = "on";
+                    delete ImpactCross;
                     class Static {
                         type = "line";
-                        width = 3;
-                        points[] =
-                            {
-
-                                {"SliderDiveSource90",
-                                 1,
-                                 "SliderDiveSource30",
-                                 1,
-                                 "SliderDiveSource",
-                                 1,
-                                 "SliderDiveSource30m",
-                                 1,
-                                 "SliderDiveSource90m",
-                                 1,
-                                 {0.015, 0.0099999998},
-                                 1},
-
-                                {"SliderDiveSource90",
-                                 1,
-                                 "SliderDiveSource30",
-                                 1,
-                                 "SliderDiveSource",
-                                 1,
-                                 "SliderDiveSource30m",
-                                 1,
-                                 "SliderDiveSource90m",
-                                 1,
-                                 {0, 0},
-                                 1},
-
-                                {"SliderDiveSource90",
-                                 1,
-                                 "SliderDiveSource30",
-                                 1,
-                                 "SliderDiveSource",
-                                 1,
-                                 "SliderDiveSource30m",
-                                 1,
-                                 "SliderDiveSource90m",
-                                 1,
-                                 {0.015, -0.0099999998},
-                                 1},
-
-                                {"SliderDiveSource90",
-                                 1,
-                                 "SliderDiveSource30",
-                                 1,
-                                 "SliderDiveSource",
-                                 1,
-                                 "SliderDiveSource30m",
-                                 1,
-                                 "SliderDiveSource90m",
-                                 1,
-                                 {0.015, 0.0099999998},
-                                 1},
-                                {},
-
-                                {"SliderDiveSource90",
-                                 1,
-                                 "SliderDiveSource30",
-                                 1,
-                                 "SliderDiveSource",
-                                 1,
-                                 "SliderDiveSource30m",
-                                 1,
-                                 "SliderDiveSource90m",
-                                 1,
-                                 {0.029999999, 0.015},
-                                 1},
-
-                                {"SliderDiveSource90",
-                                 1,
-                                 "SliderDiveSource30",
-                                 1,
-                                 "SliderDiveSource",
-                                 1,
-                                 "SliderDiveSource30m",
-                                 1,
-                                 "SliderDiveSource90m",
-                                 1,
-                                 {0.088, 0.015},
-                                 1},
-
-                                {"SliderDiveSource90",
-                                 1,
-                                 "SliderDiveSource30",
-                                 1,
-                                 "SliderDiveSource",
-                                 1,
-                                 "SliderDiveSource30m",
-                                 1,
-                                 "SliderDiveSource90m",
-                                 1,
-                                 {0.088, -0.015},
-                                 1},
-
-                                {"SliderDiveSource90",
-                                 1,
-                                 "SliderDiveSource30",
-                                 1,
-                                 "SliderDiveSource",
-                                 1,
-                                 "SliderDiveSource30m",
-                                 1,
-                                 "SliderDiveSource90m",
-                                 1,
-                                 {0.029999999, -0.015},
-                                 1},
-
-                                {"SliderDiveSource90",
-                                 1,
-                                 "SliderDiveSource30",
-                                 1,
-                                 "SliderDiveSource",
-                                 1,
-                                 "SliderDiveSource30m",
-                                 1,
-                                 "SliderDiveSource90m",
-                                 1,
-                                 {0.029999999, 0.015},
-                                 1},
-                                {},
-
-                                {{0.1, 0.30000001},
-                                 1},
-
-                                {{0.1, 0.62},
-                                 1},
-                                {},
-
-                                {{0.1, 0.30000001},
-                                 1},
-
-                                {{0.079999998, 0.30000001},
-                                 1},
-                                {},
-
-                                {{0.1, 0.34},
-                                 1},
-
-                                {{0.079999998, 0.34},
-                                 1},
-                                {},
-
-                                {{0.1, 0.38},
-                                 1},
-
-                                {{0.079999998, 0.38},
-                                 1},
-                                {},
-
-                                {{0.1, 0.46000001},
-                                 1},
-
-                                {{0.079999998, 0.46000001},
-                                 1},
-                                {},
-
-                                {{0.1, 0.54000002},
-                                 1},
-
-                                {{0.079999998, 0.54000002},
-                                 1},
-                                {},
-
-                                {{0.1, 0.57999998},
-                                 1},
-
-                                {{0.079999998, 0.57999998},
-                                 1},
-                                {},
-
-                                {{0.1, 0.62},
-                                 1},
-
-                                {{0.079999998, 0.62},
-                                 1},
-                                {},
-
-                                {"GForceSource",
-                                 {0.015, 0.0099999998},
-                                 1},
-
-                                {"GForceSource",
-                                 {0, 0},
-                                 1},
-
-                                {"GForceSource",
-                                 {0.015, -0.0099999998},
-                                 1},
-
-                                {"GForceSource",
-                                 {0.015, 0.0099999998},
-                                 1},
-                                {},
-
-                                {{0.1, 0.68800002},
-                                 1},
-
-                                {{0.1, 0.81999999},
-                                 1},
-                                {},
-
-                                {{0.1, 0.69999999},
-                                 1},
-
-                                {{0.079999998, 0.69999999},
-                                 1},
-                                {},
-
-                                {{0.1, 0.74000001},
-                                 1},
-
-                                {{0.079999998, 0.74000001},
-                                 1},
-                                {},
-
-                                {{0.1, 0.77999997},
-                                 1},
-
-                                {{0.079999998, 0.77999997},
-                                 1},
-                                {},
-
-                                {{0.1, 0.81999999},
-                                 1},
-
-                                {{0.079999998, 0.81999999},
-                                 1},
-                                {},
-
-                                {{0.40000001, 0.86000001},
-                                 1},
-
-                                {{0.40000001, 0.94},
-                                 1},
-
-                                {{0.60000002, 0.94},
-                                 1},
-
-                                {{0.60000002, 0.86000001},
-                                 1},
-
-                                {{0.40000001, 0.86000001},
-                                 1},
-                                {},
-
-                                {{0.40000001, 0.89499998},
-                                 1},
-
-                                {{0.40799999, 0.89499998},
-                                 1},
-                                {},
-
-                                {{0.60000002, 0.89499998},
-                                 1},
-
-                                {{0.59200001, 0.89499998},
-                                 1},
-                                {},
-
-                                {{0.5, 0.86000001},
-                                 1},
-
-                                {{0.5, 0.86799997},
-                                 1},
-                                {},
-
-                                {{0.5, 0.94},
-                                 1},
-
-                                {{0.5, 0.93199998},
-                                 1},
-                                {},
-
-                                {{0.46000001, 0.07},
-                                 1},
-
-                                {{0.54000002, 0.07},
-                                 1},
-
-                                {{0.54000002, 0.035},
-                                 1},
-
-                                {{0.46000001, 0.035},
-                                 1},
-
-                                {{0.46000001, 0.07},
-                                 1},
-                                {},
-
-                                {{0.15000001, 0.115},
-                                 1},
-
-                                {{0.85000002, 0.115},
-                                 1},
-                                {},
-
-                                {{0, 0.95999998},
-                                 1},
-
-                                {{1.1, 0.95999998},
-                                 1},
-                                {},
-
-                                {{0.47999999, 0.5},
-                                 1},
-
-                                {{0.49000001, 0.5},
-                                 1},
-                                {},
-
-                                {{0.50999999, 0.5},
-                                 1},
-
-                                {{0.51999998, 0.5},
-                                 1},
-                                {},
-
-                                {{0.5, 0.49000001},
-                                 1},
-
-                                {{0.5, 0.47999999},
-                                 1},
-                                {},
-
-                                {{0.5, 0.50999999},
-                                 1},
-
-                                {{0.5, 0.51999998},
-                                 1},
-                                {},
-
-                                {"WeaponAim",
-                                 1,
-                                 {-0.02, 0},
-                                 1},
-
-                                {"WeaponAim",
-                                 1,
-                                 {-0.0099999998, 0},
-                                 1},
-                                {},
-
-                                {"WeaponAim",
-                                 1,
-                                 {0.0099999998, 0},
-                                 1},
-
-                                {"WeaponAim",
-                                 1,
-                                 {0.02, 0},
-                                 1},
-                                {},
-
-                                {"WeaponAim",
-                                 1,
-                                 {0, -0.0099999998},
-                                 1},
-
-                                {"WeaponAim",
-                                 1,
-                                 {0, -0.02},
-                                 1},
-                                {},
-
-                                {"WeaponAim",
-                                 1,
-                                 {0, 0.0099999998},
-                                 1},
-
-                                {"WeaponAim",
-                                 1,
-                                 {0, 0.02},
-                                 1},
-                                {},
-
-                                {"HUDCenter",
-                                 {-0.16500001, 7.0890902e-009},
-                                 1},
-
-                                {"HUDCenter",
-                                 {-0.22, 9.45212e-009},
-                                 1},
-                                {},
-
-                                {"HUDCenter",
-                                 {0.16500001, -1.9339701e-009},
-                                 1},
-
-                                {"HUDCenter",
-                                 {0.22, -2.57863e-009},
-                                 1},
-                                {},
-
-                                {"HUDCenter",
-                                 {-0.082500003, 0.140452},
-                                 1},
-
-                                {"HUDCenter",
-                                 {-0.096249998, 0.16385999},
-                                 1},
-                                {},
-
-                                {"HUDCenter",
-                                 {0.082500003, 0.140452},
-                                 1},
-
-                                {"HUDCenter",
-                                 {0.096249998, 0.16385999},
-                                 1},
-                                {},
-
-                                {"HUDCenter",
-                                 {-0.142894, 0.081089698},
-                                 1},
-
-                                {"HUDCenter",
-                                 {-0.16671, 0.094604701},
-                                 1},
-                                {},
-
-                                {"HUDCenter",
-                                 {0.142894, 0.081089698},
-                                 1},
-
-                                {"HUDCenter",
-                                 {0.16671, 0.094604701},
-                                 1},
-                                {},
-
-                                {"HUDCenter",
-                                 {-0.116673, 0.114678},
-                                 1},
-
-                                {"HUDCenter",
-                                 {-0.155564, 0.152904},
-                                 1},
-                                {},
-
-                                {"HUDCenter",
-                                 {0.116673, 0.114678},
-                                 1},
-
-                                {"HUDCenter",
-                                 {0.155563, 0.152904},
-                                 1},
-                                {},
-                                {}};
-                    };
-                    class Gunner {
-                        type = "line";
                         width = 4;
-                        points[] =
-                            {
-
-                                {"GunnerAim",
-                                 {0.48500001, 0.89200002},
-                                 1},
-
-                                {"GunnerAim",
-                                 {0.48500001, 0.90799999},
-                                 1},
-
-                                {"GunnerAim",
-                                 {0.51499999, 0.90799999},
-                                 1},
-
-                                {"GunnerAim",
-                                 {0.51499999, 0.89200002},
-                                 1},
-
-                                {"GunnerAim",
-                                 {0.48500001, 0.89200002},
-                                 1}};
-                    };
-                    class DiveNumber {
-                        type = "text";
-                        source = "horizondive";
-                        sourceScale = 57.29578;
-                        sourceOffset = 0;
-                        align = "left";
-                        scale = 1;
-                        pos[] =
-                            {
-                                "SliderDiveSource90",
-                                1,
-                                "SliderDiveSource30",
-                                1,
-                                "SliderDiveSource",
-                                1,
-                                "SliderDiveSource30m",
-                                1,
-                                "SliderDiveSource90m",
-                                1,
-
-                                {0.085000001,
-                                 "0.00-0.011"},
-                                1};
-                        right[] =
-                            {
-                                "SliderDiveSource90",
-                                1,
-                                "SliderDiveSource30",
-                                1,
-                                "SliderDiveSource",
-                                1,
-                                "SliderDiveSource30m",
-                                1,
-                                "SliderDiveSource90m",
-                                1,
-
-                                {0.12,
-                                 "0.00-0.011"},
-                                1};
-                        down[] =
-                            {
-                                "SliderDiveSource90",
-                                1,
-                                "SliderDiveSource30",
-                                1,
-                                "SliderDiveSource",
-                                1,
-                                "SliderDiveSource30m",
-                                1,
-                                "SliderDiveSource90m",
-                                1,
-
-                                {0.085000001,
-                                 "0.03-0.011"},
-                                1};
-                    };
-                    class VSpeedGroup {
-                        condition = "on";
-                        class VSpeedNumber {
-                            type = "text";
-                            source = "vspeed";
-                            sourceScale = 1;
-                            align = "center";
-                            scale = 1;
-                            pos[] =
-                                {
-
-                                    {"0.82+0.07",
-                                     0.72799999},
-                                    1};
-                            right[] =
-                                {
-
-                                    {"0.87+0.07",
-                                     0.72799999},
-                                    1};
-                            down[] =
-                                {
-
-                                    {"0.82+0.07",
-                                     0.76300001},
-                                    1};
-                        };
-                        class Static {
-                            type = "line";
-                            width = 3;
-                            points[] =
-                                {
-
-                                    {{0.85900003, 0.75999999},
-                                     1},
-
-                                    {{0.91900003, 0.75999999},
-                                     1},
-
-                                    {{0.91900003, 0.72500002},
-                                     1},
-
-                                    {{0.85900003, 0.72500002},
-                                     1},
-
-                                    {{0.85900003, 0.75999999},
-                                     1},
-                                    {}};
-                        };
-                    };
-                    class VSpeedGroupUp {
-                        condition = "vspeed";
-                        class Static {
-                            type = "line";
-                            width = 3;
-                            points[] =
-                                {
-
-                                    {{0.86900002, 0.71499997},
-                                     1},
-
-                                    {{0.90899998, 0.71499997},
-                                     1},
-
-                                    {{0.889, 0.69499999},
-                                     1},
-
-                                    {{0.86900002, 0.71499997},
-                                     1},
-                                    {}};
-                        };
-                    };
-                    class VSpeedGroupDown {
-                        condition = "-vspeed";
-                        class Static {
-                            type = "line";
-                            width = 3;
-                            points[] =
-                                {
-
-                                    {{0.86900002, 0.76999998},
-                                     1},
-
-                                    {{0.90899998, 0.76999998},
-                                     1},
-
-                                    {{0.889, 0.79000002},
-                                     1},
-
-                                    {{0.86900002, 0.76999998},
-                                     1},
-                                    {}};
-                        };
-                    };
-                    class AltGroup {
-                        condition = "1000 - altitudeAGL";
-                        class Static {
-                            type = "line";
-                            width = 3;
-                            points[] =
-                                {
-
-                                    {"SliderAltitudeSource",
-                                     {0.024, 0.0099999998},
-                                     1},
-
-                                    {"SliderAltitudeSource",
-                                     {0.0089999996, 0},
-                                     1},
-
-                                    {"SliderAltitudeSource",
-                                     {0.024, -0.0099999998},
-                                     1},
-
-                                    {"SliderAltitudeSource",
-                                     {0.024, 0.0099999998},
-                                     1},
-                                    {},
-
-                                    {"SliderAltitudeSource",
-                                     {0.035, 0.015},
-                                     1},
-
-                                    {"SliderAltitudeSource",
-                                     {0.093000002, 0.015},
-                                     1},
-
-                                    {"SliderAltitudeSource",
-                                     {0.093000002, -0.015},
-                                     1},
-
-                                    {"SliderAltitudeSource",
-                                     {0.035, -0.015},
-                                     1},
-
-                                    {"SliderAltitudeSource",
-                                     {0.035, 0.015},
-                                     1},
-                                    {},
-
-                                    {{0.889, 0.2},
-                                     1},
-
-                                    {{0.889, 0.375},
-                                     1},
-                                    {},
-
-                                    {{0.87900001, 0.2},
-                                     1},
-
-                                    {{0.89899999, 0.2},
-                                     1},
-                                    {},
-
-                                    {{0.87900001, 0.375},
-                                     1},
-
-                                    {{0.89899999, 0.375},
-                                     1},
-                                    {}};
-                        };
-                        class AltNumber {
-                            type = "text";
-                            source = "altitudeAGL";
-                            sourceScale = 1;
-                            sourceOffset = -3;
-                            align = "left";
-                            scale = 1;
-                            pos[] =
-                                {
-                                    "SliderAltitudeSource",
-
-                                    {0.085000001,
-                                     "0.00-0.011"},
-                                    1};
-                            right[] =
-                                {
-                                    "SliderAltitudeSource",
-
-                                    {0.11,
-                                     "0.00-0.011"},
-                                    1};
-                            down[] =
-                                {
-                                    "SliderAltitudeSource",
-
-                                    {0.085000001,
-                                     "0.03-0.011"},
-                                    1};
-                        };
-                        class AltStatic50 {
-                            type = "text";
-                            source = "static";
-                            text = "1000";
-                            scale = 1;
-                            sourceScale = 1;
-                            align = "center";
-                            pos[] =
-                                {
-                                    {0.88499999, 0.171},
-                                    1};
-                            right[] =
-                                {
-                                    {0.92500001, 0.171},
-                                    1};
-                            down[] =
-                                {
-                                    {0.88499999, 0.20100001},
-                                    1};
-                        };
-                    };
-                    class SpeedNumber {
-                        type = "text";
-                        source = "speed";
-                        sourceScale = 3.5999999;
-                        sourceLength = 3;
-                        align = "left";
-                        scale = 1;
-                        pos[] =
-                            {
-                                {0.13, 0.22},
-                                1};
-                        down[] =
-                            {
-                                {0.13, 0.25999999},
-                                1};
-                        right[] =
-                            {
-                                {0.2, 0.22},
-                                1};
-                    };
-                    class Angle_90 {
-                        type = "text";
-                        source = "static";
-                        text = "90";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.285},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.285},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.315},
-                                1};
-                    };
-                    class Angle_30 {
-                        type = "text";
-                        source = "static";
-                        text = "30";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.32499999},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.32499999},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.35499999},
-                                1};
-                    };
-                    class Angle_10 {
-                        type = "text";
-                        source = "static";
-                        text = "10";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.36500001},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.36500001},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.39500001},
-                                1};
-                    };
-                    class Angle_0 {
-                        type = "text";
-                        source = "static";
-                        text = "0";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.44499999},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.44499999},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.47499999},
-                                1};
-                    };
-                    class Angle_10m {
-                        type = "text";
-                        source = "static";
-                        text = "-10";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.52499998},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.52499998},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.55500001},
-                                1};
-                    };
-                    class Angle_30m {
-                        type = "text";
-                        source = "static";
-                        text = "-30";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.565},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.565},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.59500003},
-                                1};
-                    };
-                    class Angle_90m {
-                        type = "text";
-                        source = "static";
-                        text = "-90";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.60500002},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.60500002},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.63499999},
-                                1};
-                    };
-                    class GMeterStatic3 {
-                        type = "text";
-                        source = "static";
-                        text = "3";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.68300003},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.68300003},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.713},
-                                1};
-                    };
-                    class GMeterStatic2 {
-                        type = "text";
-                        source = "static";
-                        text = "2";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.72299999},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.72299999},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.75300002},
-                                1};
-                    };
-                    class GMeterStatic1 {
-                        type = "text";
-                        source = "static";
-                        text = "1";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.76300001},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.76300001},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.79299998},
-                                1};
-                    };
-                    class GMeterStatic0 {
-                        type = "text";
-                        source = "static";
-                        text = "0";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "left";
-                        pos[] =
-                            {
-                                {0.07, 0.80299997},
-                                1};
-                        right[] =
-                            {
-                                {0.11, 0.80299997},
-                                1};
-                        down[] =
-                            {
-                                {0.07, 0.833},
-                                1};
-                    };
-                    class RtdOnlyGroup {
-                        condition = "simulRTD";
-                        class CollectiveNumber {
-                            type = "text";
-                            source = "rtdCollective";
-                            sourceScale = 100;
-                            align = "left";
-                            scale = 1;
-                            pos[] =
-                                {
-                                    {0.889, 0.46000001},
-                                    1};
-                            right[] =
-                                {
-                                    {0.93900001, 0.46000001},
-                                    1};
-                            down[] =
-                                {
-                                    {0.889, 0.495},
-                                    1};
-                        };
-                        class CollectiveText {
-                            type = "text";
-                            source = "static";
-                            text = "%";
-                            scale = 1;
-                            sourceScale = 1;
-                            align = "right";
-                            pos[] =
-                                {
-                                    {0.89899999, 0.46000001},
-                                    1};
-                            right[] =
-                                {
-                                    {0.949, 0.46000001},
-                                    1};
-                            down[] =
-                                {
-                                    {0.89899999, 0.495},
-                                    1};
-                        };
-                        class EngineRPM {
-                            type = "line";
-                            width = 3;
-                            points[] =
-                                {
-
-                                    {{0.88999999, 0.5},
-                                     1},
-
-                                    {{0.88999999, 0.66000003},
-                                     1},
-                                    {},
-
-                                    {{0.92000002, 0.5},
-                                     1},
-
-                                    {{0.86000001, 0.5},
-                                     1},
-                                    {},
-
-                                    {{0.92000002, 0.66000003},
-                                     1},
-
-                                    {{0.86000001, 0.66000003},
-                                     1},
-                                    {},
-
-                                    {{0.91000003, 0.54000002},
-                                     1},
-
-                                    {{0.87, 0.54000002},
-                                     1},
-                                    {},
-
-                                    {{0.91000003, 0.57999998},
-                                     1},
-
-                                    {{0.87, 0.57999998},
-                                     1},
-                                    {},
-
-                                    {{0.91000003, 0.62},
-                                     1},
-
-                                    {{0.87, 0.62},
-                                     1},
-                                    {}};
-                        };
-                        class EngineRPMLines {
-                            type = "line";
-                            width = 5;
-                            points[] =
-                                {
-
-                                    {
-
-                                        {"0.90+0.01",
-                                         0.66000003},
-                                        1},
-
-                                    {"rtdrpm1",
-
-                                     {"0.90+0.01",
-                                      0.66000003},
-                                     1},
-                                    {},
-
-                                    {
-
-                                        {"0.86+0.01",
-                                         0.66000003},
-                                        1},
-
-                                    {"rtdrpm2",
-
-                                     {"0.86+0.01",
-                                      0.66000003},
-                                     1},
-                                    {},
-                                    {}};
-                        };
-                        class RPM60Text {
-                            type = "text";
-                            source = "static";
-                            text = "60";
-                            scale = 1;
-                            sourceScale = 1;
-                            align = "right";
-                            pos[] =
-                                {
-                                    {0.92500001, 0.64499998},
-                                    1};
-                            right[] =
-                                {
-                                    {0.95499998, 0.64499998},
-                                    1};
-                            down[] =
-                                {
-                                    {0.92500001, 0.67000002},
-                                    1};
-                        };
-                        class RPM80Text {
-                            type = "text";
-                            source = "static";
-                            text = "80";
-                            scale = 1;
-                            sourceScale = 1;
-                            align = "right";
-                            pos[] =
-                                {
-                                    {0.92500001, 0.60500002},
-                                    1};
-                            right[] =
-                                {
-                                    {0.95499998, 0.60500002},
-                                    1};
-                            down[] =
-                                {
-                                    {0.92500001, 0.63},
-                                    1};
-                        };
-                        class RPM100Text {
-                            type = "text";
-                            source = "static";
-                            text = "100";
-                            scale = 1;
-                            sourceScale = 1;
-                            align = "right";
-                            pos[] =
-                                {
-                                    {0.92500001, 0.565},
-                                    1};
-                            right[] =
-                                {
-                                    {0.95499998, 0.565},
-                                    1};
-                            down[] =
-                                {
-                                    {0.92500001, 0.58999997},
-                                    1};
-                        };
-                        class RPM120Text {
-                            type = "text";
-                            source = "static";
-                            text = "120";
-                            scale = 1;
-                            sourceScale = 1;
-                            align = "right";
-                            pos[] =
-                                {
-                                    {0.92500001, 0.52499998},
-                                    1};
-                            right[] =
-                                {
-                                    {0.95499998, 0.52499998},
-                                    1};
-                            down[] =
-                                {
-                                    {0.92500001, 0.55000001},
-                                    1};
-                        };
+                        points[] = {{{0.5, 0.11}, 1}, {{0.5, 0.14}, 1}, {}, {{0.4, 0.86}, 1}, {{0.4, 0.94}, 1}, {{0.6, 0.94}, 1}, {{0.6, 0.86}, 1}, {{0.4, 0.86}, 1}, {}, {{0.4, 0.885}, 1}, {{0.408, 0.885}, 1}, {}, {{0.6, 0.885}, 1}, {{0.592, 0.885}, 1}, {}, {{0.5, 0.86}, 1}, {{0.5, 0.868}, 1}, {}, {{0.5, 0.94}, 1}, {{0.5, 0.932}, 1}, {}, {{0.52, 0.86}, 1}, {{0.52, 0.82}, 1}, {}, {{0.48, 0.86}, 1}, {{0.48, 0.82}, 1}, {}, {{0.55, 0}, 1}, {{0.55, 0.04}, 1}, {{0.45, 0.04}, 1}, {{0.45, 0}, 1}, {{0.55, 0}, 1}};
                     };
                     class HeadingNumber {
                         type = "text";
-                        source = "heading";
+                        source = "Heading";
                         sourceScale = 1;
                         align = "center";
                         scale = 1;
-                        pos[] =
-                            {
-
-                                {"0.80-0.302",
-                                 "0.082-0.043"},
-                                1};
-                        right[] =
-                            {
-
-                                {"0.84-0.302",
-                                 "0.082-0.043"},
-                                1};
-                        down[] =
-                            {
-
-                                {"0.80-0.302",
-                                 "0.117-0.043"},
-                                1};
-                    };
-                    class HeadingRotationArrow {
-                        condition = "5-abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)";
-                        class HeadingArrow {
-                            type = "line";
-                            width = 3;
-                            points[] =
-                                {
-
-                                    {{0.51999998, 0.079999998},
-                                     1},
-
-                                    {{0.5, 0.11},
-                                     1},
-
-                                    {{0.47999999, 0.079999998},
-                                     1},
-
-                                    {{0.51999998, 0.079999998},
-                                     1},
-                                    {}};
-                        };
+                        pos[] = {{0.5, 0.006}, 1};
+                        right[] = {{0.55, 0.006}, 1};
+                        down[] = {{0.5, 0.046}, 1};
                     };
                     class HeadingRotation {
                         condition = "abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)-5";
@@ -5345,794 +1566,350 @@ class CfgVehicles {
                             sourceScale = 1;
                             align = "center";
                             scale = 1;
-                            pos[] =
-                                {
-
-                                    {"0.80-0.302",
-                                     "0.082+0.001"},
-                                    1};
-                            right[] =
-                                {
-
-                                    {"0.83-0.302",
-                                     "0.082+0.001"},
-                                    1};
-                            down[] =
-                                {
-
-                                    {"0.80-0.302",
-                                     "0.113+0.001"},
-                                    1};
+                            pos[] = {{"0.80-0.302", "0.082-0.025"}, 1};
+                            right[] = {{"0.83-0.302", "0.082-0.025"}, 1};
+                            down[] = {{"0.80-0.302", "0.113-0.025"}, 1};
                         };
                         class HeadingArrow {
                             type = "line";
                             width = 3;
-                            points[] =
-                                {
-
-                                    {{0.47799999, 0.075000003},
-                                     1},
-
-                                    {{0.52200001, 0.075000003},
-                                     1},
-
-                                    {{0.55199999, 0.094999999},
-                                     1},
-
-                                    {{0.52200001, 0.115},
-                                     1},
-
-                                    {{0.47799999, 0.115},
-                                     1},
-
-                                    {{0.44800001, 0.094999999},
-                                     1},
-
-                                    {{0.47799999, 0.075000003},
-                                     1},
-                                    {}};
+                            points[] = {{{0.478, 0.045}, 1}, {{0.522, 0.045}, 1}, {{0.552, 0.07}, 1}, {{0.522, 0.095}, 1}, {{0.478, 0.095}, 1}, {{0.448, 0.07}, 1}, {{0.478, 0.045}, 1}, {}};
+                        };
+                        class HeadingScaleRight {
+                            clipTL[] = {0.55, 0.05};
+                            clipBR[] = {0.83, 0.11};
+                            class lines {
+                                type = "scale";
+                                horizontal = 1;
+                                source = "heading";
+                                sourceScale = 1;
+                                width = 4;
+                                top = 0.5;
+                                center = 0.5;
+                                bottom = 0.85;
+                                lineXleft = 0.11;
+                                lineYright = 0.1;
+                                lineXleftMajor = 0.11;
+                                lineYrightMajor = 0.09;
+                                majorLineEach = 2;
+                                numberEach = 2;
+                                step = 22.5;
+                                stepSize = 0.075;
+                                align = "center";
+                                scale = 1;
+                                pos[] = {0.496, 0.05};
+                                right[] = {0.536, 0.05};
+                                down[] = {0.496, 0.09};
+                            };
+                        };
+                        class HeadingScaleMidle {
+                            type = "scale";
+                            horizontal = 1;
+                            source = "heading";
+                            sourceScale = 1;
+                            width = 4;
+                            top = 0.45;
+                            center = 0.5;
+                            bottom = 0.55;
+                            lineXleft = 0.11;
+                            lineYright = 0.1;
+                            lineXleftMajor = 0.11;
+                            lineYrightMajor = 0.1;
+                            majorLineEach = 2;
+                            step = 22.5;
+                            stepSize = 0.075;
+                            align = "center";
+                            scale = 1;
+                            numberEach = 0;
+                            pos[] = {0.47, 0.05};
+                            right[] = {0.5, 0.05};
+                            down[] = {0.45, 0.09};
+                        };
+                        class HeadingScaleLeft {
+                            clipTL[] = {0.18, 0.05};
+                            clipBR[] = {0.45, 0.11};
+                            class lines {
+                                type = "scale";
+                                horizontal = 1;
+                                source = "heading";
+                                sourceScale = 1;
+                                width = 4;
+                                top = 0.15;
+                                center = 0.5;
+                                bottom = 0.55;
+                                lineXleft = 0.11;
+                                lineYright = 0.1;
+                                lineXleftMajor = 0.11;
+                                lineYrightMajor = 0.09;
+                                majorLineEach = 2;
+                                numberEach = 2;
+                                step = 22.5;
+                                stepSize = 0.075;
+                                align = "center";
+                                scale = 1;
+                                pos[] = {0.146, 0.05};
+                                right[] = {0.186, 0.05};
+                                down[] = {0.146, 0.09};
+                            };
                         };
                     };
-                    class HeadingScale {
-                        type = "scale";
-                        horizontal = 1;
-                        source = "heading";
-                        sourceScale = 0.1;
-                        sourceoffset = 0;
-                        width = 3;
-                        NeverEatSeaWeed = 1;
-                        top = 0.15000001;
-                        center = 0.5;
-                        bottom = 0.85000002;
-                        lineXleft = 0.114;
-                        lineYright = 0.12;
-                        lineXleftMajor = 0.114;
-                        lineYrightMajor = 0.13;
-                        majorLineEach = 2;
-                        numberEach = 6;
-                        step = 0.5;
-                        stepSize = 0.034482799;
-                        align = "center";
-                        scale = 1;
-                        pos[] = {0.15000001, 0.13};
-                        right[] = {0.20999999, 0.13};
-                        down[] = {0.15000001, 0.17};
+                    class HeadingScaleFull {
+                        condition = "4-abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)";
+                        class HeadingScale {
+                            clipTL[] = {0.18, 0};
+                            clipBR[] = {0.83, 1};
+                            class lines {
+                                type = "scale";
+                                horizontal = 1;
+                                source = "heading";
+                                sourceScale = 1;
+                                width = 4;
+                                top = 0.15;
+                                center = 0.5;
+                                bottom = 0.85;
+                                lineXleft = 0.11;
+                                lineYright = 0.1;
+                                lineXleftMajor = 0.11;
+                                lineYrightMajor = 0.09;
+                                majorLineEach = 2;
+                                numberEach = 2;
+                                step = 22.5;
+                                stepSize = 0.075;
+                                align = "center";
+                                scale = 1;
+                                pos[] = {0.146, 0.05};
+                                right[] = {0.186, 0.05};
+                                down[] = {0.146, 0.09};
+                            };
+                        };
                     };
-                    class HorizonBanking {
-                        type = "line";
-                        width = 3;
-                        clipTL[] = {0, 0.1};
-                        clipBR[] = {1, 0.89999998};
-                        points[] =
-                            {
-
-                                {"HorizonBankSource",
-                                 {0.16, 0},
-                                 1},
-
-                                {"HorizonBankSource",
-                                 {0.1, 0},
-                                 1},
-
-                                {"HorizonBankSource",
-                                 {0.085000001, -0.015},
-                                 1},
-
-                                {"HorizonBankSource",
-                                 {0.07, 0},
-                                 1},
-
-                                {"HorizonBankSource",
-                                 {0.050000001, 0},
-                                 1},
-                                {},
-
-                                {"HorizonBankSource",
-                                 {-0.16, 0},
-                                 1},
-
-                                {"HorizonBankSource",
-                                 {-0.1, 0},
-                                 1},
-
-                                {"HorizonBankSource",
-                                 {-0.085000001, -0.015},
-                                 1},
-
-                                {"HorizonBankSource",
-                                 {-0.07, 0},
-                                 1},
-
-                                {"HorizonBankSource",
-                                 {-0.050000001, 0},
-                                 1},
-                                {}};
+                    class HorizonBankRot {
+                        type = "polygon";
+                        width = 4;
+                        points[] = {{{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.00260472, -0.0145196}, 1}, {"HorizonBankRot", {0.0051303, -0.0138544}, 1}, {"HorizonBankRot", {0.0075, -0.0127683}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0075, -0.0127683}, 1}, {"HorizonBankRot", {0.00964181, -0.0112942}, 1}, {"HorizonBankRot", {0.0114907, -0.009477}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0114907, -0.009477}, 1}, {"HorizonBankRot", {0.0129904, -0.00737179}, 1}, {"HorizonBankRot", {0.0140954, -0.0050426}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0140954, -0.0050426}, 1}, {"HorizonBankRot", {0.0147721, -0.0025602}, 1}, {"HorizonBankRot", {0.015, 6.44463e-10}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.015, 6.44463e-10}, 1}, {"HorizonBankRot", {0.0147721, 0.0025602}, 1}, {"HorizonBankRot", {0.0140954, 0.0050426}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0140954, 0.0050426}, 1}, {"HorizonBankRot", {0.0129904, 0.0073718}, 1}, {"HorizonBankRot", {0.0114907, 0.009477}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0114907, 0.009477}, 1}, {"HorizonBankRot", {0.00964181, 0.0112942}, 1}, {"HorizonBankRot", {0.0075, 0.0127683}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.0075, 0.0127683}, 1}, {"HorizonBankRot", {0.0051303, 0.0138544}, 1}, {"HorizonBankRot", {0.00260472, 0.0145196}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {0.00260472, 0.0145196}, 1}, {"HorizonBankRot", {-1.31134e-09, 0.0147436}, 1}, {"HorizonBankRot", {-0.00260473, 0.0145196}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.00260473, 0.0145196}, 1}, {"HorizonBankRot", {-0.0051303, 0.0138544}, 1}, {"HorizonBankRot", {-0.0075, 0.0127683}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0075, 0.0127683}, 1}, {"HorizonBankRot", {-0.00964181, 0.0112942}, 1}, {"HorizonBankRot", {-0.0114907, 0.009477}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0114907, 0.009477}, 1}, {"HorizonBankRot", {-0.0129904, 0.00737179}, 1}, {"HorizonBankRot", {-0.0140954, 0.0050426}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0140954, 0.0050426}, 1}, {"HorizonBankRot", {-0.0147721, 0.0025602}, 1}, {"HorizonBankRot", {-0.015, -1.75816e-10}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.015, -1.75816e-10}, 1}, {"HorizonBankRot", {-0.0147721, -0.0025602}, 1}, {"HorizonBankRot", {-0.0140954, -0.0050426}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0140954, -0.0050426}, 1}, {"HorizonBankRot", {-0.0129904, -0.0073718}, 1}, {"HorizonBankRot", {-0.0114907, -0.009477}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0114907, -0.009477}, 1}, {"HorizonBankRot", {-0.00964181, -0.0112942}, 1}, {"HorizonBankRot", {-0.0075, -0.0127683}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.0075, -0.0127683}, 1}, {"HorizonBankRot", {-0.00513031, -0.0138544}, 1}, {"HorizonBankRot", {-0.00260472, -0.0145196}, 1}}, {{"HorizonBankRot", 1, {0, 0}, 1}, {"HorizonBankRot", {-0.00260472, -0.0145196}, 1}, {"HorizonBankRot", {2.62268e-09, -0.0147436}, 1}, {"HorizonBankRot", {0.00260472, -0.0145196}, 1}}};
                     };
-                    class CoordXNumber {
+                    class CollectiveGroup {
+                        condition = "simulRTD";
+                        class CollectiveText {
+                            type = "text";
+                            source = "static";
+                            text = "%";
+                            align = "right";
+                            scale = 1;
+                            pos[] = {{0.22, 0.2}, 1};
+                            right[] = {{0.28, 0.2}, 1};
+                            down[] = {{0.22, 0.24}, 1};
+                        };
+                        class CollectiveNumber {
+                            type = "text";
+                            source = "rtdCollective";
+                            sourceScale = 100;
+                            align = "left";
+                            scale = 1;
+                            pos[] = {{0.22, 0.2}, 1};
+                            right[] = {{0.28, 0.2}, 1};
+                            down[] = {{0.22, 0.24}, 1};
+                        };
+                    };
+                    class SpeedNumber {
                         type = "text";
-                        source = "coordinateX";
-                        sourceScale = 0.0099999998;
-                        sourceLength = 3;
-                        sourceOffset = -0.5;
+                        source = "speed";
+                        sourceScale = 3.6;
                         align = "right";
                         scale = 1;
-                        pos[] =
-                            {
-                                {0.80900002, 0.96100003},
-                                1};
-                        right[] =
-                            {
-                                {0.85900003, 0.96100003},
-                                1};
-                        down[] =
-                            {
-                                {0.80900002, 0.99599999},
-                                1};
+                        pos[] = {{0.16, 0.48}, 1};
+                        right[] = {{0.22, 0.48}, 1};
+                        down[] = {{0.16, 0.52}, 1};
                     };
-                    class CoordYNumber : CoordXNumber {
-                        source = "coordinateY";
-                        pos[] =
-                            {
-                                {0.89899999, 0.96100003},
-                                1};
-                        right[] =
-                            {
-                                {0.949, 0.96100003},
-                                1};
-                        down[] =
-                            {
-                                {0.89899999, 0.99599999},
-                                1};
-                    };
-                    class Time : CoordXNumber {
-                        source = "time";
-                        text = "%X";
+                    class AltNumber {
+                        type = "text";
+                        source = "altitudeAGL";
+                        sourceScale = 1;
+                        sourceOffset = -2;
                         align = "left";
-                        pos[] =
-                            {
-                                {0.60500002, 0.96100003},
-                                1};
-                        right[] =
-                            {
-                                {0.65499997, 0.96100003},
-                                1};
-                        down[] =
-                            {
-                                {0.60500002, 0.99599999},
-                                1};
+                        scale = 1;
+                        pos[] = {{0.81, 0.48}, 1};
+                        right[] = {{0.87, 0.48}, 1};
+                        down[] = {{0.81, 0.52}, 1};
                     };
-                    class CurrentWeapon {
+                    class HoverMode {
+                        condition = "autohover";
+                        class HoverText {
+                            type = "text";
+                            source = "static";
+                            text = "HOVER";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{0.005, 0.075}, 1};
+                            right[] = {{0.045, 0.075}, 1};
+                            down[] = {{0.005, 0.11}, 1};
+                        };
+                    };
+                    class CruiseMode {
+                        condition = "((altitudeASL-27) min 1) - autohover";
+                        class CruiseText {
+                            type = "text";
+                            source = "static";
+                            text = "CRUISE";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{0.005, 0.075}, 1};
+                            right[] = {{0.045, 0.075}, 1};
+                            down[] = {{0.005, 0.11}, 1};
+                        };
+                        class AltNumberASL {
+                            type = "text";
+                            source = "altitudeASL";
+                            sourceScale = 1;
+                            align = "left";
+                            scale = 1;
+                            pos[] = {{0.81, 0.16}, 1};
+                            right[] = {{0.87, 0.16}, 1};
+                            down[] = {{0.81, 0.2}, 1};
+                        };
+                    };
+                    class TransitionMode {
+                        condition = "((27-altitudeASL) min 1) - autohover";
+                        class TransText {
+                            type = "text";
+                            source = "static";
+                            text = "TRANS";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{0.005, 0.075}, 1};
+                            right[] = {{0.045, 0.075}, 1};
+                            down[] = {{0.005, 0.11}, 1};
+                        };
+                    };
+                    class HoverModeHide {
+                        condition = "1-autohover";
+                        class VelocityLine {
+                            type = "line";
+                            width = 4;
+                            points[] = {{"VelocityVector", {0, -0.0196581}, 1}, {"VelocityVector", {0.01, -0.0170239}, 1}, {"VelocityVector", {0.01732, -0.00982906}, 1}, {"VelocityVector", {0.02, 0}, 1}, {"VelocityVector", {0.01732, 0.00982906}, 1}, {"VelocityVector", {0.01, 0.0170239}, 1}, {"VelocityVector", {0, 0.0196581}, 1}, {"VelocityVector", {-0.01, 0.0170239}, 1}, {"VelocityVector", {-0.01732, 0.00982906}, 1}, {"VelocityVector", {-0.02, 0}, 1}, {"VelocityVector", {-0.01732, -0.00982906}, 1}, {"VelocityVector", {-0.01, -0.0170239}, 1}, {"VelocityVector", {0, -0.0196581}, 1}, {}, {"VelocityVector", {0.04, 0}, 1}, {"VelocityVector", {0.02, 0}, 1}, {}, {"VelocityVector", {-0.04, 0}, 1}, {"VelocityVector", {-0.02, 0}, 1}, {}, {"VelocityVector", {0, -0.0393162}, 1}, {"VelocityVector", {0, -0.0196581}, 1}, {}};
+                        };
+                    };
+                    class GearGroup {
+                        type = "group";
+                        condition = "ils";
+                        class GearText {
+                            type = "text";
+                            source = "static";
+                            text = "GEAR";
+                            align = "right";
+                            scale = 1;
+                            pos[] = {{0.015, 0.334188}, 1};
+                            right[] = {{0.055, 0.334188}, 1};
+                            down[] = {{0.015, 0.363675}, 1};
+                        };
+                    };
+                    class LaserGroup {
+                        condition = "laseron";
+                        class laserText {
+                            type = "text";
+                            source = "static";
+                            text = "LASER";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{0.015, 0.37}, 1};
+                            right[] = {{0.055, 0.37}, 1};
+                            down[] = {{0.015, 0.405}, 1};
+                        };
+                    };
+                    class RadarGroup {
+                        condition = "activeSensorsOn";
+                        class radarText {
+                            type = "text";
+                            source = "static";
+                            text = "RADAR";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{0.015, 0.41}, 1};
+                            right[] = {{0.055, 0.41}, 1};
+                            down[] = {{0.015, 0.445}, 1};
+                        };
+                    };
+                    class VerticalSpeedScale {
+                        type = "line";
+                        width = 4;
+                        points[] = {{"HUDCenter", 1, {-0.03, 0}, 1}, {"HUDCenter", 1, {-0.01, 0}, 1}, {}, {"HUDCenter", 1, {0.01, 0}, 1}, {"HUDCenter", 1, {0.03, 0}, 1}, {}, {"HUDCenter", 1, {0, -0.01}, 1}, {"HUDCenter", 1, {0, -0.03}, 1}, {}, {"HUDCenter", 1, {0, 0.01}, 1}, {"HUDCenter", 1, {0, 0.03}, 1}, {}, {{0.915, 0.18}, 1}, {{0.935, 0.18}, 1}, {}, {{0.87, 0.18}, 1}, {{0.89, 0.18}, 1}, {}, {{0.915, 0.34}, 1}, {{0.935, 0.34}, 1}, {}, {{0.87, 0.34}, 1}, {{0.89, 0.34}, 1}, {}, {{0.875, 0.372}, 1}, {{0.885, 0.372}, 1}, {}, {{0.875, 0.404}, 1}, {{0.885, 0.404}, 1}, {}, {{0.875, 0.436}, 1}, {{0.885, 0.436}, 1}, {}, {{0.875, 0.468}, 1}, {{0.885, 0.468}, 1}, {}, {{0.87, 0.5}, 1}, {{0.89, 0.5}, 1}, {}, {{0.915, 0.5}, 1}, {{0.935, 0.5}, 1}, {}, {{0.915, 0.66}, 1}, {{0.935, 0.66}, 1}, {}, {{0.87, 0.66}, 1}, {{0.89, 0.66}, 1}, {}, {{0.875, 0.628}, 1}, {{0.885, 0.628}, 1}, {}, {{0.875, 0.596}, 1}, {{0.885, 0.596}, 1}, {}, {{0.875, 0.564}, 1}, {{0.885, 0.564}, 1}, {}, {{0.875, 0.532}, 1}, {{0.885, 0.532}, 1}, {}, {{0.92, 0.692}, 1}, {{0.93, 0.692}, 1}, {}, {{0.92, 0.724}, 1}, {{0.93, 0.724}, 1}, {}, {{0.92, 0.756}, 1}, {{0.93, 0.756}, 1}, {}, {{0.92, 0.788}, 1}, {{0.93, 0.788}, 1}, {}, {{0.915, 0.82}, 1}, {{0.935, 0.82}, 1}, {}, {{0.87, 0.82}, 1}, {{0.89, 0.82}, 1}, {}};
+                    };
+                    class GunnerAimWorld {
+                        condition = "1-mgun";
+                        class Cross {
+                            type = "line";
+                            width = 4;
+                            points[] = {{"WeaponAimRelative", 1, {-0.03, 0}, 1}, {"WeaponAimRelative", 1, {-0.02, 0}, 1}, {}, {"WeaponAimRelative", 1, {0.02, 0}, 1}, {"WeaponAimRelative", 1, {0.03, 0}, 1}, {}, {"WeaponAimRelative", 1, {0, -0.02}, 1}, {"WeaponAimRelative", 1, {0, -0.03}, 1}, {}, {"WeaponAimRelative", 1, {0, 0.02}, 1}, {"WeaponAimRelative", 1, {0, 0.03}, 1}};
+                        };
+                    };
+                    class VerticalSpeedArrow {
+                        type = "polygon";
+                        points[] = {{{"VerticalSpeedBone", {0.85, 0.488}, 1}, {"VerticalSpeedBone", {0.87, 0.5}, 1}, {"VerticalSpeedBone", {0.85, 0.512}, 1}}};
+                    };
+                    class RadarAltitude {
+                        condition = "101-altitudeAGL";
+                        class RadarHeight {
+                            type = "line";
+                            width = 15;
+                            points[] = {{{0.903, 0.82}, 1}, {"RadarHeight", {0, 0}, 1}, {}};
+                        };
+                    };
+                    class HorizonLine {
+                        condition = "1-autohover";
+                        clipTL[] = {0.2, 0.145};
+                        clipBR[] = {0.8, 0.855};
+                        class HorizonLineDraw {
+                            type = "line";
+                            width = 4;
+                            points[] = {{"HorizonVector", {-0.225, 0}, 1}, {"HorizonVector", {-0.1875, 0}, 1}, {}, {"HorizonVector", {-0.15, 0}, 1}, {"HorizonVector", {-0.1125, 0}, 1}, {}, {"HorizonVector", {-0.075, 0}, 1}, {"HorizonVector", {-0.0375, 0}, 1}, {}, {"HorizonVector", {0.0375, 0}, 1}, {"HorizonVector", {0.075, 0}, 1}, {}, {"HorizonVector", {0.1125, 0}, 1}, {"HorizonVector", {0.15, 0}, 1}, {}, {"HorizonVector", {0.1875, 0}, 1}, {"HorizonVector", {0.225, 0}, 1}};
+                        };
+                    };
+                    class Gunner {
+                        type = "line";
+                        width = 4;
+                        points[] = {{"GunnerAim", {0.485, 0.892}, 1}, {"GunnerAim", {0.485, 0.908}, 1}, {"GunnerAim", {0.515, 0.908}, 1}, {"GunnerAim", {0.515, 0.892}, 1}, {"GunnerAim", {0.485, 0.892}, 1}};
+                    };
+                    class WeaponsText {
                         type = "text";
                         source = "weapon";
                         sourceScale = 1;
                         align = "left";
-                        scale = 1;
-                        pos[] =
-                            {
-                                {0.97899997, 0.889},
-                                1};
-                        right[] =
-                            {
-                                {1.029, 0.889},
-                                1};
-                        down[] =
-                            {
-                                {0.97899997, 0.92400002},
-                                1};
+                        scale = 0.5;
+                        pos[] = {{0.38, 0.869}, 1};
+                        right[] = {{0.415, 0.869}, 1};
+                        down[] = {{0.38, 0.904}, 1};
                     };
-                    class CurrentAmmo : CurrentWeapon {
+                    class Ammo {
+                        type = "text";
                         source = "ammo";
+                        sourceScale = 1;
                         align = "left";
-                        pos[] =
-                            {
-                                {0.97899997, 0.921},
-                                1};
-                        right[] =
-                            {
-                                {1.029, 0.921},
-                                1};
-                        down[] =
-                            {
-                                {0.97899997, 0.95599997},
-                                1};
-                    };
-                    class CoordXText {
-                        type = "text";
-                        source = "static";
-                        text = "GRID:";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "right";
-                        pos[] =
-                            {
-                                {0.65499997, 0.96100003},
-                                1};
-                        right[] =
-                            {
-                                {0.70499998, 0.96100003},
-                                1};
-                        down[] =
-                            {
-                                {0.65499997, 0.99599999},
-                                1};
-                    };
-                    class CoordYText {
-                        type = "text";
-                        source = "static";
-                        text = "";
-                        scale = 1;
-                        sourceScale = 1;
-                        align = "right";
-                        pos[] =
-                            {
-                                {0.875, 0.96100003},
-                                1};
-                        right[] =
-                            {
-                                {0.92500001, 0.96100003},
-                                1};
-                        down[] =
-                            {
-                                {0.875, 0.99599999},
-                                1};
-                    };
-                    class LightsGroup {
-                        condition = "lights";
-                        class LightsText {
-                            type = "text";
-                            source = "static";
-                            text = "LIGHT";
-                            align = "left";
-                            scale = 1;
-                            pos[] =
-                                {
-                                    {0.149, 0.96100003},
-                                    1};
-                            right[] =
-                                {
-                                    {0.199, 0.96100003},
-                                    1};
-                            down[] =
-                                {
-                                    {0.149, 0.99599999},
-                                    1};
-                        };
-                    };
-                    class CollisionLights {
-                        condition = "collisionlights";
-                        class CollisionLightsText {
-                            type = "text";
-                            source = "static";
-                            text = "COLL";
-                            align = "left";
-                            scale = 1;
-                            pos[] =
-                                {
-                                    {0.30899999, 0.96100003},
-                                    1};
-                            right[] =
-                                {
-                                    {0.359, 0.96100003},
-                                    1};
-                            down[] =
-                                {
-                                    {0.30899999, 0.99599999},
-                                    1};
-                        };
-                    };
-                    class WeaponsLocking {
-                        condition = "missilelocking";
-                        blinkingPattern[] = {0.2, 0.2};
-                        blinkingStartsOn = 1;
-                        class Text {
-                            type = "text";
-                            source = "static";
-                            text = "LOCKING";
-                            align = "center";
-                            scale = 1;
-                            pos[] =
-                                {
-                                    {0.215, 0.87970102},
-                                    1};
-                            right[] =
-                                {
-                                    {0.27500001, 0.87970102},
-                                    1};
-                            down[] =
-                                {
-                                    {0.215, 0.928846},
-                                    1};
-                        };
-                    };
-                    class TargetDist {
-                        class DistanceText {
-                            type = "text";
-                            source = "static";
-                            text = "DISTANCE:";
-                            scale = 1;
-                            sourceScale = 1;
-                            align = "left";
-                            pos[] =
-                                {
-
-                                    {"0.125+0.13",
-                                     0.921},
-                                    1};
-                            right[] =
-                                {
-                                    {0.30000001, 0.921},
-                                    1};
-                            down[] =
-                                {
-
-                                    {"0.125+0.13",
-                                     0.95599997},
-                                    1};
-                        };
-                        class TargetDistance : CurrentWeapon {
-                            source = "targetDist";
-                            sourceLength = 0;
-                            sourcePrecision = 2;
-                            sourceScale = 0.001;
-                            align = "right";
-                            pos[] =
-                                {
-                                    {0.26899999, 0.921},
-                                    1};
-                            right[] =
-                                {
-                                    {0.31900001, 0.921},
-                                    1};
-                            down[] =
-                                {
-                                    {0.26899999, 0.95599997},
-                                    1};
-                        };
-                    };
-                    class TargetInfo {
-                        condition = "missilelocked";
-                        class TargetLockedText {
-                            type = "text";
-                            source = "static";
-                            text = "TARGET ACQUIRED";
-                            scale = 1;
-                            sourceScale = 1;
-                            align = "center";
-                            pos[] =
-                                {
-                                    {0.19499999, 0.85900003},
-                                    1};
-                            right[] =
-                                {
-                                    {0.235, 0.85900003},
-                                    1};
-                            down[] =
-                                {
-                                    {0.19499999, 0.88999999},
-                                    1};
-                        };
-                        class TimeOfFlightText {
-                            type = "text";
-                            source = "static";
-                            text = "TOF:";
-                            scale = 1;
-                            sourceScale = 1;
-                            align = "left";
-                            pos[] =
-                                {
-
-                                    {"0.127+0.13",
-                                     0.889},
-                                    1};
-                            right[] =
-                                {
-                                    {0.30199999, 0.889},
-                                    1};
-                            down[] =
-                                {
-
-                                    {"0.127+0.13",
-                                     0.92400002},
-                                    1};
-                        };
-                        class TOF_source : CurrentWeapon {
-                            source = "missileflighttime";
-                            align = "right";
-                            pos[] =
-                                {
-                                    {0.26899999, 0.889},
-                                    1};
-                            right[] =
-                                {
-                                    {0.31900001, 0.889},
-                                    1};
-                            down[] =
-                                {
-                                    {0.26899999, 0.92400002},
-                                    1};
-                        };
-                    };
-                    class IncomingMissile {
-                        condition = "incomingmissile";
-                        blinkingPattern[] = {0.30000001, 0.30000001};
-                        blinkingStartsOn = 1;
-                        class Text {
-                            type = "text";
-                            source = "static";
-                            text = "!INCOMING MISSILE!";
-                            align = "center";
-                            scale = 1;
-                            pos[] =
-                                {
-                                    {0.48500001, 0.21623901},
-                                    1};
-                            right[] =
-                                {
-                                    {0.54500002, 0.21623901},
-                                    1};
-                            down[] =
-                                {
-                                    {0.48500001, 0.265385},
-                                    1};
-                        };
+                        scale = 0.5;
+                        pos[] = {{0.38, 0.901}, 1};
+                        right[] = {{0.415, 0.901}, 1};
+                        down[] = {{0.38, 0.936}, 1};
                     };
                     class MGun {
                         condition = "-2+mgun*ImpactDistance";
                         class Cross {
                             type = "line";
                             width = 3;
-                            points[] =
-                                {
-
-                                    {"ImpactPoint",
-                                     {0, -0.0294872},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, -0.0393162},
-                                     1},
-                                    {},
-
-                                    {"ImpactPoint",
-                                     {0.02, -0.024},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.025, -0.030999999},
-                                     1},
-                                    {},
-
-                                    {"ImpactPoint",
-                                     {0, -0.0020000001},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, 0.0020000001},
-                                     1},
-                                    {},
-
-                                    {"ImpactPoint",
-                                     {-0.0020000001, 0},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.0020000001, 0},
-                                     1},
-                                    {}};
+                            points[] = {{"ImpactPoint", {0, -0.0294872}, 1}, {"ImpactPoint", {0, -0.0393162}, 1}, {}, {"ImpactPoint", {0.02, -0.024}, 1}, {"ImpactPoint", {0.025, -0.030999999}, 1}, {}, {"ImpactPoint", {0, -0.0020000001}, 1}, {"ImpactPoint", {0, 0.0020000001}, 1}, {}, {"ImpactPoint", {-0.0020000001, 0}, 1}, {"ImpactPoint", {0.0020000001, 0}, 1}, {}};
                         };
                         class Circle {
                             type = "line";
                             width = 3;
-                            points[] =
-                                {
-
-                                    {"ImpactPoint",
-                                     {0, -0.0275214},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, -0.0344017},
-                                     1},
-
-                                    {"MissileFlightTimeRot1",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot2",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot3",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot4",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot5",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot6",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot7",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot8",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot9",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot10",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot11",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot12",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot13",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot14",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot15",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot16",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot17",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot18",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot19",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot20",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot20",
-                                     {0, 0.028000001},
-                                     1,
-                                     "ImpactPoint",
-                                     1}};
+                            points[] = {{"ImpactPoint", {0, -0.0275214}, 1}, {"ImpactPoint", {0, -0.0344017}, 1}, {"MissileFlightTimeRot1", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot2", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot3", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot4", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot5", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot6", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot7", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot8", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot9", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot10", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot11", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot12", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot13", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot14", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot15", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot16", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot17", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot18", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot19", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot20", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot20", {0, 0.028000001}, 1, "ImpactPoint", 1}};
                         };
                         class Circle_Min_Range {
                             type = "line";
                             width = 3;
-                            points[] =
-                                {
-
-                                    {"ImpactPoint",
-                                     {0, -0.0294872},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.0052080001, -0.029038999},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.01026, -0.0277091},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.015, -0.0255359},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.019284001, -0.022587201},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.022980001, -0.0189544},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.025979999, -0.0147436},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.028191, -0.0100846},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.029544, -0.0051189698},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.029999999, 0},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.029544, 0.0051189698},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.028191, 0.0100846},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.025979999, 0.0147436},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.022980001, 0.0189544},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.019284001, 0.022587201},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.015, 0.0255359},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.01026, 0.0277091},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.0052080001, 0.029038999},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, 0.0294872},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.0052080001, 0.029038999},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.01026, 0.0277091},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.015, 0.0255359},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.019284001, 0.022587201},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.022980001, 0.0189544},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.025979999, 0.0147436},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.028191, 0.0100846},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.029544, 0.0051189698},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.029999999, 0},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.029544, -0.0051189698},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.028191, -0.0100846},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.025979999, -0.0147436},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.022980001, -0.0189544},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.019284001, -0.022587201},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.015, -0.0255359},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.01026, -0.0277091},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.0052080001, -0.029038999},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, -0.0294872},
-                                     1}};
+                            points[] = {{"ImpactPoint", {0, -0.0294872}, 1}, {"ImpactPoint", {0.0052080001, -0.029038999}, 1}, {"ImpactPoint", {0.01026, -0.0277091}, 1}, {"ImpactPoint", {0.015, -0.0255359}, 1}, {"ImpactPoint", {0.019284001, -0.022587201}, 1}, {"ImpactPoint", {0.022980001, -0.0189544}, 1}, {"ImpactPoint", {0.025979999, -0.0147436}, 1}, {"ImpactPoint", {0.028191, -0.0100846}, 1}, {"ImpactPoint", {0.029544, -0.0051189698}, 1}, {"ImpactPoint", {0.029999999, 0}, 1}, {"ImpactPoint", {0.029544, 0.0051189698}, 1}, {"ImpactPoint", {0.028191, 0.0100846}, 1}, {"ImpactPoint", {0.025979999, 0.0147436}, 1}, {"ImpactPoint", {0.022980001, 0.0189544}, 1}, {"ImpactPoint", {0.019284001, 0.022587201}, 1}, {"ImpactPoint", {0.015, 0.0255359}, 1}, {"ImpactPoint", {0.01026, 0.0277091}, 1}, {"ImpactPoint", {0.0052080001, 0.029038999}, 1}, {"ImpactPoint", {0, 0.0294872}, 1}, {"ImpactPoint", {-0.0052080001, 0.029038999}, 1}, {"ImpactPoint", {-0.01026, 0.0277091}, 1}, {"ImpactPoint", {-0.015, 0.0255359}, 1}, {"ImpactPoint", {-0.019284001, 0.022587201}, 1}, {"ImpactPoint", {-0.022980001, 0.0189544}, 1}, {"ImpactPoint", {-0.025979999, 0.0147436}, 1}, {"ImpactPoint", {-0.028191, 0.0100846}, 1}, {"ImpactPoint", {-0.029544, 0.0051189698}, 1}, {"ImpactPoint", {-0.029999999, 0}, 1}, {"ImpactPoint", {-0.029544, -0.0051189698}, 1}, {"ImpactPoint", {-0.028191, -0.0100846}, 1}, {"ImpactPoint", {-0.025979999, -0.0147436}, 1}, {"ImpactPoint", {-0.022980001, -0.0189544}, 1}, {"ImpactPoint", {-0.019284001, -0.022587201}, 1}, {"ImpactPoint", {-0.015, -0.0255359}, 1}, {"ImpactPoint", {-0.01026, -0.0277091}, 1}, {"ImpactPoint", {-0.0052080001, -0.029038999}, 1}, {"ImpactPoint", {0, -0.0294872}, 1}};
                         };
                         class Distance {
                             type = "text";
@@ -6142,21 +1919,9 @@ class CfgVehicles {
                             max = 99;
                             align = "center";
                             scale = 1;
-                            pos[] =
-                                {
-                                    "ImpactPoint",
-                                    {-0.0020000001, -0.079999998},
-                                    1};
-                            right[] =
-                                {
-                                    "ImpactPoint",
-                                    {0.045000002, -0.079999998},
-                                    1};
-                            down[] =
-                                {
-                                    "ImpactPoint",
-                                    {-0.0020000001, -0.039999999},
-                                    1};
+                            pos[] = {"ImpactPoint", {-0.0020000001, -0.079999998}, 1};
+                            right[] = {"ImpactPoint", {0.045000002, -0.079999998}, 1};
+                            down[] = {"ImpactPoint", {-0.0020000001, -0.039999999}, 1};
                         };
                     };
                     class Rockets {
@@ -6164,338 +1929,17 @@ class CfgVehicles {
                         class Cross {
                             type = "line";
                             width = 3;
-                            points[] =
-                                {
-
-                                    {"ImpactPoint",
-                                     {0, -0.0294872},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, -0.0393162},
-                                     1},
-                                    {},
-
-                                    {"ImpactPoint",
-                                     {0.02, -0.024},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.025, -0.030999999},
-                                     1},
-                                    {},
-
-                                    {"ImpactPoint",
-                                     {0, -0.0020000001},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, 0.0020000001},
-                                     1},
-                                    {},
-
-                                    {"ImpactPoint",
-                                     {-0.0020000001, 0},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.0020000001, 0},
-                                     1},
-                                    {}};
+                            points[] = {{"ImpactPoint", {0, -0.0294872}, 1}, {"ImpactPoint", {0, -0.0393162}, 1}, {}, {"ImpactPoint", {0.02, -0.024}, 1}, {"ImpactPoint", {0.025, -0.030999999}, 1}, {}, {"ImpactPoint", {0, -0.0020000001}, 1}, {"ImpactPoint", {0, 0.0020000001}, 1}, {}, {"ImpactPoint", {-0.0020000001, 0}, 1}, {"ImpactPoint", {0.0020000001, 0}, 1}, {}};
                         };
                         class Circle {
                             type = "line";
                             width = 3;
-                            points[] =
-                                {
-
-                                    {"ImpactPoint",
-                                     {0, -0.0275214},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, -0.0344017},
-                                     1},
-
-                                    {"MissileFlightTimeRot1",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot2",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot3",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot4",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot5",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot6",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot7",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot8",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot9",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot10",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot11",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot12",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot13",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot14",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot15",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot16",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot17",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot18",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot19",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot20",
-                                     {0, 0.035},
-                                     1,
-                                     "ImpactPoint",
-                                     1},
-
-                                    {"MissileFlightTimeRot20",
-                                     {0, 0.028000001},
-                                     1,
-                                     "ImpactPoint",
-                                     1}};
+                            points[] = {{"ImpactPoint", {0, -0.0275214}, 1}, {"ImpactPoint", {0, -0.0344017}, 1}, {"MissileFlightTimeRot1", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot2", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot3", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot4", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot5", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot6", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot7", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot8", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot9", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot10", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot11", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot12", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot13", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot14", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot15", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot16", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot17", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot18", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot19", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot20", {0, 0.035}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot20", {0, 0.028000001}, 1, "ImpactPoint", 1}};
                         };
                         class Circle_Min_Range {
                             type = "line";
                             width = 3;
-                            points[] =
-                                {
-
-                                    {"ImpactPoint",
-                                     {0, -0.0294872},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.0052080001, -0.029038999},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.01026, -0.0277091},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.015, -0.0255359},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.019284001, -0.022587201},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.022980001, -0.0189544},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.025979999, -0.0147436},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.028191, -0.0100846},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.029544, -0.0051189698},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.029999999, 0},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.029544, 0.0051189698},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.028191, 0.0100846},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.025979999, 0.0147436},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.022980001, 0.0189544},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.019284001, 0.022587201},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.015, 0.0255359},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.01026, 0.0277091},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.0052080001, 0.029038999},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, 0.0294872},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.0052080001, 0.029038999},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.01026, 0.0277091},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.015, 0.0255359},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.019284001, 0.022587201},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.022980001, 0.0189544},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.025979999, 0.0147436},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.028191, 0.0100846},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.029544, 0.0051189698},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.029999999, 0},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.029544, -0.0051189698},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.028191, -0.0100846},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.025979999, -0.0147436},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.022980001, -0.0189544},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.019284001, -0.022587201},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.015, -0.0255359},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.01026, -0.0277091},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.0052080001, -0.029038999},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, -0.0294872},
-                                     1}};
+                            points[] = {{"ImpactPoint", {0, -0.0294872}, 1}, {"ImpactPoint", {0.0052080001, -0.029038999}, 1}, {"ImpactPoint", {0.01026, -0.0277091}, 1}, {"ImpactPoint", {0.015, -0.0255359}, 1}, {"ImpactPoint", {0.019284001, -0.022587201}, 1}, {"ImpactPoint", {0.022980001, -0.0189544}, 1}, {"ImpactPoint", {0.025979999, -0.0147436}, 1}, {"ImpactPoint", {0.028191, -0.0100846}, 1}, {"ImpactPoint", {0.029544, -0.0051189698}, 1}, {"ImpactPoint", {0.029999999, 0}, 1}, {"ImpactPoint", {0.029544, 0.0051189698}, 1}, {"ImpactPoint", {0.028191, 0.0100846}, 1}, {"ImpactPoint", {0.025979999, 0.0147436}, 1}, {"ImpactPoint", {0.022980001, 0.0189544}, 1}, {"ImpactPoint", {0.019284001, 0.022587201}, 1}, {"ImpactPoint", {0.015, 0.0255359}, 1}, {"ImpactPoint", {0.01026, 0.0277091}, 1}, {"ImpactPoint", {0.0052080001, 0.029038999}, 1}, {"ImpactPoint", {0, 0.0294872}, 1}, {"ImpactPoint", {-0.0052080001, 0.029038999}, 1}, {"ImpactPoint", {-0.01026, 0.0277091}, 1}, {"ImpactPoint", {-0.015, 0.0255359}, 1}, {"ImpactPoint", {-0.019284001, 0.022587201}, 1}, {"ImpactPoint", {-0.022980001, 0.0189544}, 1}, {"ImpactPoint", {-0.025979999, 0.0147436}, 1}, {"ImpactPoint", {-0.028191, 0.0100846}, 1}, {"ImpactPoint", {-0.029544, 0.0051189698}, 1}, {"ImpactPoint", {-0.029999999, 0}, 1}, {"ImpactPoint", {-0.029544, -0.0051189698}, 1}, {"ImpactPoint", {-0.028191, -0.0100846}, 1}, {"ImpactPoint", {-0.025979999, -0.0147436}, 1}, {"ImpactPoint", {-0.022980001, -0.0189544}, 1}, {"ImpactPoint", {-0.019284001, -0.022587201}, 1}, {"ImpactPoint", {-0.015, -0.0255359}, 1}, {"ImpactPoint", {-0.01026, -0.0277091}, 1}, {"ImpactPoint", {-0.0052080001, -0.029038999}, 1}, {"ImpactPoint", {0, -0.0294872}, 1}};
                         };
                         class Distance {
                             type = "text";
@@ -6505,21 +1949,9 @@ class CfgVehicles {
                             max = 99;
                             align = "center";
                             scale = 1;
-                            pos[] =
-                                {
-                                    "ImpactPoint",
-                                    {-0.0020000001, -0.079999998},
-                                    1};
-                            right[] =
-                                {
-                                    "ImpactPoint",
-                                    {0.045000002, -0.079999998},
-                                    1};
-                            down[] =
-                                {
-                                    "ImpactPoint",
-                                    {-0.0020000001, -0.039999999},
-                                    1};
+                            pos[] = {"ImpactPoint", {-0.0020000001, -0.079999998}, 1};
+                            right[] = {"ImpactPoint", {0.045000002, -0.079999998}, 1};
+                            down[] = {"ImpactPoint", {-0.0020000001, -0.039999999}, 1};
                         };
                     };
                     class BombCrosshairGroup {
@@ -6528,241 +1960,7 @@ class CfgVehicles {
                         class BombCrosshair {
                             type = "line";
                             width = 4;
-                            points[] =
-                                {
-
-                                    {"ImpactPoint",
-                                     {0, -0.0982906},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.01736, -0.096796602},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.034200002, -0.0923637},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.050000001, -0.085119702},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.064280003, -0.075290598},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.0766, -0.063181199},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.086599998, -0.0491453},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.093970001, -0.033615399},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.098480001, -0.0170632},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.1, 0},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.098480001, 0.0170632},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.093970001, 0.033615399},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.086599998, 0.0491453},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.0766, 0.063181199},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.064280003, 0.075290598},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.050000001, 0.085119702},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.034200002, 0.0923637},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0.01736, 0.096796602},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, 0.0982906},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.01736, 0.096796602},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.034200002, 0.0923637},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.050000001, 0.085119702},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.064280003, 0.075290598},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.0766, 0.063181199},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.086599998, 0.0491453},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.093970001, 0.033615399},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.098480001, 0.0170632},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.1, 0},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.098480001, -0.0170632},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.093970001, -0.033615399},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.086599998, -0.0491453},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.0766, -0.063181199},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.064280003, -0.075290598},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.050000001, -0.085119702},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.034200002, -0.0923637},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {-0.01736, -0.096796602},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     {0, -0.0982906},
-                                     1},
-                                    {},
-
-                                    {"ImpactPoint",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0, -0.0196581},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0.014, -0.0137607},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     1,
-                                     "Limit0109",
-                                     1,
-
-                                     {"+ 0.02",
-                                      0},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0.014, 0.0137607},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0, 0.0196581},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {-0.014, 0.0137607},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     1,
-                                     "Limit0109",
-                                     1,
-
-                                     {"- 0.02",
-                                      0},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {-0.014, -0.0137607},
-                                     1},
-
-                                    {"ImpactPoint",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0, -0.0196581},
-                                     1},
-                                    {},
-
-                                    {"VelocityVector",
-                                     0.001,
-                                     "ImpactPoint",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0, 0},
-                                     1},
-
-                                    {"VelocityVector",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0, 0},
-                                     1}};
+                            points[] = {{"ImpactPoint", {0, -0.0982906}, 1}, {"ImpactPoint", {0.01736, -0.096796602}, 1}, {"ImpactPoint", {0.034200002, -0.0923637}, 1}, {"ImpactPoint", {0.050000001, -0.085119702}, 1}, {"ImpactPoint", {0.064280003, -0.075290598}, 1}, {"ImpactPoint", {0.0766, -0.063181199}, 1}, {"ImpactPoint", {0.086599998, -0.0491453}, 1}, {"ImpactPoint", {0.093970001, -0.033615399}, 1}, {"ImpactPoint", {0.098480001, -0.0170632}, 1}, {"ImpactPoint", {0.1, 0}, 1}, {"ImpactPoint", {0.098480001, 0.0170632}, 1}, {"ImpactPoint", {0.093970001, 0.033615399}, 1}, {"ImpactPoint", {0.086599998, 0.0491453}, 1}, {"ImpactPoint", {0.0766, 0.063181199}, 1}, {"ImpactPoint", {0.064280003, 0.075290598}, 1}, {"ImpactPoint", {0.050000001, 0.085119702}, 1}, {"ImpactPoint", {0.034200002, 0.0923637}, 1}, {"ImpactPoint", {0.01736, 0.096796602}, 1}, {"ImpactPoint", {0, 0.0982906}, 1}, {"ImpactPoint", {-0.01736, 0.096796602}, 1}, {"ImpactPoint", {-0.034200002, 0.0923637}, 1}, {"ImpactPoint", {-0.050000001, 0.085119702}, 1}, {"ImpactPoint", {-0.064280003, 0.075290598}, 1}, {"ImpactPoint", {-0.0766, 0.063181199}, 1}, {"ImpactPoint", {-0.086599998, 0.0491453}, 1}, {"ImpactPoint", {-0.093970001, 0.033615399}, 1}, {"ImpactPoint", {-0.098480001, 0.0170632}, 1}, {"ImpactPoint", {-0.1, 0}, 1}, {"ImpactPoint", {-0.098480001, -0.0170632}, 1}, {"ImpactPoint", {-0.093970001, -0.033615399}, 1}, {"ImpactPoint", {-0.086599998, -0.0491453}, 1}, {"ImpactPoint", {-0.0766, -0.063181199}, 1}, {"ImpactPoint", {-0.064280003, -0.075290598}, 1}, {"ImpactPoint", {-0.050000001, -0.085119702}, 1}, {"ImpactPoint", {-0.034200002, -0.0923637}, 1}, {"ImpactPoint", {-0.01736, -0.096796602}, 1}, {"ImpactPoint", {0, -0.0982906}, 1}, {}, {"ImpactPoint", 1, "Limit0109", 1, {0, -0.0196581}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {0.014, -0.0137607}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {"+ 0.02", 0}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {0.014, 0.0137607}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {0, 0.0196581}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {-0.014, 0.0137607}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {"- 0.02", 0}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {-0.014, -0.0137607}, 1}, {"ImpactPoint", 1, "Limit0109", 1, {0, -0.0196581}, 1}, {}, {"VelocityVector", 0.001, "ImpactPoint", 1, "Limit0109", 1, {0, 0}, 1}, {"VelocityVector", 1, "Limit0109", 1, {0, 0}, 1}};
                         };
                         class Distance {
                             type = "text";
@@ -6772,25 +1970,18 @@ class CfgVehicles {
                             max = 99;
                             align = "center";
                             scale = 1;
-                            pos[] =
-                                {
-                                    "ImpactPoint",
-                                    {-0.0020000001, 0.11},
-                                    1};
-                            right[] =
-                                {
-                                    "ImpactPoint",
-                                    {0.045000002, 0.11},
-                                    1};
-                            down[] =
-                                {
-                                    "ImpactPoint",
-                                    {-0.0020000001, 0.15000001},
-                                    1};
+                            pos[] = {"ImpactPoint", {-0.0020000001, 0.11}, 1};
+                            right[] = {"ImpactPoint", {0.045000002, 0.11}, 1};
+                            down[] = {"ImpactPoint", {-0.0020000001, 0.15000001}, 1};
                         };
                     };
                     class AAMissile {
                         condition = "AAmissile";
+                        class Circle {
+                            type = "line";
+                            width = 4;
+                            points[] = {{"ForwardVector", 1, "HUDCenter", {0, -0.245726}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0434, -0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0855, -0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {0.125, -0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1607, -0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1915, -0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2165, -0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {0.234925, -0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2462, -0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {0.25, 0}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2462, 0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {0.234925, 0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2165, 0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1915, 0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1607, 0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {0.125, 0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0855, 0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0434, 0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0, 0.245726}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0434, 0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0855, 0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.125, 0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1607, 0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1915, 0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2165, 0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.234925, 0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2462, 0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.25, 0}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2462, -0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.234925, -0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2165, -0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1915, -0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1607, -0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.125, -0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0855, -0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0434, -0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0, -0.245726}, 1}};
+                        };
                         class Lines {
                             type = "line";
                             width = 4;
@@ -6829,6 +2020,11 @@ class CfgVehicles {
                     };
                     class ATMissile {
                         condition = "ATmissile";
+                        class Circle {
+                            type = "line";
+                            width = 4;
+                            points[] = {{"ForwardVector", 1, "HUDCenter", {-0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.15, -0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.13, -0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.13, 0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.13, -0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.13, 0.147436}, 1}};
+                        };
                         class Lines {
                             type = "line";
                             width = 4;
@@ -6874,152 +2070,88 @@ class CfgVehicles {
                             sourcePrecision = 2;
                             align = "left";
                             scale = 1;
-                            pos[] =
-                                {
-                                    {0.935, 0.79713702},
-                                    1};
-                            right[] =
-                                {
-                                    {0.97500002, 0.79713702},
-                                    1};
-                            down[] =
-                                {
-                                    {0.935, 0.83448702},
-                                    1};
-                        };
-                        class WPstatic {
-                            type = "text";
-                            source = "static";
-                            text = ">";
-                            align = "center";
-                            scale = 2;
-                            pos[] =
-                                {
-                                    {0.94999999, 0.79713702},
-                                    1};
-                            right[] =
-                                {
-                                    {0.97000003, 0.79713702},
-                                    1};
-                            down[] =
-                                {
-                                    {0.94999999, 0.83448702},
-                                    1};
+                            pos[] = {{0.235, 0.774038}, 1};
+                            right[] = {{0.275, 0.774038}, 1};
+                            down[] = {{0.235, 0.80156}, 1};
                         };
                         class WPIndex {
                             type = "text";
                             source = "wpIndex";
                             sourceScale = 1;
+                            sourceLength = 2;
                             align = "right";
                             scale = 1;
-                            pos[] =
-                                {
-                                    {0.95999998, 0.79713702},
-                                    1};
-                            right[] =
-                                {
-                                    {1, 0.79713702},
-                                    1};
-                            down[] =
-                                {
-                                    {0.95999998, 0.83448702},
-                                    1};
+                            pos[] = {{0.096, 0.776004}, 1};
+                            right[] = {{0.126, 0.776004}, 1};
+                            down[] = {{0.096, 0.799594}, 1};
+                        };
+                        class WPstatic {
+                            type = "text";
+                            source = "static";
+                            text = "W";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{0.075, 0.775}, 1};
+                            right[] = {{0.105, 0.775}, 1};
+                            down[] = {{0.075, 0.8}, 1};
+                        };
+                        class WPKM {
+                            type = "text";
+                            source = "static";
+                            text = "KM";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{"0.075 +0.16", 0.775}, 1};
+                            right[] = {{0.265, 0.775}, 1};
+                            down[] = {{"0.075 +0.16", 0.803}, 1};
                         };
                         class WP {
-                            width = 1;
+                            width = 2;
                             type = "line";
-                            points[] =
-                                {
-
-                                    {"wppoint",
-                                     1,
-
-                                     {"HorizonBankRotFull",
-                                      0.015,
-                                      -0.035},
-                                     1},
-
-                                    {"wppoint",
-                                     1,
-
-                                     {"HorizonBankRotFull",
-                                      0,
-                                      0},
-                                     1},
-
-                                    {"wppoint",
-                                     1,
-
-                                     {"HorizonBankRotFull",
-                                      -0.015,
-                                      -0.035},
-                                     1}};
+                            points[] = {{"WPPoint", 1, "LimitWaypoint", 1, {-0.02, 0.04}, 1}, {"WPPoint", 1, "LimitWaypoint", 1, {0, 0.02}, 1}, {"WPPoint", 1, "LimitWaypoint", 1, {0.02, 0.04}, 1}, {}};
                         };
                     };
-                    class RadarBoxes {
-                        type = "radartoview";
-                        pos0[] = {0.5, 0.5};
-                        pos10[] = {0.73400003, 0.73000002};
-                        width = 2;
-                        points[] =
-                            {
-
-                                {{-0.0020000001, -0.0019658101},
-                                 1},
-
-                                {{0.0020000001, -0.0019658101},
-                                 1},
-
-                                {{0.0020000001, 0.0019658101},
-                                 1},
-
-                                {{-0.0020000001, 0.0019658101},
-                                 1},
-
-                                {{-0.0020000001, -0.0019658101},
-                                 1}};
+                    class WeaponsLocking {
+                        condition = "missilelocking";
+                        blinkingPattern[] = {0.2, 0.2};
+                        blinkingStartsOn = 1;
+                        class shape {
+                            type = "line";
+                            width = 4;
+                            points[] = {{"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, 0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {-0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}};
+                        };
+                    };
+                    class IncomingMissile {
+                        condition = "incomingmissile";
+                        blinkingPattern[] = {0.3, 0.3};
+                        blinkingStartsOn = 1;
+                        class Text {
+                            type = "text";
+                            source = "static";
+                            text = "!INCOMING MISSILE!";
+                            align = "center";
+                            scale = 1;
+                            pos[] = {{0.485, 0.216239}, 1};
+                            right[] = {{0.545, 0.216239}, 1};
+                            down[] = {{0.485, 0.265385}, 1};
+                        };
+                    };
+                    class RadarTargets {
+                        class RadarBoxes {
+                            type = "radartoview";
+                            pos0[] = {0.5, 0.5};
+                            pos10[] = {0.734, 0.73};
+                            width = 4;
+                            points[] = {{{-0.0035, -0.00344017}, 1}, {{0.0035, -0.00344017}, 1}, {{0.0035, 0.00344017}, 1}, {{-0.0035, 0.00344017}, 1}, {{-0.0035, -0.00344017}, 1}};
+                        };
                     };
                     class TargetDiamond {
                         class shape {
                             type = "line";
                             width = 4;
-                            points[] =
-                                {
-
-                                    {"Target",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0.02, 0.0196581},
-                                     1},
-
-                                    {"Target",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {-0.02, 0.0196581},
-                                     1},
-
-                                    {"Target",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {-0.02, -0.0196581},
-                                     1},
-
-                                    {"Target",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0.02, -0.0196581},
-                                     1},
-
-                                    {"Target",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0.02, 0.0196581},
-                                     1}};
+                            points[] = {{"Target", 1, "Limit0109", 1, {0.02, 0.0196581}, 1}, {"Target", 1, "Limit0109", 1, {-0.02, 0.0196581}, 1}, {"Target", 1, "Limit0109", 1, {-0.02, -0.0196581}, 1}, {"Target", 1, "Limit0109", 1, {0.02, -0.0196581}, 1}, {"Target", 1, "Limit0109", 1, {0.02, 0.0196581}, 1}};
                         };
                     };
                     class TargetLocked {
@@ -7027,43 +2159,53 @@ class CfgVehicles {
                         class shape {
                             type = "line";
                             width = 4;
-                            points[] =
-                                {
-
-                                    {"Target",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0, -0.0294872},
-                                     1},
-
-                                    {"Target",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0.029999999, 0},
-                                     1},
-
-                                    {"Target",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0, 0.0294872},
-                                     1},
-
-                                    {"Target",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {-0.029999999, 0},
-                                     1},
-
-                                    {"Target",
-                                     1,
-                                     "Limit0109",
-                                     1,
-                                     {0, -0.0294872},
-                                     1}};
+                            points[] = {{"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, 0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {-0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}};
+                        };
+                        class TimeOfFlightText {
+                            type = "text";
+                            source = "static";
+                            text = "TOF:";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{"0.127+0.49", 0.869}, 1};
+                            right[] = {{0.652, 0.869}, 1};
+                            down[] = {{"0.127+0.49", 0.904}, 1};
+                        };
+                        class TOF_source {
+                            type = "text";
+                            scale = 1;
+                            sourceScale = 1;
+                            source = "missileflighttime";
+                            align = "right";
+                            pos[] = {{0.739, 0.869}, 1};
+                            right[] = {{0.774, 0.869}, 1};
+                            down[] = {{0.739, 0.904}, 1};
+                        };
+                    };
+                    class TargetDist {
+                        class DistanceText {
+                            type = "text";
+                            source = "static";
+                            text = "DIST:";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{"0.125+0.49", 0.901}, 1};
+                            right[] = {{0.65, 0.901}, 1};
+                            down[] = {{"0.125+0.49", 0.936}, 1};
+                        };
+                        class TargetDistance {
+                            type = "text";
+                            scale = 1;
+                            source = "targetDist";
+                            sourceLength = 0;
+                            sourcePrecision = 2;
+                            sourceScale = 0.001;
+                            align = "right";
+                            pos[] = {{0.739, 0.901}, 1};
+                            right[] = {{0.774, 0.901}, 1};
+                            down[] = {{0.739, 0.936}, 1};
                         };
                     };
                 };
@@ -7072,49 +2214,27 @@ class CfgVehicles {
                 turret[] = {-1};
                 class Draw {
                     alpha = "user3";
-                    color[] =
-                        {
-                            "user0",
-                            "user1",
-                            "user2"};
-                    condition = "(1 - (cameraHeadingDiffY<=-19) + (abs(cameraHeadingDiffX)>=24))*on";
-                    class CMName {
+                    color[] = {"user0", "user1", "user2"};
+                    condition = "on";
+                    class cmWeapons {
                         type = "text";
                         source = "cmweapon";
                         sourceScale = 1;
-                        align = "left";
-                        scale = 1;
-                        pos[] =
-                            {
-                                {0.86900002, 0.84899998},
-                                1};
-                        right[] =
-                            {
-                                {0.91900003, 0.84899998},
-                                1};
-                        down[] =
-                            {
-                                {0.86900002, 0.884},
-                                1};
+                        align = "right";
+                        scale = 0.5;
+                        pos[] = {{0.001, 0.869}, 1};
+                        right[] = {{0.036, 0.869}, 1};
+                        down[] = {{0.001, 0.904}, 1};
                     };
-                    class CMCount {
+                    class cmAmmo {
                         type = "text";
                         source = "cmammo";
                         sourceScale = 1;
-                        align = "left";
-                        scale = 1;
-                        pos[] =
-                            {
-                                {0.97899997, 0.84899998},
-                                1};
-                        right[] =
-                            {
-                                {1.029, 0.84899998},
-                                1};
-                        down[] =
-                            {
-                                {0.97899997, 0.884},
-                                1};
+                        align = "right";
+                        scale = 0.5;
+                        pos[] = {{0.001, 0.901}, 1};
+                        right[] = {{0.036, 0.901}, 1};
+                        down[] = {{0.001, 0.936}, 1};
                     };
                 };
             };
@@ -7135,13 +2255,14 @@ class CfgVehicles {
             horizontalWingsAngleCollMax = 7.5;
             stressDamagePerSec = 0.0033333332;
         };
-        envelope[] = {0,0.2,0.9,2.1,2.5,3.3,3.5,3.6,3.7,3.8,3.8,3.8,3.8,3.8,3.8};
+        defaultUserMFDvalues[] = {0.25, 1, 0.25, 1};
+        envelope[] = {0, 0.2, 0.9, 2.1, 2.5, 3.3, 3.5, 3.6, 3.7, 3.8, 3.8, 3.8, 3.8, 3.8, 3.8};
         maxSpeed = 365;
         slingLoadMaxCargoMass = 4000;
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
         cargoCompartments[] = {"Compartment3"};
         transportsoldier = 11;
-        cargoProxyIndexes[] = {1,2,3,4,5,6,7,8,9,10,11};
+        cargoProxyIndexes[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
         gearUpExt[] = {"A3\Sounds_F\vehicles\air\Heli_Attack_01\blackfoot_gear_up_ext", 1, 1, 1000};
         gearUpInt[] = {"A3\Sounds_F\vehicles\air\Heli_Attack_01\blackfoot_gear_up_int", 1, 1, 100};
         gearUp[] = {"gearUpInt", "gearUpExt"};
@@ -7190,7 +2311,7 @@ class CfgVehicles {
             pilotOpticsShowCursor = 1;
             controllable = 1;
         };
-        // Fix the gunner repeater vision mode 
+        // Fix the gunner repeater vision mode
         class RenderTargets {
             class LeftMirror {
                 class CameraView1 {
@@ -7230,11 +2351,11 @@ class CfgVehicles {
                         attachment = "PylonRack_4Rnd_LG_scalpel";
                         turret[] = {0};
                     };
-                    class PylonLeft4: PylonLeft4 {
+                    class PylonLeft4 : PylonLeft4 {
                     };
                     class PylonRight4 : PylonRight4 {
                     };
-                    class PylonRadar: PylonRadar {
+                    class PylonRadar : PylonRadar {
                     };
                 };
                 class Presets : Presets {
@@ -7250,41 +2371,33 @@ class CfgVehicles {
                 };
             };
         };
-        cargoProxyIndexes[] = {1,2,3,4,9,10,11};
+        cargoProxyIndexes[] = {1, 2, 3, 4, 9, 10, 11};
         transportsoldier = 7;
         cargoAction[] = {"Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "passenger_flatground_generic02", "passenger_flatground_generic05", "passenger_flatground_leanleft"};
         // It has to be re-declared(?), otherwise won't work
-        class Turrets: Turrets {
-            class CargoTurret_01: CargoTurret_01 {
-
+        class Turrets : Turrets {
+            class CargoTurret_01 : CargoTurret_01 {
             };
-            class CargoTurret_02: CargoTurret_02 {
-
+            class CargoTurret_02 : CargoTurret_02 {
             };
-            class CargoTurret_03: CargoTurret_03 {
-
+            class CargoTurret_03 : CargoTurret_03 {
             };
-            class CargoTurret_04: CargoTurret_04 {
-
+            class CargoTurret_04 : CargoTurret_04 {
             };
         };
     };
-    class Aegis_B_ION_Heli_Attack_04_F: Aegis_Heli_Attack_04_base_F {
-        cargoProxyIndexes[] = {1,2,3,4,9,10,11};
+    class Aegis_B_ION_Heli_Attack_04_F : Aegis_Heli_Attack_04_base_F {
+        cargoProxyIndexes[] = {1, 2, 3, 4, 9, 10, 11};
         transportsoldier = 7;
         cargoAction[] = {"Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "passenger_flatground_generic02", "passenger_flatground_generic05", "passenger_flatground_leanleft"};
-        class Turrets: Turrets {
-            class CargoTurret_01: CargoTurret_01 {
-
+        class Turrets : Turrets {
+            class CargoTurret_01 : CargoTurret_01 {
             };
-            class CargoTurret_02: CargoTurret_02 {
-
+            class CargoTurret_02 : CargoTurret_02 {
             };
-            class CargoTurret_03: CargoTurret_03 {
-
+            class CargoTurret_03 : CargoTurret_03 {
             };
-            class CargoTurret_04: CargoTurret_04 {
-
+            class CargoTurret_04 : CargoTurret_04 {
             };
         };
         class Components : Components {
@@ -7302,57 +2415,49 @@ class CfgVehicles {
                     };
                     class PylonRight3 : PylonRight3 {
                     };
-                    class PylonLeft4: PylonLeft4 {
+                    class PylonLeft4 : PylonLeft4 {
                     };
                     class PylonRight4 : PylonRight4 {
                     };
-                    class PylonRadar: PylonRadar {
+                    class PylonRadar : PylonRadar {
                         attachment = "";
                     };
                 };
                 class Presets : Presets {
                     class Default : Default {
-                        attachment[] = {"PylonRack_12Rnd_PG_missiles","PylonRack_12Rnd_PG_missiles","PylonWeapon_300Rnd_20mm_shells","PylonRack_12Rnd_PG_missiles","PylonRack_12Rnd_PG_missiles","PylonWeapon_300Rnd_20mm_shells", "", "", ""};
+                        attachment[] = {"PylonRack_12Rnd_PG_missiles", "PylonRack_12Rnd_PG_missiles", "PylonWeapon_300Rnd_20mm_shells", "PylonRack_12Rnd_PG_missiles", "PylonRack_12Rnd_PG_missiles", "PylonWeapon_300Rnd_20mm_shells", "", "", ""};
                     };
                 };
             };
         };
     };
-    class Aegis_O_A_Heli_Attack_04_F: Aegis_Heli_Attack_04_base_F {
-        cargoProxyIndexes[] = {1,2,3,4,9,10,11};
+    class Aegis_O_A_Heli_Attack_04_F : Aegis_Heli_Attack_04_base_F {
+        cargoProxyIndexes[] = {1, 2, 3, 4, 9, 10, 11};
         transportsoldier = 7;
         cargoAction[] = {"Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "passenger_flatground_generic02", "passenger_flatground_generic05", "passenger_flatground_leanleft"};
-        class Turrets: Turrets {
-            class CargoTurret_01: CargoTurret_01 {
-
+        class Turrets : Turrets {
+            class CargoTurret_01 : CargoTurret_01 {
             };
-            class CargoTurret_02: CargoTurret_02 {
-
+            class CargoTurret_02 : CargoTurret_02 {
             };
-            class CargoTurret_03: CargoTurret_03 {
-
+            class CargoTurret_03 : CargoTurret_03 {
             };
-            class CargoTurret_04: CargoTurret_04 {
-
+            class CargoTurret_04 : CargoTurret_04 {
             };
         };
     };
-    class Aegis_I_Raven_Heli_Attack_04_F: Aegis_Heli_Attack_04_base_F {
-        cargoProxyIndexes[] = {1,2,3,4,9,10,11};
+    class Aegis_I_Raven_Heli_Attack_04_F : Aegis_Heli_Attack_04_base_F {
+        cargoProxyIndexes[] = {1, 2, 3, 4, 9, 10, 11};
         transportsoldier = 7;
         cargoAction[] = {"Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "passenger_flatground_generic02", "passenger_flatground_generic05", "passenger_flatground_leanleft"};
-        class Turrets: Turrets {
-            class CargoTurret_01: CargoTurret_01 {
-
+        class Turrets : Turrets {
+            class CargoTurret_01 : CargoTurret_01 {
             };
-            class CargoTurret_02: CargoTurret_02 {
-
+            class CargoTurret_02 : CargoTurret_02 {
             };
-            class CargoTurret_03: CargoTurret_03 {
-
+            class CargoTurret_03 : CargoTurret_03 {
             };
-            class CargoTurret_04: CargoTurret_04 {
-
+            class CargoTurret_04 : CargoTurret_04 {
             };
         };
         class Components : Components {
@@ -7370,38 +2475,34 @@ class CfgVehicles {
                     };
                     class PylonRight3 : PylonRight3 {
                     };
-                    class PylonLeft4: PylonLeft4 {
+                    class PylonLeft4 : PylonLeft4 {
                     };
                     class PylonRight4 : PylonRight4 {
                     };
-                    class PylonRadar: PylonRadar {
+                    class PylonRadar : PylonRadar {
                         attachment = "";
                     };
                 };
                 class Presets : Presets {
                     class Default : Default {
-                        attachment[] = {"PylonRack_20Rnd_Rocket_80mm","PylonRack_20Rnd_Rocket_80mm","PylonWeapon_250Rnd_20mm_shells","PylonRack_20Rnd_Rocket_80mm","PylonRack_20Rnd_Rocket_80mm","PylonWeapon_250Rnd_20mm_shells", "", "", ""};
+                        attachment[] = {"PylonRack_20Rnd_Rocket_80mm", "PylonRack_20Rnd_Rocket_80mm", "PylonWeapon_250Rnd_20mm_shells", "PylonRack_20Rnd_Rocket_80mm", "PylonRack_20Rnd_Rocket_80mm", "PylonWeapon_250Rnd_20mm_shells", "", "", ""};
                     };
                 };
             };
         };
     };
-    class Aegis_O_R_Heli_Attack_04_F: Aegis_Heli_Attack_04_base_F {
-        cargoProxyIndexes[] = {1,2,3,4,9,10,11};
+    class Aegis_O_R_Heli_Attack_04_F : Aegis_Heli_Attack_04_base_F {
+        cargoProxyIndexes[] = {1, 2, 3, 4, 9, 10, 11};
         transportsoldier = 7;
         cargoAction[] = {"Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "passenger_flatground_generic02", "passenger_flatground_generic05", "passenger_flatground_leanleft"};
-        class Turrets: Turrets {
-            class CargoTurret_01: CargoTurret_01 {
-
+        class Turrets : Turrets {
+            class CargoTurret_01 : CargoTurret_01 {
             };
-            class CargoTurret_02: CargoTurret_02 {
-
+            class CargoTurret_02 : CargoTurret_02 {
             };
-            class CargoTurret_03: CargoTurret_03 {
-
+            class CargoTurret_03 : CargoTurret_03 {
             };
-            class CargoTurret_04: CargoTurret_04 {
-
+            class CargoTurret_04 : CargoTurret_04 {
             };
         };
         class Components : Components {
@@ -7419,47 +2520,42 @@ class CfgVehicles {
                     };
                     class PylonRight3 : PylonRight3 {
                     };
-                    class PylonLeft4: PylonLeft4{
+                    class PylonLeft4 : PylonLeft4 {
                     };
                     class PylonRight4 : PylonRight4 {
                     };
-                    class PylonRadar: PylonRadar {
+                    class PylonRadar : PylonRadar {
                     };
                 };
-                class Presets: Presets
-                {
-                    class Default: Default {
-                        attachment[] = {"PylonRack_20Rnd_Rocket_80mm","PylonRack_20Rnd_Rocket_80mm","PylonRack_6Rnd_Vikhr_missiles","PylonRack_20Rnd_Rocket_80mm","PylonRack_20Rnd_Rocket_80mm","PylonRack_6Rnd_Vikhr_missiles", "", "", "MastRadar"};
+                class Presets : Presets {
+                    class Default : Default {
+                        attachment[] = {"PylonRack_20Rnd_Rocket_80mm", "PylonRack_20Rnd_Rocket_80mm", "PylonRack_6Rnd_Vikhr_missiles", "PylonRack_20Rnd_Rocket_80mm", "PylonRack_20Rnd_Rocket_80mm", "PylonRack_6Rnd_Vikhr_missiles", "", "", "MastRadar"};
                     };
-                    class AT: AT {
-                        attachment[] = {"PylonRack_6Rnd_Vikhr_missiles","PylonRack_6Rnd_Vikhr_missiles","PylonRack_6Rnd_Vikhr_missiles","PylonRack_6Rnd_Vikhr_missiles","PylonRack_6Rnd_Vikhr_missiles","PylonRack_6Rnd_Vikhr_missiles", "", "", "MastRadar"};
+                    class AT : AT {
+                        attachment[] = {"PylonRack_6Rnd_Vikhr_missiles", "PylonRack_6Rnd_Vikhr_missiles", "PylonRack_6Rnd_Vikhr_missiles", "PylonRack_6Rnd_Vikhr_missiles", "PylonRack_6Rnd_Vikhr_missiles", "PylonRack_6Rnd_Vikhr_missiles", "", "", "MastRadar"};
                     };
-                    class HAT: HAT {
-                        attachment[] = {"PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_6Rnd_Vikhr_missiles","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_6Rnd_Vikhr_missiles", "", "", "MastRadar"};
+                    class HAT : HAT {
+                        attachment[] = {"PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_6Rnd_Vikhr_missiles", "PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_6Rnd_Vikhr_missiles", "", "", "MastRadar"};
                     };
-                    class CAS: CAS {
-                        attachment[] = {"PylonRack_20Rnd_Rocket_80mm","PylonMissile_1Rnd_Bomb_03_F","PylonRack_20Rnd_Rocket_80mm","PylonRack_20Rnd_Rocket_80mm","PylonMissile_1Rnd_Bomb_03_F","PylonRack_20Rnd_Rocket_80mm", "", "", "MastRadar"};
+                    class CAS : CAS {
+                        attachment[] = {"PylonRack_20Rnd_Rocket_80mm", "PylonMissile_1Rnd_Bomb_03_F", "PylonRack_20Rnd_Rocket_80mm", "PylonRack_20Rnd_Rocket_80mm", "PylonMissile_1Rnd_Bomb_03_F", "PylonRack_20Rnd_Rocket_80mm", "", "", "MastRadar"};
                     };
                 };
             };
         };
     };
-    class Aegis_O_SFIA_Heli_Attack_04_F: Aegis_Heli_Attack_04_base_F {
-        cargoProxyIndexes[] = {1,2,3,4,9,10,11};
+    class Aegis_O_SFIA_Heli_Attack_04_F : Aegis_Heli_Attack_04_base_F {
+        cargoProxyIndexes[] = {1, 2, 3, 4, 9, 10, 11};
         transportsoldier = 7;
         cargoAction[] = {"Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "Passenger_Heli_Attack_04", "passenger_flatground_generic02", "passenger_flatground_generic05", "passenger_flatground_leanleft"};
-        class Turrets: Turrets {
-            class CargoTurret_01: CargoTurret_01 {
-
+        class Turrets : Turrets {
+            class CargoTurret_01 : CargoTurret_01 {
             };
-            class CargoTurret_02: CargoTurret_02 {
-
+            class CargoTurret_02 : CargoTurret_02 {
             };
-            class CargoTurret_03: CargoTurret_03 {
-
+            class CargoTurret_03 : CargoTurret_03 {
             };
-            class CargoTurret_04: CargoTurret_04 {
-
+            class CargoTurret_04 : CargoTurret_04 {
             };
         };
         class Components : Components {
@@ -7477,22 +2573,22 @@ class CfgVehicles {
                     };
                     class PylonRight3 : PylonRight3 {
                     };
-                    class PylonLeft4: PylonLeft4{
+                    class PylonLeft4 : PylonLeft4 {
                     };
                     class PylonRight4 : PylonRight4 {
                     };
-                    class PylonRadar: PylonRadar {
+                    class PylonRadar : PylonRadar {
                     };
                 };
-                class Presets: Presets {
-                    class Default: Default {
-                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_3Rnd_LG_scalpel","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_3Rnd_LG_scalpel", "", "", "MastRadar"};
+                class Presets : Presets {
+                    class Default : Default {
+                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_3Rnd_LG_scalpel", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_3Rnd_LG_scalpel", "", "", "MastRadar"};
                     };
-                    class AT: AT {
-                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel", "", "", "MastRadar"};
+                    class AT : AT {
+                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_3Rnd_LG_scalpel", "PylonRack_3Rnd_LG_scalpel", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_3Rnd_LG_scalpel", "PylonRack_3Rnd_LG_scalpel", "", "", "MastRadar"};
                     };
-                    class CAS: CAS {
-                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonWeapon_250Rnd_20mm_shells","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonWeapon_250Rnd_20mm_shells", "", "", "MastRadar"};
+                    class CAS : CAS {
+                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonWeapon_250Rnd_20mm_shells", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonWeapon_250Rnd_20mm_shells", "", "", "MastRadar"};
                     };
                 };
             };
