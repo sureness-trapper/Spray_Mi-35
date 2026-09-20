@@ -510,7 +510,7 @@ class CfgVehicles {
                                 source = "LarAmmoMax";
                                 sourceScale = 1;
                                 min = 0;
-                                max = 1;
+                                max = 1.5;
                                 minPos[] = {0, 1};
                                 maxPos[] = {0, 0};
                             };
@@ -1080,41 +1080,6 @@ class CfgVehicles {
                                     width = 4;
                                     points[] = {{"ForwardVector", 1, "HUDCenter", {0, -0.245726}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0434, -0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0855, -0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {0.125, -0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1607, -0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1915, -0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2165, -0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {0.234925, -0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2462, -0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {0.25, 0}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2462, 0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {0.234925, 0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2165, 0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1915, 0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1607, 0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {0.125, 0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0855, 0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0434, 0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0, 0.245726}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0434, 0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0855, 0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.125, 0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1607, 0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1915, 0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2165, 0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.234925, 0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2462, 0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.25, 0}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2462, -0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.234925, -0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2165, -0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1915, -0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1607, -0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.125, -0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0855, -0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0434, -0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0, -0.245726}, 1}};
                                 };
-                                class Lines {
-                                    type = "line";
-                                    width = 4;
-                                    points[] = {{{0.21, 0.55}, 1}, {{0.19, 0.55}, 1}, {{0.19, 0.71}, 1}, {{0.21, 0.71}, 1}, {}, {{0.21, 0.67}, 1}, {{0.19, 0.67}, 1}, {}, {{0.21, 0.63}, 1}, {{0.19, 0.63}, 1}, {}, {{0.21, 0.59}, 1}, {{0.19, 0.59}, 1}, {}, {"LarTargetDist", -0.16, {0.17, 0.73}, 1}, {"LarTargetDist", -0.16, {0.19, 0.71}, 1}, {"LarTargetDist", -0.16, {0.17, 0.69}, 1}, {}};
-                                };
-                                class Poly {
-                                    type = "polygon";
-                                    points[] = {{{"LarAmmoMin", -0.16, {0.191, 0.71}, 1}, {"LarAmmoMax", -0.16, {0.191, 0.71}, 1}, {"LarAmmoMax", -0.16, {0.208, 0.71}, 1}, {"LarAmmoMin", -0.16, {0.208, 0.71}, 1}}};
-                                };
-                                class TopText {
-                                    type = "text";
-                                    source = "LarTop";
-                                    sourceScale = 0.001;
-                                    scale = 1;
-                                    pos[] = {{0.22, 0.53}, 1};
-                                    right[] = {{0.26, 0.53}, 1};
-                                    down[] = {{0.22, 0.57}, 1};
-                                    align = "right";
-                                };
-                                class MiddleText : TopText {
-                                    source = "LarTop";
-                                    sourcePrecision = -1;
-                                    sourceScale = 0.0005;
-                                    pos[] = {{0.22, 0.61}, 1};
-                                    right[] = {{0.26, 0.61}, 1};
-                                    down[] = {{0.22, 0.65}, 1};
-                                };
-                                class SpeedText : TopText {
-                                    source = "LarTargetSpeed";
-                                    align = "left";
-                                    sourceScale = 3.6;
-                                    pos[] = {"LarTargetDist", -0.16, {0.16, 0.69}, 1};
-                                    right[] = {"LarTargetDist", -0.16, {0.2, 0.69}, 1};
-                                    down[] = {"LarTargetDist", -0.16, {0.16, 0.73}, 1};
-                                };
                             };
                             class ATMissile {
                                 condition = "ATmissile";
@@ -1123,40 +1088,48 @@ class CfgVehicles {
                                     width = 4;
                                     points[] = {{"ForwardVector", 1, "HUDCenter", {-0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.15, -0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.13, -0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.13, 0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.13, -0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.13, 0.147436}, 1}};
                                 };
+                            };
+                            class LAR {
+                                condition = "missile+AAmissile+ATmissile";
                                 class Lines {
                                     type = "line";
                                     width = 4;
-                                    points[] = {{{0.21, 0.55}, 1}, {{0.19, 0.55}, 1}, {{0.19, 0.71}, 1}, {{0.21, 0.71}, 1}, {}, {{0.21, 0.67}, 1}, {{0.19, 0.67}, 1}, {}, {{0.21, 0.63}, 1}, {{0.19, 0.63}, 1}, {}, {{0.21, 0.59}, 1}, {{0.19, 0.59}, 1}, {}, {"LarTargetDist", -0.16, {0.17, 0.73}, 1}, {"LarTargetDist", -0.16, {0.19, 0.71}, 1}, {"LarTargetDist", -0.16, {0.17, 0.69}, 1}, {}};
+                                    points[] = {{{0.21, 0.55}, 1}, {{0.19, 0.55}, 1}, {{0.19, 0.79}, 1}, {{0.21, 0.79}, 1}, {}, {{0.21, 0.71}, 1}, {{0.19, 0.71}, 1}, {}, {{0.21, 0.63}, 1}, {{0.19, 0.63}, 1}, {}, {"LarTargetDist", -0.24, {0.18, 0.8}, 1}, {"LarTargetDist", -0.24, {0.19, 0.79}, 1}, {"LarTargetDist", -0.24, {0.18, 0.78}, 1}, {}};
                                 };
                                 class Poly {
                                     type = "polygon";
-                                    points[] = {{{"LarAmmoMin", -0.16, {0.191, 0.71}, 1}, {"LarAmmoMax", -0.16, {0.191, 0.71}, 1}, {"LarAmmoMax", -0.16, {0.208, 0.71}, 1}, {"LarAmmoMin", -0.16, {0.208, 0.71}, 1}}};
+                                    points[] = {{{"LarAmmoMin", -0.24, {0.19, 0.79}, 1}, {"LarAmmoMax", -0.24, {0.19, 0.79}, 1}, {"LarAmmoMax", -0.24, {0.208, 0.79}, 1}, {"LarAmmoMin", -0.24, {0.208, 0.79}, 1}}};
                                 };
                                 class TopText {
                                     type = "text";
                                     source = "LarTop";
-                                    sourceScale = 0.001;
-                                    scale = 1;
-                                    pos[] = {{0.22, 0.53}, 1};
-                                    right[] = {{0.26, 0.53}, 1};
-                                    down[] = {{0.22, 0.57}, 1};
+                                    sourceScale = 0.0015;
+                                    sourcePrecision = 1;
+                                    scale = 0.5;
+                                    pos[] = {{0.22, 0.54}, 1};
+                                    right[] = {{0.24, 0.54}, 1};
+                                    down[] = {{0.22, 0.56}, 1};
                                     align = "right";
                                 };
                                 class MiddleText : TopText {
-                                    source = "LarTop";
-                                    sourcePrecision = -1;
+                                    sourceScale = 0.001;
+                                    pos[] = {{0.22, 0.62}, 1};
+                                    right[] = {{0.24, 0.62}, 1};
+                                    down[] = {{0.22, 0.64}, 1};
+                                };
+                                class BottomText : TopText {
                                     sourceScale = 0.0005;
-                                    pos[] = {{0.22, 0.61}, 1};
-                                    right[] = {{0.26, 0.61}, 1};
-                                    down[] = {{0.22, 0.65}, 1};
+                                    pos[] = {{0.22, 0.7}, 1};
+                                    right[] = {{0.24, 0.7}, 1};
+                                    down[] = {{0.22, 0.72}, 1};
                                 };
                                 class SpeedText : TopText {
                                     source = "LarTargetSpeed";
                                     align = "left";
                                     sourceScale = 3.6;
-                                    pos[] = {"LarTargetDist", -0.16, {0.16, 0.69}, 1};
-                                    right[] = {"LarTargetDist", -0.16, {0.2, 0.69}, 1};
-                                    down[] = {"LarTargetDist", -0.16, {0.16, 0.73}, 1};
+                                    pos[] = {"LarTargetDist", -0.24, {0.18, 0.78}, 1};
+                                    right[] = {"LarTargetDist", -0.24, {0.2, 0.78}, 1};
+                                    down[] = {"LarTargetDist", -0.24, {0.18, 0.8}, 1};
                                 };
                             };
                             class WP {
@@ -1168,9 +1141,9 @@ class CfgVehicles {
                                     sourcePrecision = 2;
                                     align = "left";
                                     scale = 1;
-                                    pos[] = {{0.235, 0.774038}, 1};
-                                    right[] = {{0.275, 0.774038}, 1};
-                                    down[] = {{0.235, 0.80156}, 1};
+                                    pos[] = {{0.235, 0.824038}, 1};
+                                    right[] = {{0.275, 0.824038}, 1};
+                                    down[] = {{0.235, 0.85156}, 1};
                                 };
                                 class WPIndex {
                                     type = "text";
@@ -1179,9 +1152,9 @@ class CfgVehicles {
                                     sourceLength = 2;
                                     align = "right";
                                     scale = 1;
-                                    pos[] = {{0.096, 0.776004}, 1};
-                                    right[] = {{0.126, 0.776004}, 1};
-                                    down[] = {{0.096, 0.799594}, 1};
+                                    pos[] = {{0.096, 0.831004}, 1};
+                                    right[] = {{0.126, 0.831004}, 1};
+                                    down[] = {{0.096, 0.849594}, 1};
                                 };
                                 class WPstatic {
                                     type = "text";
@@ -1190,20 +1163,9 @@ class CfgVehicles {
                                     scale = 1;
                                     sourceScale = 1;
                                     align = "right";
-                                    pos[] = {{0.075, 0.775}, 1};
-                                    right[] = {{0.105, 0.775}, 1};
-                                    down[] = {{0.075, 0.8}, 1};
-                                };
-                                class WPKM {
-                                    type = "text";
-                                    source = "static";
-                                    text = "KM";
-                                    scale = 1;
-                                    sourceScale = 1;
-                                    align = "right";
-                                    pos[] = {{"0.075 +0.16", 0.775}, 1};
-                                    right[] = {{0.265, 0.775}, 1};
-                                    down[] = {{"0.075 +0.16", 0.803}, 1};
+                                    pos[] = {{0.075, 0.825}, 1};
+                                    right[] = {{0.105, 0.825}, 1};
+                                    down[] = {{0.075, 0.85}, 1};
                                 };
                                 class WP {
                                     width = 2;
@@ -1468,7 +1430,7 @@ class CfgVehicles {
                         source = "LarAmmoMax";
                         sourceScale = 1;
                         min = 0;
-                        max = 1;
+                        max = 1.5;
                         minPos[] = {0, 1};
                         maxPos[] = {0, 0};
                     };
@@ -2038,41 +2000,6 @@ class CfgVehicles {
                             width = 4;
                             points[] = {{"ForwardVector", 1, "HUDCenter", {0, -0.245726}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0434, -0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0855, -0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {0.125, -0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1607, -0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1915, -0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2165, -0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {0.234925, -0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2462, -0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {0.25, 0}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2462, 0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {0.234925, 0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {0.2165, 0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1915, 0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {0.1607, 0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {0.125, 0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0855, 0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {0.0434, 0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0, 0.245726}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0434, 0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0855, 0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.125, 0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1607, 0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1915, 0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2165, 0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.234925, 0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2462, 0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.25, 0}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2462, -0.0426581}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.234925, -0.0840385}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.2165, -0.122863}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1915, -0.157953}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.1607, -0.188226}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.125, -0.212799}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0855, -0.230909}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.0434, -0.241991}, 1}, {"ForwardVector", 1, "HUDCenter", {0, -0.245726}, 1}};
                         };
-                        class Lines {
-                            type = "line";
-                            width = 4;
-                            points[] = {{{0.21, 0.55}, 1}, {{0.19, 0.55}, 1}, {{0.19, 0.71}, 1}, {{0.21, 0.71}, 1}, {}, {{0.21, 0.67}, 1}, {{0.19, 0.67}, 1}, {}, {{0.21, 0.63}, 1}, {{0.19, 0.63}, 1}, {}, {{0.21, 0.59}, 1}, {{0.19, 0.59}, 1}, {}, {"LarTargetDist", -0.16, {0.17, 0.73}, 1}, {"LarTargetDist", -0.16, {0.19, 0.71}, 1}, {"LarTargetDist", -0.16, {0.17, 0.69}, 1}, {}};
-                        };
-                        class Poly {
-                            type = "polygon";
-                            points[] = {{{"LarAmmoMin", -0.16, {0.191, 0.71}, 1}, {"LarAmmoMax", -0.16, {0.191, 0.71}, 1}, {"LarAmmoMax", -0.16, {0.208, 0.71}, 1}, {"LarAmmoMin", -0.16, {0.208, 0.71}, 1}}};
-                        };
-                        class TopText {
-                            type = "text";
-                            source = "LarTop";
-                            sourceScale = 0.001;
-                            scale = 1;
-                            pos[] = {{0.22, 0.53}, 1};
-                            right[] = {{0.26, 0.53}, 1};
-                            down[] = {{0.22, 0.57}, 1};
-                            align = "right";
-                        };
-                        class MiddleText : TopText {
-                            source = "LarTop";
-                            sourcePrecision = -1;
-                            sourceScale = 0.0005;
-                            pos[] = {{0.22, 0.61}, 1};
-                            right[] = {{0.26, 0.61}, 1};
-                            down[] = {{0.22, 0.65}, 1};
-                        };
-                        class SpeedText : TopText {
-                            source = "LarTargetSpeed";
-                            align = "left";
-                            sourceScale = 3.6;
-                            pos[] = {"LarTargetDist", -0.16, {0.16, 0.69}, 1};
-                            right[] = {"LarTargetDist", -0.16, {0.2, 0.69}, 1};
-                            down[] = {"LarTargetDist", -0.16, {0.16, 0.73}, 1};
-                        };
                     };
                     class ATMissile {
                         condition = "ATmissile";
@@ -2081,40 +2008,48 @@ class CfgVehicles {
                             width = 4;
                             points[] = {{"ForwardVector", 1, "HUDCenter", {-0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.15, -0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.127778}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.13, -0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {-0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {-0.13, 0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, -0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.13, -0.147436}, 1}, {}, {"ForwardVector", 1, "HUDCenter", {0.15, 0.147436}, 1}, {"ForwardVector", 1, "HUDCenter", {0.13, 0.147436}, 1}};
                         };
+                    };
+                    class LAR {
+                        condition = "missile+AAmissile+ATmissile";
                         class Lines {
                             type = "line";
                             width = 4;
-                            points[] = {{{0.21, 0.55}, 1}, {{0.19, 0.55}, 1}, {{0.19, 0.71}, 1}, {{0.21, 0.71}, 1}, {}, {{0.21, 0.67}, 1}, {{0.19, 0.67}, 1}, {}, {{0.21, 0.63}, 1}, {{0.19, 0.63}, 1}, {}, {{0.21, 0.59}, 1}, {{0.19, 0.59}, 1}, {}, {"LarTargetDist", -0.16, {0.17, 0.73}, 1}, {"LarTargetDist", -0.16, {0.19, 0.71}, 1}, {"LarTargetDist", -0.16, {0.17, 0.69}, 1}, {}};
+                            points[] = {{{0.21, 0.55}, 1}, {{0.19, 0.55}, 1}, {{0.19, 0.79}, 1}, {{0.21, 0.79}, 1}, {}, {{0.21, 0.71}, 1}, {{0.19, 0.71}, 1}, {}, {{0.21, 0.63}, 1}, {{0.19, 0.63}, 1}, {}, {"LarTargetDist", -0.24, {0.18, 0.8}, 1}, {"LarTargetDist", -0.24, {0.19, 0.79}, 1}, {"LarTargetDist", -0.24, {0.18, 0.78}, 1}, {}};
                         };
                         class Poly {
                             type = "polygon";
-                            points[] = {{{"LarAmmoMin", -0.16, {0.191, 0.71}, 1}, {"LarAmmoMax", -0.16, {0.191, 0.71}, 1}, {"LarAmmoMax", -0.16, {0.208, 0.71}, 1}, {"LarAmmoMin", -0.16, {0.208, 0.71}, 1}}};
+                            points[] = {{{"LarAmmoMin", -0.24, {0.19, 0.79}, 1}, {"LarAmmoMax", -0.24, {0.19, 0.79}, 1}, {"LarAmmoMax", -0.24, {0.208, 0.79}, 1}, {"LarAmmoMin", -0.24, {0.208, 0.79}, 1}}};
                         };
                         class TopText {
                             type = "text";
                             source = "LarTop";
-                            sourceScale = 0.001;
-                            scale = 1;
-                            pos[] = {{0.22, 0.53}, 1};
-                            right[] = {{0.26, 0.53}, 1};
-                            down[] = {{0.22, 0.57}, 1};
+                            sourceScale = 0.0015;
+                            sourcePrecision = 1;
+                            scale = 0.5;
+                            pos[] = {{0.22, 0.54}, 1};
+                            right[] = {{0.24, 0.54}, 1};
+                            down[] = {{0.22, 0.56}, 1};
                             align = "right";
                         };
                         class MiddleText : TopText {
-                            source = "LarTop";
-                            sourcePrecision = -1;
+                            sourceScale = 0.001;
+                            pos[] = {{0.22, 0.62}, 1};
+                            right[] = {{0.24, 0.62}, 1};
+                            down[] = {{0.22, 0.64}, 1};
+                        };
+                        class BottomText : TopText {
                             sourceScale = 0.0005;
-                            pos[] = {{0.22, 0.61}, 1};
-                            right[] = {{0.26, 0.61}, 1};
-                            down[] = {{0.22, 0.65}, 1};
+                            pos[] = {{0.22, 0.7}, 1};
+                            right[] = {{0.24, 0.7}, 1};
+                            down[] = {{0.22, 0.72}, 1};
                         };
                         class SpeedText : TopText {
                             source = "LarTargetSpeed";
                             align = "left";
                             sourceScale = 3.6;
-                            pos[] = {"LarTargetDist", -0.16, {0.16, 0.69}, 1};
-                            right[] = {"LarTargetDist", -0.16, {0.2, 0.69}, 1};
-                            down[] = {"LarTargetDist", -0.16, {0.16, 0.73}, 1};
+                            pos[] = {"LarTargetDist", -0.24, {0.18, 0.78}, 1};
+                            right[] = {"LarTargetDist", -0.24, {0.2, 0.78}, 1};
+                            down[] = {"LarTargetDist", -0.24, {0.18, 0.8}, 1};
                         };
                     };
                     class WP {
@@ -2126,9 +2061,9 @@ class CfgVehicles {
                             sourcePrecision = 2;
                             align = "left";
                             scale = 1;
-                            pos[] = {{0.235, 0.774038}, 1};
-                            right[] = {{0.275, 0.774038}, 1};
-                            down[] = {{0.235, 0.80156}, 1};
+                            pos[] = {{0.235, 0.824038}, 1};
+                            right[] = {{0.275, 0.824038}, 1};
+                            down[] = {{0.235, 0.85156}, 1};
                         };
                         class WPIndex {
                             type = "text";
@@ -2137,9 +2072,9 @@ class CfgVehicles {
                             sourceLength = 2;
                             align = "right";
                             scale = 1;
-                            pos[] = {{0.096, 0.776004}, 1};
-                            right[] = {{0.126, 0.776004}, 1};
-                            down[] = {{0.096, 0.799594}, 1};
+                            pos[] = {{0.096, 0.831004}, 1};
+                            right[] = {{0.126, 0.831004}, 1};
+                            down[] = {{0.096, 0.849594}, 1};
                         };
                         class WPstatic {
                             type = "text";
@@ -2148,20 +2083,9 @@ class CfgVehicles {
                             scale = 1;
                             sourceScale = 1;
                             align = "right";
-                            pos[] = {{0.075, 0.775}, 1};
-                            right[] = {{0.105, 0.775}, 1};
-                            down[] = {{0.075, 0.8}, 1};
-                        };
-                        class WPKM {
-                            type = "text";
-                            source = "static";
-                            text = "KM";
-                            scale = 1;
-                            sourceScale = 1;
-                            align = "right";
-                            pos[] = {{"0.075 +0.16", 0.775}, 1};
-                            right[] = {{0.265, 0.775}, 1};
-                            down[] = {{"0.075 +0.16", 0.803}, 1};
+                            pos[] = {{0.075, 0.825}, 1};
+                            right[] = {{0.105, 0.825}, 1};
+                            down[] = {{0.075, 0.85}, 1};
                         };
                         class WP {
                             width = 2;
