@@ -629,7 +629,7 @@ class CfgVehicles {
                                 down[] = {{0.5, 0.046}, 1};
                             };
                             class HeadingRotation {
-                                condition = "abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)-5";
+                                condition = "((abs(cameraDir-heading) min (360-abs(cameraDir-heading))) > 5)";
                                 class HeadingHeadNumber {
                                     type = "text";
                                     source = "cameraDir";
@@ -724,7 +724,7 @@ class CfgVehicles {
                                 };
                             };
                             class HeadingScaleFull {
-                                condition = "4-abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)";
+                                condition = "((abs(cameraDir-heading) min (360-abs(cameraDir-heading))) <= 5)";
                                 class HeadingScale {
                                     clipTL[] = {0.18, 0};
                                     clipBR[] = {0.83, 1};
@@ -871,9 +871,9 @@ class CfgVehicles {
                                     text = "GEAR";
                                     align = "right";
                                     scale = 1;
-                                    pos[] = {{0.015, 0.334188}, 1};
-                                    right[] = {{0.055, 0.334188}, 1};
-                                    down[] = {{0.015, 0.363675}, 1};
+                                    pos[] = {{0.015, 0.33}, 1};
+                                    right[] = {{0.055, 0.33}, 1};
+                                    down[] = {{0.015, 0.365}, 1};
                                 };
                             };
                             class LaserGroup {
@@ -902,6 +902,34 @@ class CfgVehicles {
                                     pos[] = {{0.015, 0.41}, 1};
                                     right[] = {{0.055, 0.41}, 1};
                                     down[] = {{0.015, 0.445}, 1};
+                                };
+                            };
+                            class CollGroup {
+                                condition = "collisionlights";
+                                class collText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "COLL";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{0.015, 0.45}, 1};
+                                    right[] = {{0.055, 0.45}, 1};
+                                    down[] = {{0.015, 0.485}, 1};
+                                };
+                            };
+                            class LightsGroup {
+                                condition = "lights";
+                                class LightsText {
+                                    type = "text";
+                                    source = "static";
+                                    text = "LIGHTS";
+                                    scale = 1;
+                                    sourceScale = 1;
+                                    align = "right";
+                                    pos[] = {{0.015, 0.29}, 1};
+                                    right[] = {{0.055, 0.29}, 1};
+                                    down[] = {{0.015, 0.325}, 1};
                                 };
                             };
                             class VerticalSpeedScale {
@@ -1559,7 +1587,7 @@ class CfgVehicles {
                         down[] = {{0.5, 0.046}, 1};
                     };
                     class HeadingRotation {
-                        condition = "abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)-5";
+                        condition = "((abs(cameraDir-heading) min (360-abs(cameraDir-heading))) > 5)";
                         class HeadingHeadNumber {
                             type = "text";
                             source = "cameraDir";
@@ -1654,7 +1682,7 @@ class CfgVehicles {
                         };
                     };
                     class HeadingScaleFull {
-                        condition = "4-abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)";
+                        condition = "((abs(cameraDir-heading) min (360-abs(cameraDir-heading))) <= 5)";
                         class HeadingScale {
                             clipTL[] = {0.18, 0};
                             clipBR[] = {0.83, 1};
@@ -1801,9 +1829,9 @@ class CfgVehicles {
                             text = "GEAR";
                             align = "right";
                             scale = 1;
-                            pos[] = {{0.015, 0.334188}, 1};
-                            right[] = {{0.055, 0.334188}, 1};
-                            down[] = {{0.015, 0.363675}, 1};
+                            pos[] = {{0.015, 0.33}, 1};
+                            right[] = {{0.055, 0.33}, 1};
+                            down[] = {{0.015, 0.365}, 1};
                         };
                     };
                     class LaserGroup {
@@ -1832,6 +1860,34 @@ class CfgVehicles {
                             pos[] = {{0.015, 0.41}, 1};
                             right[] = {{0.055, 0.41}, 1};
                             down[] = {{0.015, 0.445}, 1};
+                        };
+                    };
+                    class CollGroup {
+                        condition = "collisionlights";
+                        class collText {
+                            type = "text";
+                            source = "static";
+                            text = "COLL";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{0.015, 0.45}, 1};
+                            right[] = {{0.055, 0.45}, 1};
+                            down[] = {{0.015, 0.485}, 1};
+                        };
+                    };
+                    class LightsGroup {
+                        condition = "lights";
+                        class LightsText {
+                            type = "text";
+                            source = "static";
+                            text = "LIGHTS";
+                            scale = 1;
+                            sourceScale = 1;
+                            align = "right";
+                            pos[] = {{0.015, 0.29}, 1};
+                            right[] = {{0.055, 0.29}, 1};
+                            down[] = {{0.015, 0.325}, 1};
                         };
                     };
                     class VerticalSpeedScale {
