@@ -7,7 +7,14 @@ private _targets = _veh getVariable ["Spray_LaserTargets", []];
 {
 	private _target = _x select 0;
 	private _time = [_x select 3, "HH:MM:SS"] call BIS_fnc_timeToString;
-	lbAdd [1500, netId _target + ", Grid:" + mapGridPosition  _target + ", Created:" + _time];
+    private _bearing = round (_veh getdir _target);
+
+    private _bearingText = switch (true) do {
+        case (_bearing < 10):  {format ["00%1", _bearing]};
+        case (_bearing < 100): {format ["0%1", _bearing]};
+        default                {str _bearing};
+    };
+	lbAdd [1500, netId _target + "  B" + _bearingText + " R" + str ((round ((_veh distance _target) / 10)) / 100) + " G" + mapGridPosition  _target + " T" + _time];
 } forEach _targets;
 
 // Add button
