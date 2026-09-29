@@ -27,11 +27,19 @@ private _t = dayTime;
 		_marker setMarkerText ("Laser Target " + netId _target);
 	};
 }] remoteExec ["call", 0, true];
-private _keepAlive = [_target] spawn {
-params ["_target"];	
-	while {alive _target} do {
+private _keepAlive = [_veh, _target] spawn {
+	params ["_veh", "_target"];	
+	private _netID = "Spray_Laser_" + netId _target;
+	while {alive _target && alive _veh} do {
 		_target setPosATL getPosATL _target;
 		sleep 5;
+	};
+	if (alive _veh) then {
+		private _targets = _veh getVariable ["Spray_LaserTargets", []];
+		private _sel = _targets findIf {(_x # 1) == _netID};
+		[_veh, _sel] remoteExec ["Spray_Laser_fnc_remove", 2];
+	} else {
+		deleteMarker _netID;
 	};
 };
 [[side _veh, _target],  {

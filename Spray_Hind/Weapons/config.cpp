@@ -31,6 +31,9 @@ class CfgAmmo {
 	class B_20mm_Tracer_Yellow: B_20mm {
         model = "\A3\Weapons_f\Data\bullettracer\tracer_yellow";
     };
+	class B_20mm_Tracer_Green: B_20mm {
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_green";
+    };
     class MissileCore;
     class MissileBase: MissileCore {
         class Components;
