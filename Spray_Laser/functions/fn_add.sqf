@@ -45,7 +45,7 @@ private _keepAlive = [_veh, _target] spawn {
 [[side _veh, _target],  {
 	params ["_side", "_target"];
 	if (alive _target) then {
-		// The biggest time allow seems to be ≈ 2.14733e+06, which is ≈ 24.85 days
+		// The biggest time allowed seems to be ≈ 2.14733e+06, which is ≈ 24.85 days
 		_side reportRemoteTarget [_target, 1e9];
 	};
 }] remoteExec ["call", 0, true];
