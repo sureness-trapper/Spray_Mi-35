@@ -1265,26 +1265,30 @@ class CfgVehicles {
                                     width = 4;
                                     points[] = {{"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, 0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {-0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}};
                                 };
+                            };
+                            class TTI {
+                                condition = "missilelocking+missilelocked";
                                 class TimeOfFlightText {
                                     type = "text";
                                     source = "static";
-                                    text = "TOF:";
+                                    text = "T";
                                     scale = 1;
                                     sourceScale = 1;
                                     align = "right";
-                                    pos[] = {{"0.127+0.49", 0.869}, 1};
-                                    right[] = {{0.652, 0.869}, 1};
-                                    down[] = {{"0.127+0.49", 0.904}, 1};
+                                    pos[] = {{0.025, 0.85}, 1};
+                                    right[] = {{0.055, 0.85}, 1};
+                                    down[] = {{0.025, 0.875}, 1};
                                 };
                                 class TOF_source {
                                     type = "text";
                                     scale = 1;
                                     sourceScale = 1;
+                                    sourcePrecision = 1;
                                     source = "missileflighttime";
                                     align = "right";
-                                    pos[] = {{0.739, 0.869}, 1};
-                                    right[] = {{0.774, 0.869}, 1};
-                                    down[] = {{0.739, 0.904}, 1};
+                                    pos[] = {{0.065, 0.85156}, 1};
+                                    right[] = {{0.1, 0.85156}, 1};
+                                    down[] = {{0.065, 0.87656}, 1};
                                 };
                             };
                             class TargetDist {
@@ -2207,26 +2211,30 @@ class CfgVehicles {
                             width = 4;
                             points[] = {{"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, 0.0294872}, 1}, {"Target", 1, "Limit0109", 1, {-0.029999999, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, -0.0294872}, 1}};
                         };
+                    };
+                    class TTI {
+                        condition = "missilelocking+missilelocked";
                         class TimeOfFlightText {
                             type = "text";
                             source = "static";
-                            text = "TOF:";
+                            text = "T";
                             scale = 1;
                             sourceScale = 1;
                             align = "right";
-                            pos[] = {{"0.127+0.49", 0.869}, 1};
-                            right[] = {{0.652, 0.869}, 1};
-                            down[] = {{"0.127+0.49", 0.904}, 1};
+                            pos[] = {{0.025, 0.85}, 1};
+                            right[] = {{0.055, 0.85}, 1};
+                            down[] = {{0.025, 0.875}, 1};
                         };
                         class TOF_source {
                             type = "text";
                             scale = 1;
                             sourceScale = 1;
+                            sourcePrecision = 1;
                             source = "missileflighttime";
                             align = "right";
-                            pos[] = {{0.739, 0.869}, 1};
-                            right[] = {{0.774, 0.869}, 1};
-                            down[] = {{0.739, 0.904}, 1};
+                            pos[] = {{0.065, 0.85156}, 1};
+                            right[] = {{0.1, 0.85156}, 1};
+                            down[] = {{0.065, 0.87656}, 1};
                         };
                     };
                     class TargetDist {
@@ -2251,7 +2259,7 @@ class CfgVehicles {
                             sourceScale = 0.001;
                             align = "right";
                             pos[] = {{0.065, 0.824038}, 1};
-                            right[] = {{0.10, 0.824038}, 1};
+                            right[] = {{0.1, 0.824038}, 1};
                             down[] = {{0.065, 0.85156}, 1};
                         };
                     };
