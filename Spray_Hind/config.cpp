@@ -304,28 +304,24 @@ class CfgVehicles {
                         maxFov = "(30 / 120)";
                         minFov = "(30 / 120)";
                         gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-                        opticsDisplayName = "W";
                     };
                     class Medium : Wide {
                         initFov = "(5 / 120)";
                         maxFov = "(5 / 120)";
                         minFov = "(5 / 120)";
                         gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
-                        opticsDisplayName = "M";
                     };
                     class Narrow : Wide {
                         gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
                         initFov = "(2 / 120)";
                         maxFov = "(2 / 120)";
                         minFov = "(2 / 120)";
-                        opticsDisplayName = "N";
                     };
                     class VeryNarrow : Wide {
                         initFov = "(0.75 / 120)";
                         maxFov = "(0.75 / 120)";
                         minFov = "(0.75 / 120)";
                         gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-                        opticsDisplayName = "N";
                     };
                 };
                 class Components {
