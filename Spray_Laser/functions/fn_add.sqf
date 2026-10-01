@@ -18,15 +18,10 @@ _pos = ASLToATL _pos;
 private _target = createVehicle [("LaserTarget" + _side), _pos, [], 0, "CAN_COLLIDE"];
 private _t = dayTime;
 
-// Isn't it supposed to work without remoteExec?
-[[_target],  {
-	params ["_target"];
-	if (alive _target) then {
-		_marker = createMarker [("Spray_Laser_" + netId _target), _target, 1];
-		_marker setMarkerType "waypoint";
-		_marker setMarkerText ("Laser Target " + netId _target);
-	};
-}] remoteExec ["call", 0, true];
+_marker = createMarkerLocal [("Spray_Laser_" + netId _target), _target, 1, (crew _veh select {isPlayer _x}) # 0];
+_marker setMarkerTypeLocal "waypoint";
+_marker setMarkerText ("Laser Target " + netId _target);
+
 private _keepAlive = [_veh, _target] spawn {
 	params ["_veh", "_target"];	
 	private _netID = "Spray_Laser_" + netId _target;
