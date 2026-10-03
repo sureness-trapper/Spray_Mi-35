@@ -18,10 +18,6 @@ _pos = ASLToATL _pos;
 private _target = createVehicle [("LaserTarget" + _side), _pos, [], 0, "CAN_COLLIDE"];
 private _t = dayTime;
 
-_marker = createMarkerLocal [("Spray_Laser_" + netId _target), _target, 1, (crew _veh select {isPlayer _x}) # 0];
-_marker setMarkerTypeLocal "waypoint";
-_marker setMarkerText ("Laser Target " + netId _target);
-
 private _keepAlive = [_veh, _target] spawn {
 	params ["_veh", "_target"];	
 	private _netID = "Spray_Laser_" + netId _target;
@@ -42,6 +38,9 @@ private _keepAlive = [_veh, _target] spawn {
 	if (alive _target) then {
 		// The biggest time allowed seems to be ≈ 2.14733e+06, which is ≈ 24.85 days
 		_side reportRemoteTarget [_target, 1e9];
+		private _marker = createMarkerLocal [("Spray_Laser_" + netId _target), _target, 1, (crew _veh select {isPlayer _x}) # 0];
+		_marker setMarkerTypeLocal "waypoint";
+		_marker setMarkerTextLocal ("Laser Target " + netId _target);
 	};
 }] remoteExec ["call", 0, true];
 _targets pushBack [_target, ("Spray_Laser_" + netId _target), _keepAlive, _t];
