@@ -54,7 +54,7 @@ createDialog "Spray_AutoCM_Dialog";
 (displayCtrl 2600) ctrlAddEventHandler ["ButtonClick", {
 	params ["_control"];
 	//1401 Burst 1400 timer 
-	if ((lbText [1500, lbCurSel 1500] != "") && (parseNumber ctrlText 1401 >= 1) && (parseNumber ctrlText 1401 <= 5) && (parseNumber ctrlText 1400 >= 0.2) && (parseNumber ctrlText 1400 <= 5)) then {
+	if ((lbText [1500, lbCurSel 1500] != "") && (parseNumber ctrlText 1401 >= 1) && (parseNumber ctrlText 1401 <= 10) && (parseNumber ctrlText 1400 >= 0.1) && (parseNumber ctrlText 1400 <= 5)) then {
 		private _turret = call compile lbText [1502, lbCurSel 1502];
 		private _mode = lbText [1501, lbCurSel 1501];
 		private _burst = parseNumber ctrlText 1401;

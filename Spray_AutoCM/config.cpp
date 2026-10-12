@@ -77,7 +77,7 @@ class Spray_AutoCM_Dialog {
         };
         class RscText_1004 : RscText {
             idc = 1004;
-            text = "Burst  (1 - 5):";  //--- ToDo: Localize;
+            text = "Burst  (1 - 10):";  //--- ToDo: Localize;
             x = 0.489687 * safezoneW + safezoneX;
             y = 0.5 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
@@ -93,7 +93,7 @@ class Spray_AutoCM_Dialog {
         };
         class RscText_1005 : RscText {
             idc = 1005;
-            text = "Interval (0.2s - 5s):";  //--- ToDo: Localize;
+            text = "Interval (0.1s - 5s):";  //--- ToDo: Localize;
             x = 0.489687 * safezoneW + safezoneX;
             y = 0.544 * safezoneH + safezoneY;
             w = 0.086625 * safezoneW;

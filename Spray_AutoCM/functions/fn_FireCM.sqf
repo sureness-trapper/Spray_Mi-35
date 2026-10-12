@@ -16,8 +16,8 @@ if (_cm == _mode) then {
 } else {
 	_delay = getNumber (configFile >> "CfgWeapons" >> _cm >> _mode >> "burst") * getNumber (configFile >> "CfgWeapons" >> _cm >> _mode >> "reloadTime");
 };
-for "_i" from 0 to (((_burst max 1) min 5) - 1) do {
+for "_i" from 0 to (((_burst max 1) min 10) - 1) do {
 	// [_target, _cm, _turret] call BIS_fnc_fire;
 	(_target turretUnit _turret) forceWeaponFire [_cm, _mode];
-	sleep (_delay + ((_timer max 0.2) min 5));
+	sleep (_delay + ((_timer max 0.1) min 5));
 };
