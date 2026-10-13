@@ -9,15 +9,17 @@ if _add then {
 };
 _veh setVariable ["Spray_AutoCMID", _AutoCMID, true];
 //Locality change handler
-_veh addEventHandler ["Local", {
-	params ["_entity", "_isLocal"];
-    private _AutoCMEH = _entity getVariable ["Spray_AutoCMEH", -1];
-    if (_AutoCMEH != -1) then {
-        if (!_isLocal) then {
-            _entity removeEventHandler ["IncomingMissile", _AutoCMEH];
-        } else {
-            _entity setVariable ["Spray_AutoCMEH", nil, true];
-            [_entity, _AutoCMEH != -1] call Spray_AutoCM_fnc_init;
+if (_veh getVariable ["Spray_AutoCMLocalEH", -1] == -1) then {
+	_veh setVariable ["Spray_AutoCMLocalEH", _veh addEventHandler ["Local", {
+        params ["_entity", "_isLocal"];
+        private _AutoCMEH = _entity getVariable ["Spray_AutoCMEH", -1];
+        if (_AutoCMEH != -1) then {
+            if (!_isLocal) then {
+                _entity removeEventHandler ["IncomingMissile", _AutoCMEH];
+            } else {
+                _entity setVariable ["Spray_AutoCMEH", nil, true];
+                [_entity, _AutoCMEH != -1] call Spray_AutoCM_fnc_init;
+            };
         };
-    };
-}];
+    }]];
+};
